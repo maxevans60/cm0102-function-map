@@ -6,7 +6,7 @@ AI agents named each function from its code, and a review checked every medium a
 
 | Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
 |---|---|---|---|---|---|---|---|
-| 0x5af630 | 46 | `FOG_OF_WAR::FOG_OF_WAR` | thiscall(FOG_OF_WAR *this, int zip_handle) ret 4, returns this | Clears the sixteen map slots and, when fog of war is on, loads fog.dat or else makes a map for each human manager. | medium | opus | 2026-10-14-game-creation-inventory.md |
+| 0x5af630 | 46 | `FOG_OF_WAR::FOG_OF_WAR` | thiscall(FOG_OF_WAR *this, int zip_handle) ret 4, returns this | Clears the sixteen map slots and, when fog of war is on, loads fog.dat or else makes a map for each human manager. | high | sonnet | 2026-10-14-game-creation-inventory.md |
 | 0x5af6a0 | 25 | `FOG_OF_WAR::~FOG_OF_WAR` | thiscall(FOG_OF_WAR *this) ret 0 | Frees the buffer and the object of each of the sixteen fog of war map slots. | medium | opus |  |
 | 0x5af6e0 | 305 (+2 unwind) | `FOG_OF_WAR::load` | thiscall(FOG_OF_WAR *this, int zip_handle) ret 4, returns 1 on success | Reads fog.dat from the save archive into the sixteen map slots, or builds fresh maps for human managers when the version global is below 0x3e036. | high | opus |  |
 | 0x5afad0 | 167 | `FOG_OF_WAR::save` | thiscall(FOG_OF_WAR *this, int zip_handle) ret 4 | Writes the fog on flag and, for each of the sixteen slots, a presence word and the map data to fog.dat in the save archive. | high | opus |  |

@@ -1,0 +1,100 @@
+address	note
+0x55f7c0	File note: the asserts name network.h, a header with inline code. The address lies in the display.cpp range.
+0x55fba0	File note: the asserts name network.h, a header with inline code. The address lies in the display.cpp range.
+0x560140	File note: the asserts name network.h, a header with inline code. The address lies in the display.cpp range.
+0x5601e0	File note: the asserts name network.h, a header with inline code. The address lies in the display.cpp range.
+0x560290	File note: the asserts name network.h, a header with inline code. The address lies in the display.cpp range.
+0x560340	File note: the asserts name network.h, a header with inline code. The address lies in the display.cpp range.
+0x567b40	File note: the asserts name network.h, a header with inline code. The address lies in the display.cpp range.
+0x567be0	File note: the asserts name network.h, a header with inline code. The address lies in the display.cpp range.
+0x567c80	File note: the asserts name network.h, a header with inline code. The address lies in the display.cpp range.
+0x567d30	File note: the asserts name network.h, a header with inline code. The address lies in the display.cpp range.
+0x567de0	File note: the asserts name network.h, a header with inline code. The address lies in the display.cpp range.
+0x567e90	File note: the asserts name network.h, a header with inline code. The address lies in the display.cpp range.
+0x567f40	File note: the asserts name network.h, a header with inline code. The address lies in the display.cpp range.
+0x567ff0	File note: the asserts name network.h, a header with inline code. The address lies in the display.cpp range.
+0x5694a0	File note: the asserts name network.h, a header with inline code. The address lies in the range between display.cpp and dispute.cpp.
+0x569540	File note: the asserts name network.h, a header with inline code. The address lies in the range between display.cpp and dispute.cpp.
+0x569610	File note: no assert. The address lies in the range between display.cpp and dispute.cpp, next to network.h code.
+0x58e280	File note: no assert names a file for the FILE_LLIST code. It lies in the gap between fifa_rankings.cpp and file_screens.cpp.
+0x58e330	File note: no assert names a file for the FILE_LLIST code. It lies in the gap between fifa_rankings.cpp and file_screens.cpp.
+0x58e340	File note: no assert names a file for the FILE_LLIST code. It lies in the gap between fifa_rankings.cpp and file_screens.cpp.
+0x58e9b0	File note: no assert names a file for the FILE_LLIST code. It lies in the gap between fifa_rankings.cpp and file_screens.cpp.
+0x58f110	File note: no assert names a file for the FILE_LLIST code. It lies in the gap between fifa_rankings.cpp and file_screens.cpp.
+0x58f120	File note: no assert names a file for the FILE_LLIST code. It lies in the gap between fifa_rankings.cpp and file_screens.cpp.
+0x5961c0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x5961d0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x5968d0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x597db0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x598340	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x598370	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x5986b0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x5987c0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x598800	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x599800	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x599850	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x599890	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x5998e0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x599920	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x599960	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x5999a0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x5999e0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x599a20	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x599e00	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59a370	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59a5a0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59a5d0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59af40	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59b2a0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59b3b0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59b4c0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59b630	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59b7e0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59b9c0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59cdd0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59cf50	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59cfa0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59dd40	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59e050	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59e5a0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59e940	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59ed70	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59f300	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59f3e0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59f900	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59f9c0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59fae0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59fb90	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59fc60	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59fcf0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59fe10	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59feb0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x59ffb0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x5a0000	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x5a0050	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x5a0230	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x5a02f0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x5a0380	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x5a0410	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x5a04c0	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x5a0590	File note: the asserts of the Finance code name finance.CPP. The placement files it under fin_prm.cpp.
+0x729000	File note: the asserts of the Match_Stats code name match_stats.CPP. The placement files it under match_screens.cpp.
+0x7293c0	File note: the asserts of the Match_Stats code name match_stats.CPP. The placement files it under match_screens.cpp.
+0x7293f0	File note: the asserts of the Match_Stats code name match_stats.CPP. The placement files it under match_screens.cpp.
+0x729500	File note: the asserts of the Match_Stats code name match_stats.CPP. The placement files it under match_screens.cpp.
+0x729600	File note: the asserts of the Match_Stats code name match_stats.CPP. The placement files it under match_screens.cpp.
+0x729820	File note: the asserts of the Match_Stats code name match_stats.CPP. The placement files it under match_screens.cpp.
+0x729bd0	File note: the asserts of the Match_Stats code name match_stats.CPP. The placement files it under match_screens.cpp.
+0x729e30	File note: the asserts of the Match_Stats code name match_stats.CPP. The placement files it under match_screens.cpp.
+0x729ff0	File note: the asserts of the Match_Stats code name match_stats.CPP. The placement files it under match_screens.cpp.
+0x72aa70	File note: the asserts of the Match_Stats code name match_stats.CPP. The placement files it under match_screens.cpp.
+0x72aa80	File note: the asserts of the Match_Stats code name match_stats.CPP. The placement files it under match_screens.cpp.
+0x72adf0	File note: the asserts of the Match_Stats code name match_stats.CPP. The placement files it under match_screens.cpp.
+0x72b160	File note: the asserts of the Match_Stats code name match_stats.CPP. The placement files it under match_screens.cpp.
+0x7fc350	File note: no assert. The address lies in the range between scout_manager.cpp and scrman.cpp, next to network.h code.
+0x7fc370	File note: no assert. The address lies in the range between scout_manager.cpp and scrman.cpp, next to network.h code.
+0x7fc380	File note: no assert. The address lies in the range between scout_manager.cpp and scrman.cpp, next to network.h code.
+0x7fc530	File note: no assert. The address lies in the range between scout_manager.cpp and scrman.cpp, next to network.h code.
+0x7fc5e0	File note: no assert. The address lies in the range between scout_manager.cpp and scrman.cpp, next to network.h code.
+0x7fc690	File note: the asserts name network.h, a header with inline code. The address lies in the range between scout_manager.cpp and scrman.cpp.
+0x7ff990	File note: the asserts name network.h, a header with inline code. The address lies in the scrman.cpp range.

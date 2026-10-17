@@ -5,11 +5,12 @@ Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do no
 AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
 
 
-All 11747 functions with their category, file and placement method are in `function-files.tsv`. All 6863 named functions are in `names.tsv`.
+All 11747 functions with their category, file and placement method are in `function-files.tsv`. All 6863 named functions are in `names.tsv`. Every row that is not high is in `not-high.tsv`, with one line on what is missing for high.
 
 - Game functions: 6609. Library without asserts: 254.
 - Not named, by category: 3873 unwind funclets (each belongs to its parent, shown as "+n unwind"), 624 exception handler stubs, 387 C runtime functions.
-- Confidence: 5457 high, 1378 medium, 28 low, 0 without a name.
+- Confidence: 5702 high, 1133 medium, 28 low, 0 without a name.
+- File notes: 99 rows say in their purpose which file their asserts name (`file-notes.tsv`).
 
 | File | Functions |
 |---|---|

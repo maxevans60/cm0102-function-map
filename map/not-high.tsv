@@ -1,0 +1,1162 @@
+address	file	name	confidence	reason
+0x402ac0	Area.cpp	Area::init	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4041d0	Area.cpp	Area::convert_colour_to_pixel_format	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x40a5f0	argentina_rules.cpp	TRANSFER_RULES::rule_slot_5	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x40cba0	asia_cup_winner.cpp	asia_cup_winner_find_club_nation_slot	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4142c0	award_manager.cpp	AWARD_MANAGER::add_year_award_record	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x414300	award_manager.cpp	AWARD_MANAGER::add_team_award_record	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x414320	award_manager.cpp	AWARD_MANAGER::get_team_award_records	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x422070	bel_third.cpp	BelThird::create_schedule_fragment_422070	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x43f350	cash.cpp	swap_bytes_64_array	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x444500	club_history.cpp	compare_int_ids	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4481b0	club_records.cpp	season_history_entry_destruct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x448260	club_records.cpp	season_history_entry_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x448490	club_records.cpp	record_holder_assign	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4484d0	club_records.cpp	man_of_match_record_assign	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x448500	club_records.cpp	discipline_record_assign	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x448530	club_records.cpp	count_record_assign	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x448550	club_records.cpp	transfer_fee_record_assign	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4485b0	club_records.cpp	fans_player_record_assign	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x448670	club_records.cpp	run_record_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x450a70	club_records.cpp	Date::get_day	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x450a80	club_records.cpp	Date::get_year	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x450a90	club_records.cpp	Cash::Cash	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x450ad0	club_records.cpp	won_run_record_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x450b20	club_records.cpp	lost_run_record_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x450b70	club_records.cpp	unbeaten_run_record_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x450c10	club_records.cpp	goals_in_match_record_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x450c60	club_records.cpp	tally_record_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x450c70	club_records.cpp	youngest_player_record_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x450cd0	club_records.cpp	oldest_player_record_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x450d30	club_records.cpp	count_record_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x450d40	club_records.cpp	record_holder_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x453bc0	club_screens.cpp	match_team_pair_destructor	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x453be0	club_screens.cpp	match_team_pair_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x453c10	club_screens.cpp	match_team_block_destruct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x453c30	club_screens.cpp	match_team_block_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x453c50	club_screens.cpp	rating_record_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x453c90	club_screens.cpp	club_history_state_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x453cf0	club_screens.cpp	club_history_state_destruct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4671a0	club_screens.cpp	Cash::set	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x484980	club_screens.cpp	build_squad_list_for_staff_history	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4849c0	club_screens.cpp	build_squad_list_by_name_for_printout	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x487810	club_screens.cpp	squad_view_settings_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x487c60	coach.cpp	coach_exit_static_global	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x48af30	coach.cpp	coach_get_player_career_stage	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x48cc70	comp.cpp	Comp::find_club_progress	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x48e180	comp.cpp	Comp::get_table_layout_type	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x48e360	comp.cpp	Comp::counts_for_fixture_clash	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x48f410	comp.cpp	comp_compare_average_rows	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x48f450	comp.cpp	comp_compare_average_rows_by_season	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x49f2a0	comp_screens.cpp	comp_unbeaten_run_record_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x49f2f0	comp_screens.cpp	comp_winless_run_record_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x49f340	comp_screens.cpp	comp_goals_in_match_record_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x49f390	comp_screens.cpp	comp_youngest_player_record_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x49f3f0	comp_screens.cpp	comp_oldest_player_record_construct	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4ab5b0	comp_screens.cpp	attendance_record_assign	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4b01d0	comp_util.cpp	comp_util_get_parent_stage_id	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4b0890	comp_util.cpp	comp_util_classify_tie_result_for_news	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4c6960	conmebol_seeding.cpp	ConmebolSeeding::set_bra_champ_cup_winner	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4ca1c0	contract_manager.cpp	CONTRACT_MANAGER::remove_talks_records	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4ca2a0	contract_manager.cpp	CONTRACT_MANAGER::find_talks_record	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4cb960	contract_manager.cpp	staff_is_not_board_member	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4cbb20	contract_manager.cpp	is_contract_staff_job	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4cca30	contract_manager.cpp	CONTRACT_MANAGER::find_agreed_contract_offer	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4ce450	contract_manager.cpp	contract_manager_lowest_wage_demand	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4cf560	contract_manager.cpp	CONTRACT_MANAGER::remove_held_offers	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4d44e0	contract_manager.cpp	contract_manager_get_offer_job	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4d45f0	contract_manager.cpp	contract_manager_season_end_month	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x51e870	Cup.cpp	Cup::set_home_teams_for_round	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x521d60	Cup.cpp	Cup::apply_round_rules_to_match	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x521e60	Cup.cpp	cup_set_round_draw_date	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x521eb0	Cup.cpp	cup_set_round_match_date	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5221f0	Cup.cpp	Cup::get_match_importance	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x522360	Cup.cpp	Cup::club_in_higher_division	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x522c50	Cup.cpp	Cup::update_projected_positions	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x539490	Database.cpp	staff_normalise_non_player_attributes	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x53a610	Database.cpp	database_player_to_attribute_vector	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x53a8b0	Database.cpp	database_non_player_to_attribute_vector	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x53a980	Database.cpp	database_attribute_vector_to_non_player	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x53aa10	Database.cpp	database_attribute_vector_to_player	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x540130	Database.cpp	database_compare_staff_by_birth_date	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x545a60	Database.cpp	get_adjective_form_index	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x547f90	Database.cpp	staff_fade_staff_relationships	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x54d550	Date.cpp	date_get_weekday_gender	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5567d0	discipline.cpp	Discipline::drop_held_bans	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x557120	discipline.cpp	Discipline::serve_international_bans	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x55cae0	discipline.cpp	Discipline::get_slot_value	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x55cb20	discipline.cpp	Discipline::set_slot	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x55cb60	discipline.cpp	Discipline::find_held_ban	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x55ef50	display.cpp	Display::Display	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x567ac0	display.cpp	guio_set_fixed_rect	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5680b0	display.cpp	ScreenManager::set_area_selection	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x56a030	dispute.cpp	DISPUTE::get_dispute_club_id	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x578660	eng_third.cpp	EngThird::set_club_progress	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x57c5d0	euro_champ.cpp	EuroChamp::save_extra_data	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x57eb10	euro_champ_qual.cpp	EuroChampQual::skip_season_reset	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x57f920	euro_champ_qual.cpp	EuroChampQual::create_runners_up_stage	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x580040	euro_champ_qual.cpp	EuroChampQual::mark_qualified_teams	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x585cb0	european_cup.cpp	EuropeanCup::draw_phase2_groups_fragment_585cb0	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x58d710	fifa_rankings.cpp	FIFA_RANKINGS::count_results_in_period	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x58e330	fifa_rankings.cpp	FILE_LLIST::~FILE_LLIST	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x58f110	fifa_rankings.cpp	FILE_LLIST::reset_last_offset	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x594850	fin_first.cpp	FinFirst::update_staff_records_for_status_fragment_594850	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5ac920	fix_man.cpp	FIXTURE_MANAGER::find_next_fixture	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5aee40	fix_man.cpp	FIXTURE_MANAGER::get_club_first_fixture_year	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5af6a0	fog_of_war.cpp	FOG_OF_WAR::~FOG_OF_WAR	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5b1a00	fog_of_war.cpp	FONT::set_style_and_size	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5b2e80	formation.cpp	Formation::has_central_slot_in_line	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5b5960	formation.cpp	Formation::clear_marking_targets	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5c29b0	friendly.cpp	Friendly::is_comp_current_on_date	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5c45a0	friendly.cpp	Friendly::candidate_has_nearby_date	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5c4680	friendly.cpp	Friendly::pick_tour_nation	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5c57d0	friendly.cpp	Friendly::schedule_assign_opponent	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5c64e0	friendly.cpp	Friendly::remove_club_from_ai_plans	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5c6740	friendly.cpp	Friendly::find_scheduled_friendly_slot	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5c9630	friendly.cpp	friendly_dates_request_destroy_slots	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5cb9b0	friendly.cpp	friendly_international_date_set	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5cbdd0	friendly.cpp	friendly_international_date_resolve	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5d5a50	game.cpp	contract_get_status_flags	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5d5a60	game.cpp	player_stats_get_mean_rating	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5d5ac0	game.cpp	training_manager_get_player_entry	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5d6220	game.cpp	compare_players_by_ability	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5d8310	game_config.cpp	Config::set_default_currency	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5d8b40	game_config.cpp	Config::get_font_index	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5e5aa0	goldcup.cpp	text_caret_glyph_callback	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5e7aa0	goldcup.cpp	circle_plot_points	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5e8280	goldcup.cpp	set_software_cursor_flag	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5eef80	Guio.cpp	Guio::convert_colours_pixel_format	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5fa7d0	host_country.cpp	HostCountry::find_next_hosts	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5fb730	human_manager.cpp	HUMAN_MANAGER::~HUMAN_MANAGER	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x5fff30	human_manager.cpp	HUMAN_MANAGER::remove_nickname_from_all	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x600e90	human_manager.cpp	human_manager_get_stand_in_manager	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x62bf60	injury.cpp	Injury::find_match_injury	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x62c660	injury.cpp	Injury::set_training_load	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x645800	ita_ser_a.cpp	FixedFixture::FixedFixture	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x657243	ita_ser_c2a.cpp	ItaSerC2a::set_up_fixed_fixtures_fragment_657243	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x684790	league.cpp	League::has_automatic_promotion	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6847b0	league.cpp	League::has_relegation	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x68a160	league.cpp	league_round_set_date	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x68a4d0	league.cpp	League::final_day_margin_needed	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x68a980	league.cpp	League::limit_club_division_tier	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x68ac40	league.cpp	League::update_projected_positions	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x68aff0	league.cpp	fixed_fixture_set_by_club_names	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x933b20	library_without_asserts	glyph_hint_find_nearest_alignment_zone	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x933da0	library_without_asserts	glyph_hint_set_distance_by_stem_width	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x933e50	library_without_asserts	glyph_hint_place_point_between_two_refs	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x933fa0	library_without_asserts	glyph_hint_adjust_x_stem_edges	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x9340a0	library_without_asserts	glyph_hint_reset_scale_search	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x9340d0	library_without_asserts	glyph_hint_refine_scale_step	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x9341e0	library_without_asserts	glyph_hint_raise_to_max_of_pair	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x934220	library_without_asserts	glyph_hint_lower_to_min_of_pair	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x934260	library_without_asserts	glyph_hint_clamp_point_and_shift_companion	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x9342c0	library_without_asserts	glyph_hint_set_x_distance_rounded	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x934380	library_without_asserts	glyph_hint_set_y_distance_rounded	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x934440	library_without_asserts	glyph_hint_round_x_to_pixel_if_flag	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x934460	library_without_asserts	glyph_hint_round_y_to_pixel_if_flag	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x934480	library_without_asserts	glyph_hint_snap_x_toward_target	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x9344e0	library_without_asserts	glyph_hint_snap_y_toward_target	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x934540	library_without_asserts	glyph_hint_interpolate_x_between_points	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x934590	library_without_asserts	glyph_hint_interpolate_y_between_points	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x9345e0	library_without_asserts	glyph_hint_interpolate_untouched_x	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x9347a0	library_without_asserts	glyph_hint_interpolate_untouched_y	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x934960	library_without_asserts	glyph_hint_set_distance_by_axis	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x9349a0	library_without_asserts	glyph_hint_find_nearest_stem_width_index	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x934ab0	library_without_asserts	glyph_hint_max_x_stem_width	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x934ae0	library_without_asserts	glyph_hint_max_y_stem_width	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x934e00	library_without_asserts	glyph_hint_outline_compute_point_tangents	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x935080	library_without_asserts	fixed_normalise_vector_2dot14	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x935140	library_without_asserts	glyph_hint_outline_flag_extrema_points	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x935f90	library_without_asserts	glyph_hint_stem_edge_faces_point	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x936060	library_without_asserts	glyph_hint_build_sorted_constraint_list	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x9364c0	library_without_asserts	glyph_hint_set_font_params	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x936510	library_without_asserts	glyph_hint_outline_and_get_advance	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x9368e0	library_without_asserts	glyph_hint_set_size	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x936930	library_without_asserts	glyph_hint_scale_font_zones	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x936e80	library_without_asserts	tt_round_to_double_grid	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x937260	library_without_asserts	tt_move_point_and_touch	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x937350	library_without_asserts	tt_current_ppem	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x937360	library_without_asserts	tt_current_ppem_stretched	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x937410	library_without_asserts	tt_run_ins_range_with_callback	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x938b80	library_without_asserts	tt_op_push_advance_width	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x9391a0	library_without_asserts	tt_compute_rp_displacement	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x93b300	library_without_asserts	glyph_hint_read_font_params	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x93c590	library_without_asserts	glyph_outline_alloc_point_arrays	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x93d780	library_without_asserts	glyph_hint_heap_sift_down_by_coord	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x93d820	library_without_asserts	font_embolden_advance_widths	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x93dd90	library_without_asserts	t2k_scaler_new	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x93e794	library_without_asserts	t2k_purge_memory_fragment_93e794	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x93e8d6	library_without_asserts	t2k_render_glyph_fragment_93e8d6	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x9409b0	library_without_asserts	t2k_scan_convert_to_bitmap	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x941f10	library_without_asserts	tt_exec_hint_glyph	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x944760	library_without_asserts	f26dot6_mul	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x690bd0	manager_manager.cpp	MANAGER_MANAGER::get_league_confidence_band	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x69f7c0	manager_manager.cpp	MANAGER_MANAGER::set_board_ratings	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6bab90	match_eng.cpp	CM3_MATCH_ENGINE::is_foul_pending	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6bb950	match_eng.cpp	CM3_MATCH_ENGINE::scale_side_anger	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6bba50	match_eng.cpp	CM3_MATCH_ENGINE::get_pending_foul_awarded_side	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6bba80	match_eng.cpp	CM3_MATCH_ENGINE::try_play_advantage	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6bbe40	match_eng.cpp	CM3_MATCH_ENGINE::move_loose_ball	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6bbf60	match_eng.cpp	CM3_MATCH_ENGINE::assign_marking_targets	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6bcbd0	match_eng.cpp	CM3_MATCH_ENGINE::sum_cell_opponents	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6bce20	match_eng.cpp	CM3_MATCH_ENGINE::can_marker_challenge	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6bd5b0	match_eng.cpp	CM3_MATCH_ENGINE::is_path_ahead_clear	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6bd6b0	match_eng.cpp	CM3_MATCH_ENGINE::update_side_pressure_flag	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6bd760	match_eng.cpp	CM3_MATCH_ENGINE::build_action_order	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6c2a40	match_eng.cpp	CM3_MATCH_ENGINE::get_reference_tactic_cell	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6c2be0	match_eng.cpp	CM3_MATCH_ENGINE::get_player_target_cell	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6c38f0	match_eng.cpp	CM3_MATCH_ENGINE::get_player_secondary_position	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6c3920	match_eng.cpp	CM3_MATCH_ENGINE::get_player_alt_slot_position	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6c41b0	match_eng.cpp	CM3_MATCH_ENGINE::is_clear_ahead_of_cell	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cb650	match_eng.cpp	is_undisputed_action_code	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cb6c0	match_eng.cpp	CM3_MATCH_ENGINE::get_direction_between_cells	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cb700	match_eng.cpp	CM3_MATCH_ENGINE::count_players_ahead_of_row	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cb910	match_eng.cpp	is_outside_box_width	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cb930	match_eng.cpp	is_in_attacking_third	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cbad0	match_eng.cpp	CM3_MATCH_ENGINE::has_free_cell_ahead	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cbbb0	match_eng.cpp	CM3_MATCH_ENGINE::count_players_on_pitch	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cd330	match_eng.cpp	CM3_MATCH_ENGINE::try_cell_interception	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cd3d0	match_eng.cpp	CM3_MATCH_ENGINE::try_cell_shot_block	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cd5f0	match_eng.cpp	CM3_MATCH_ENGINE::is_behind_own_back_line	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cd660	match_eng.cpp	CM3_MATCH_ENGINE::update_defensive_lines	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cd770	match_eng.cpp	CM3_MATCH_ENGINE::move_ball_to_cell	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cdd00	match_eng.cpp	CM3_MATCH_ENGINE::place_player_at_entry_cell	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6ce460	match_eng.cpp	CM3_MATCH_ENGINE::rebuild_team_match_stats	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6ce9c0	match_eng.cpp	CM3_MATCH_ENGINE::compute_possession_percentages	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cf710	match_eng.cpp	CM3_MATCH_ENGINE::adjust_side_rating_points	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cf750	match_eng.cpp	CM3_MATCH_ENGINE::record_possession_tick	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cfc60	match_eng.cpp	CM3_MATCH_ENGINE::referee_judge_tackle	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cfca0	match_eng.cpp	CM3_MATCH_ENGINE::referee_check_foul	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cfcd0	match_eng.cpp	CM3_MATCH_ENGINE::referee_decide_foul_punishment	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cfd10	match_eng.cpp	CM3_MATCH_ENGINE::referee_decide_booking	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cfd40	match_eng.cpp	CM3_MATCH_ENGINE::referee_decide_misconduct_card	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cfd70	match_eng.cpp	CM3_MATCH_ENGINE::referee_check_offside	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6cfda0	match_eng.cpp	CM3_MATCH_ENGINE::is_player_nearest_to_ball	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6d0f80	match_eng.cpp	CM3_MATCH_ENGINE::pick_man_of_the_match	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6d10a0	match_eng.cpp	CM3_MATCH_ENGINE::set_instruction_for_top_rated_players	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6d4280	match_eng.cpp	CM3_MATCH_ENGINE::is_fake_fixture	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6d42a0	match_eng.cpp	CM3_MATCH_ENGINE::is_side_pushing_forward	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6d58f0	match_eng.cpp	CM3_MATCH_ENGINE::get_ball_goal_end	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6d5930	match_eng.cpp	CM3_MATCH_ENGINE::is_match_abandoned	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6d5950	match_eng.cpp	CM3_MATCH_ENGINE::is_side_trailing	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6d59b0	match_eng.cpp	CM3_MATCH_ENGINE::count_markers_of_player	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6d5a10	match_eng.cpp	CM3_MATCH_ENGINE::find_marker_of_player	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6d5a70	match_eng.cpp	CM3_MATCH_ENGINE::find_free_teammate_in_final_third	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6d5af0	match_eng.cpp	CM3_MATCH_ENGINE::side_has_no_wide_midfield_or_attack	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6d5b20	match_eng.cpp	CM3_MATCH_ENGINE::side_has_no_wide_defenders	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6e0df0	match_man.cpp	match_man_compare_players_by_weighted_condition	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6e0fe0	match_man.cpp	match_man_compare_players_by_condition	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6e9540	match_official.cpp	MATCH_OFFICIAL::check_foul	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6f0970	match_pl.cpp	MATCH_PLAYER::release_possession	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6f44a0	match_pl.cpp	MATCH_PLAYER::roll_current_ratings	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6f4600	match_pl.cpp	MATCH_PLAYER::get_marking_rating	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6f4650	match_pl.cpp	MATCH_PLAYER::can_see_opponent_goal	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6f4920	match_pl.cpp	MATCH_PLAYER::set_facing_direction	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6f4aa0	match_pl.cpp	MATCH_PLAYER::update_match_rating	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6f56c0	match_pl.cpp	MATCH_PLAYER::drain_stamina	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6f5b80	match_pl.cpp	MATCH_PLAYER::drop_back_one_row	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x6fa140	match_pl.cpp	MATCH_PLAYER::is_cell_within_turn_arc	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x700340	match_pl.cpp	match_engine_get_ball_height	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x700350	match_pl.cpp	match_engine_set_ball_height	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x70a890	match_pl.cpp	MATCH_PLAYER::set_action_strength	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x70a8c0	match_pl.cpp	MATCH_PLAYER::is_free_run_action_code	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x70def0	match_pl.cpp	MATCH_PLAYER::is_in_own_third	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x70df40	match_pl.cpp	MATCH_PLAYER::is_in_attacking_third	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x70df70	match_pl.cpp	MATCH_PLAYER::is_in_attacking_quarter	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x70dfa0	match_pl.cpp	MATCH_PLAYER::is_in_own_half	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x714d00	match_pl.cpp	MATCH_PLAYER::is_ball_in_own_half	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x715f50	match_pl.cpp	MATCH_PLAYER::bias_target_column	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7160d0	match_pl.cpp	MATCH_PLAYER::add_action_delay	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x716270	match_pl.cpp	MATCH_PLAYER::get_attacking_set_piece_role	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x716310	match_pl.cpp	MATCH_PLAYER::get_defending_set_piece_role	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7163f0	match_pl.cpp	MATCH_PLAYER::has_marking_priority_flag	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x717400	match_pl.cpp	MATCH_PLAYER::get_starting_position	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x717c70	match_pl.cpp	MATCH_PLAYER::is_wide_in_both_positions	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x71df00	match_screens.cpp	match_player_row_assign	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x727fa0	match_screens.cpp	match_screens_draw_waiting_screen	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x72b160	match_stats.cpp	match_stats_compare_events	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x735780	media.cpp	Media::has_response_two_for_player	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7357c0	media.cpp	Media::get_finable_story_kind	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x735840	media.cpp	Media::has_story_for_player	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x757ea0	media.cpp	compare_id_pair_keys	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x76e070	national_teams.cpp	national_teams_get_player_squad_slot	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x775520	national_teams.cpp	NationalTeams::get_min_squad_size	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x775580	national_teams.cpp	NationalTeams::collect_duty_competitions	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x775ba0	national_teams.cpp	NationalTeams::remove_player	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x77b6e0	national_teams_screens.cpp	NetworkBuffer::~NetworkBuffer	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x789280	news_screens.cpp	NewsItem::get_date	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x796870	notes.cpp	notes_draw_staff_note_screen_fragment_796870	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x79bf40	officials_manager.cpp	OfficialsManager::clear_busy_flags	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7a1a70	physio.cpp	physio_static_init	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7a1a80	physio.cpp	physio_static_object_destructor	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7a25c0	physio.cpp	physio_get_age_stage	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7a6e20	player_regen.cpp	PLAYER_REGEN::has_spare_non_player_record	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7a6e30	player_regen.cpp	PLAYER_REGEN::take_spare_non_player_record	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7a7150	player_regen.cpp	player_regen_score_non_player_candidate	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7a7ed0	player_regen.cpp	PLAYER_REGEN::find_retirement_entry	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7a8b70	player_regen.cpp	regen_queue_entry_assign	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7ae390	player_search.cpp	PLAYER_SEARCH::PLAYER_SEARCH	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7ae4f0	player_search.cpp	PLAYER_SEARCH::~PLAYER_SEARCH	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7b3d50	player_search.cpp	PLAYER_SEARCH::set_assigned_club	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7bce80	player_search.cpp	player_search_compare_results_by_current_rating	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7bceb0	player_search.cpp	player_search_compare_results_by_potential_rating	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7bd870	player_search.cpp	player_search_slot_sum_goals	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7bd8c0	player_search.cpp	player_search_slot_sum_assists	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7bd910	player_search.cpp	player_search_slot_sum_goals_conceded	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7be640	player_search.cpp	player_search_compare_report_entries	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7c6d90	player_stats.cpp	player_stats_compare_history_by_club	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7c6de0	player_stats.cpp	player_stats_compare_history_by_staff	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7dab30	printouts.cpp	PunditList::parse_quoted_token	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7f3220	sco_prm.cpp	sco_prm_compare_split_half	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7f6730	scout_manager.cpp	scout_manager_static_init_list_b74438	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7f6750	scout_manager.cpp	scout_manager_static_destroy_list_b74438	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7fc310	scout_manager.cpp	SCOUT_MANAGER::clear_manager_lists	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7feb70	scrman.cpp	ScreenManager::count_active_records	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7ff810	scrman.cpp	ScreenManager::swap_manager_keys	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7ff8f0	scrman.cpp	ScreenManager::add_manager_record	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7ffcd0	scrman.cpp	ScreenManager::switch_to_manager	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7ffe40	scrman.cpp	ScreenManager::is_manager_done	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7ffeb0	scrman.cpp	ScreenManager::set_manager_done	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7fff20	scrman.cpp	ScreenManager::is_player_done	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7fff70	scrman.cpp	ScreenManager::count_idle_channels	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x7fffa0	scrman.cpp	ScreenManager::find_manager_channel	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x802cb0	scrman.cpp	ScreenManager::on_remote_sound_started	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x802ce0	scrman.cpp	ScreenManager::on_remote_sound_finished	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8033c0	scrman.cpp	ScreenManager::count_all_records	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x804160	scrman.cpp	ScreenManager::add_area_text_by_ref	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8042c0	search_edit_session.cpp	SearchEditSession::unwind_destroy_working_criteria	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x804540	search_edit_session.cpp	SearchEditSession::is_player_on_short_list	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x804590	search_edit_session.cpp	SearchEditSession::add_player_to_short_list	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8048e0	search_edit_session.cpp	SearchEditSession::set_search_scope	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x804ab0	search_edit_session.cpp	SearchEditSession::remove_player_from_current_search	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x804b60	search_edit_session.cpp	SearchEditSession::clear_current_results	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x804c10	search_edit_session.cpp	SearchEditSession::set_current_filters	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x805f10	search_eng.cpp	search_text_matches_continent	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x805fb0	search_eng.cpp	search_text_matches_nation	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x806030	search_eng.cpp	search_text_matches_club	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8061f0	search_eng.cpp	search_text_matches_division	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x806450	search_filters.cpp	SearchFilters::set_defaults	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8064d0	search_filters.cpp	SearchFilters::reset_general_filters	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8065d0	search_filters.cpp	SearchFilters::reset_attribute_filters	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8084c0	search_screens.cpp	SearchFilters::increase_attributes_to_match	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x808500	search_screens.cpp	SearchFilters::decrease_attributes_to_match	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x80ea90	search_screens.cpp	SearchFilters::get_flag_mask	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x81b800	search_screens.cpp	search_filter_record_init	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x81b850	Setup.cpp	setup_static_destroy_start_date	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x81b860	Setup.cpp	setup_static_init_saved_date	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x81b880	Setup.cpp	setup_static_destroy_saved_date	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x83a730	shortlist_manager.cpp	Shortlist_Manager::update_club_shortlist	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x83b360	shortlist_manager.cpp	ShortlistOldSlot::ShortlistOldSlot	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x83b690	shortlist_manager.cpp	shortlist_compare_slots_open_first	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x83b6c0	shortlist_manager.cpp	shortlist_compare_slots_by_index	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x83bd00	shortlist_manager.cpp	shortlist_position_mask_to_index	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x83bf40	shortlist_manager.cpp	Shortlist_Manager::update_club_target_reputation	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x83c090	shortlist_manager.cpp	shortlist_set_up_formation_slots	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x842b00	shortlist_manager.cpp	Shortlist_Manager::suspend_clubs_shortlisting_player	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x84b1f0	shortlist_manager.cpp	shortlist_manager_max_fee_for_player_status	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x84cf00	simulated_stats.cpp	SoundPlayer::find_free_slot	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x85e3d0	staff_contracts.cpp	staff_contracts_init_static_date	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x85e400	staff_contracts.cpp	staff_contracts_destroy_static_date	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8857b0	staff_screens.cpp	staff_contract_get_happiness	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8857c0	staff_screens.cpp	staff_contract_get_selection_streak	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8857d0	staff_screens.cpp	staff_contract_get_squad_status	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8857f0	staff_screens.cpp	staff_contract_has_transfer_request	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x899e50	tactics_screens.cpp	Tactics_Team_Data::~Tactics_Team_Data	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8a9cb0	tactics_screens.cpp	Tactics_Screen::paste_positions	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8b1730	training_manager.cpp	TRAINING_MANAGER::advance_week_counter	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8b42d0	training_manager.cpp	TRAINING_MANAGER::update_position_training	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8b4db0	training_manager.cpp	TRAINING_MANAGER::has_fast_position_training	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8b4f30	training_manager.cpp	TRAINING_SCHEDULE::set_category_level	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8b4f50	training_manager.cpp	TRAINING_SCHEDULE::get_category_level	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8b5090	training_schedule.cpp	TRAINING_SCHEDULE::set_position_training	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8b50c0	training_schedule.cpp	TRAINING_SCHEDULE::set_side_training	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8bb2a0	training_screens.cpp	training_screens_compare_by_name	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8bb340	training_screens.cpp	training_screens_compare_by_position_then_name	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8bb460	training_screens.cpp	training_screens_compare_by_value_then_name	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8bb510	training_screens.cpp	training_screens_compare_by_attribute_then_name	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8bba10	training_screens.cpp	training_record_init_header	low	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8c5410	transfer_manager.cpp	TRANSFER_MANAGER::set_agreed_contract_flag	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8c5430	transfer_manager.cpp	TRANSFER_MANAGER::clear_agreed_contract_flag	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8c6200	transfer_manager.cpp	TRANSFER_MANAGER::get_negotiation_slot	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8cc930	transfer_manager.cpp	TRANSFER_MANAGER::find_highest_offer_for_player	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8cd150	transfer_manager.cpp	TRANSFER_MANAGER::player_has_pending_offer	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8d0d90	transfer_manager.cpp	transfer_offer_is_closed	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8e54f0	transfer_manager.cpp	transfer_manager_compare_past_transfers_by_fee	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8e5540	transfer_manager.cpp	transfer_manager_compare_past_transfers_by_date	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8e5590	transfer_manager.cpp	transfer_manager_compare_window_dates	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8e56a0	transfer_offer.cpp	TRANSFER_OFFER::TRANSFER_OFFER	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x8e7f10	transfer_offer.cpp	TRANSFER_OFFER::get_player_talks_status	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x90a130	usa_mls.cpp	usa_mls_compare_points_desc	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x90c140	utils.cpp	utils_read_file_format_marker	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x90c1a0	utils.cpp	utils_append_u32_to_file	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x90e020	virtual_staff.cpp	VIRTUAL_STAFF::get_player_position_group	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x91a140	wc_europe_league.cpp	WcEuropeLeague::create_runners_up_stage	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x91def0	wc_europe_league.cpp	WcEuropeLeague::get_asia_play_off_team	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x923970	weather.cpp	Weather::get_pitch_condition	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x92b400	world_club_champ.cpp	compare_entrants_by_continent_strength	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x92f660	world_cup.cpp	compare_entries_by_pot	medium	no new evidence: no high global and no caller or callee with a new or raised name since the review
+0x4019c0	african_nations.cpp	AfricanNations::init_group_a_table	medium	The only new global is g_file_debug_info_text of the assert path, and no string or caller names the stage it builds.
+0x403320	Area.cpp	Area::set_scroll_row	medium	No string, no named field for +0x1fc, +0x14 or +0xbac, and the callers only forward the row to it.
+0x405950	arg_prm.cpp	ArgPrm::create_stages	medium	g_key_club_comp_argentine_premier_division pins the division but no string or caller names the two half-season stages.
+0x4081b0	arg_second.cpp	ArgSecond::create_zone_stages	medium	The only new global is g_file_debug_info_text of the assert path, and no string or caller names the stage it builds.
+0x408630	arg_second.cpp	ArgSecond::create_promotion_cup_stage	medium	No string or caller names the promotion cup stage, and g_club_table and the medium averages column pin nothing more.
+0x408800	arg_second.cpp	ArgSecond::create_promotion_cup_stage_fragment_408800	medium	The row is a body fragment, and no fact beyond its parent 0x408630 names it.
+0x408910	arg_second.cpp	ArgSecond::create_promotion_playoffs	medium	g_key_club_comp_argentine_premier_division and g_comp_object_table name the first division but no string or caller names the play-off ties.
+0x4093f0	arg_second.cpp	ArgSecond::init_relegation_averages	medium	The club key globals name the seeded clubs but no string or caller names the table as the relegation averages.
+0x40b620	asia_club_champ.cpp	AsiaClubChamp::build_team_table	medium	The only new global is g_file_debug_info_text of the assert path, and no string or caller names the stage it builds.
+0x40b950	asia_club_champ.cpp	AsiaClubChamp::select_qualified_clubs	medium	The Asian nation keys and g_key_continent_asia pin the region, but no caller or string names the qualifier list or its two zones.
+0x40bec0	asia_club_champ.cpp	AsiaClubChamp::create_second_zone_cup_stage	medium	The only new global is g_file_debug_info_text of the assert path, and no string or caller names the stage it builds.
+0x40c3d0	asia_club_champ.cpp	AsiaClubChamp::create_semi_final_stage	medium	The high caller advance_stage calls it at stage 3 but no string or caller names the stage as the semi final.
+0x40d830	asia_cup_winner.cpp	AsiaCupWinner::select_qualified_clubs	medium	The Asian nation keys and g_key_continent_asia pin the region, but no caller or string names the qualifier list or its two zones.
+0x40ddf0	asia_cup_winner.cpp	AsiaCupWinner::create_zone_stage	medium	The only new global is g_file_debug_info_text of the assert path, and no string or caller names the stage it builds.
+0x40e030	asia_cup_winner.cpp	AsiaCupWinner::create_finals_stage	medium	The high caller advance_stage calls it on the first move but no string names the four-club stage as the finals.
+0x40e7b0	asia_cup_winner.cpp	asia_cup_winner_club_in_club_championship	medium	g_key_continent_asia and g_league_table pin the Asian continent entry, but the comp it caches comes from the medium g_asia_club_championship_comp_cache and list order.
+0x412070	aus_nsl.cpp	AusNsl::create_finals_series_stage_fragment_412070	medium	The row is a body fragment, and no fact beyond its parent 0x412010 names it.
+0x412f00	award_manager.cpp	award_raise_winner_reputation	medium	No string or named field pins the staff words as reputations or record +6 as board confidence, the doc readings are inference.
+0x4142e0	award_manager.cpp	AWARD_MANAGER::get_year_award_records	medium	The only caller, YEAR_AWARD::get_history_list, forwards its two offsets unchanged, so it cannot pin the purpose.
+0x4148e0	award_manager.cpp	AWARD_MANAGER::set_pending_vote	medium	g_staff_count only offsets the human manager key, and the assert gives a line with no text that names the vote slot.
+0x4149a0	award_manager.cpp	AWARD_MANAGER::get_pending_vote	medium	The caller only tests the result for zero, and no string names the slot as a vote.
+0x415600	award_screens.cpp	ScreenManager::add_menu_area	medium	g_gui_colour_green is the area colour, and no string or caller names the 0x30 style as a menu area.
+0x415640	award_screens.cpp	ScreenManager::add_menu_item	medium	No string names the link type or link data, and the colours and callers do not pin the menu item role.
+0x417a20	award_shortlist.cpp	AWARD_SHORTLIST::announce	medium	g_award_manager and g_news show only that the shortlist goes to the award manager and the news, and no string or caller pins the announce step.
+0x417c50	award_shortlist.cpp	AWARD_SHORTLIST::pick_winners	medium	The club and staff tables are generic, and the only caller nation_awards_award_from_shortlist is medium, so nothing pins the vote.
+0x418ff0	awol.cpp	AWOL::has_missed_training	medium	The contract globals are generic, and the missed training meaning of bit 2 rests on the medium row 0x41a360.
+0x419070	awol.cpp	AWOL::has_fitness_incident	medium	g_staff_count only bounds the id, and the fitness incident meaning rests on the medium row 0x41add0 and a medium caller.
+0x4190d0	awol.cpp	AWOL::daily_update	medium	The new globals are shared objects and the date, and the attribute offsets come only from the forum offset index.
+0x41a360	awol.cpp	AWOL::miss_training	medium	g_fine and g_injury show only the fine and the fitness change, and no string pins the missed training case.
+0x41add0	awol.cpp	AWOL::report_poor_fitness	medium	g_news and g_fine show the news and the fine, but no string in this function pins the fitness worry text.
+0x422cf0	bel_third.cpp	BelThird::find_or_create_period_stage	medium	Only the debug text global is new, and no string or named field pins the period stage ids 0x45d to 0x462.
+0x423710	bel_third.cpp	BelThird::create_title_decider_stage	medium	Only the debug text global is new, and no string or high caller use pins stage 7 as the title decider.
+0x423880	bel_third.cpp	BelThird::create_promotion_playoff_stage	medium	The new globals are the comp table and the debug text, and nothing named pins the play-off as promotion.
+0x4242e0	bel_third.cpp	BelThird::add_period_winner_news	medium	g_news shows only the news send, and the period winner meaning rests on the slot use, not on a string or named field.
+0x426130	bra_champ_cup.cpp	BraChampCup::create_preliminary_table	medium	Only the debug text global is new, and the only caller 0x427320 is medium.
+0x427320	bra_champ_cup.cpp	BraChampCup::start_preliminary_stage	medium	The only caller's description of a preliminary stage start comes from this call, and no string names the stage.
+0x4382c0	bra_reg_parana.cpp	BraRegParana::create_final_stage	medium	The only string is the generic malloc failure assert, which pins the file but not the final stage purpose.
+0x438760	bra_reg_parana.cpp	BraRegParana::create_half_stage	medium	The only string is the generic malloc failure assert, which pins the file but not the half stage purpose.
+0x448110	club_records.cpp	match_record_assign	medium	No caller passes the copy to a field named as a match record, and the function has no string or global.
+0x448170	club_records.cpp	run_record_assign	medium	No caller passes the copy to a field named as a run record, and the function has no string or global.
+0x450aa0	club_records.cpp	Cash::format_display_amount	medium	Only callee and caller names are present, and no string or caller field names the display step.
+0x453b90	club_screens.cpp	club_screens_init_match_record	medium	g_club_screens_match_record is high only through this initialiser and its atexit destructor, so it cannot raise this row.
+0x453c60	club_screens.cpp	club_screens_init_history_states	medium	g_club_history_states is high only through this initialiser and its destructor, and no string names what the states hold.
+0x453d60	club_screens.cpp	open_club_squad_screen	medium	The new globals are the generic screen manager, human manager and date, and no caller or string pins the three best player parameters.
+0x472070	club_screens.cpp	friendly_tour_nation_screen_build_fragment_472070	medium	Cancel and Next are generic button strings, and nothing in the fragment names the friendly tour screen.
+0x474e00	club_screens.cpp	open_squad_numbers_screen_for_match	medium	No caller passes the result to a named field and no string names the squad numbers screen, the builder 0x475520 is only a data pointer.
+0x485630	club_screens.cpp	compare_players_by_human_squad_slot	medium	The squad slot comes from HUMAN_MANAGER::get_player_squad_number, which is medium, and g_human_manager only names the object.
+0x485a60	club_screens.cpp	compare_players_by_squad_status_then_name	medium	The squad status comes from CONTRACT_MANAGER::get_contract_for_club, which is medium, and the high globals only name the name style and the contract manager.
+0x485ba0	club_screens.cpp	compare_players_by_squad_number_then_name	medium	The squad number comes from a high callee, but no string, caller field or high global pins the key, and g_squad_sort_name_style only pins the tie break.
+0x485ed0	club_screens.cpp	compare_players_by_euro_registration_then_name	medium	The key is the byte at staff+0x6d, which only the forum offset index names, and g_squad_sort_name_style only pins the tie break.
+0x4861e0	club_screens.cpp	compare_players_by_staff_state_byte_then_name	low	The meaning of the byte at +0xa of the medium g_staff_state_table is unknown, and g_squad_sort_name_style only pins the tie break.
+0x4862c0	club_screens.cpp	compare_players_by_fatigue_then_name	medium	Injury::get_fatigue is medium, and g_injury only names the injury object, not the fatigue field.
+0x486e60	club_screens.cpp	compare_players_by_fifa_protected_period_then_name	medium	No string or caller field ties this comparator to the FIFA protected period sort flag.
+0x48cec0	comp.cpp	Comp::get_current_stage	medium	No string or high caller pins the stage choice, and g_file_debug_info_text is only the assert buffer.
+0x48d200	comp.cpp	Comp::get_stage	medium	The assert gives only the file and line, and no caller passes the stage to a named field.
+0x48d2b0	comp.cpp	Comp::get_first_stage_of_group	medium	No string or high caller pins the group walk, and the global is only the assert buffer.
+0x48d410	comp.cpp	Comp::are_round_fixtures_known	medium	No caller or string pins what the true result means beyond the link the fixtures tab makes.
+0x48d500	comp.cpp	Comp::build_match_date_list	medium	The comparator and the callers are not named for match date lists by a string or a high row.
+0x48db80	comp.cpp	Comp::includes_club	medium	No string pins the competition membership test, and the callers only use the result.
+0x48df40	comp.cpp	comp_active_key_nation_of_stadium	medium	The stadium +0x38 city and city +0x1f nation offsets come from the forum offset index and a doc, and no high caller pins them.
+0x48dfa0	comp.cpp	Comp::get_club_label_text	medium	Slot 19 of the comp vtable has no base slot name, and no string pins the label.
+0x48f150	comp.cpp	Comp::is_club_still_in_contention	medium	No string or high caller pins what the stats and status codes mean for contention.
+0x48f340	comp.cpp	Comp::get_first_schedule_date	medium	The caller weekly_board_confidence_update does not pass the date to a named field, and no string pins it.
+0x48f4a0	comp_screens.cpp	comp_screens_open_comp_screen	medium	The globals pin only that a screen opens, and no high caller or string pins the view and the parameters.
+0x48f8e0	comp_screens.cpp	comp_screens_open_comp_fixtures	medium	The globals pin only that a screen opens, and no string pins fixture views 2 and 3.
+0x49eac0	comp_screens.cpp	comp_screens_open_comp_from_news_item	medium	The comp screen opener 0x48f4a0 is medium, so the news global pins only the news lookup.
+0x49f160	comp_screens.cpp	Comp_Season_Records::Comp_Season_Records	medium	No string or vtable pins the season records type, and its member constructors are medium.
+0x4a1f40	comp_screens.cpp	comp_tally_record_assign	medium	No string or named field in the callers pins the tally record layout.
+0x4a1f70	comp_screens.cpp	comp_discipline_record_assign	medium	No string or named field in the callers pins the discipline record layout.
+0x4a1fb0	comp_screens.cpp	player_age_record_assign	medium	No string or named field in the callers pins the youngest and oldest player record layout.
+0x4a2050	comp_screens.cpp	comp_rating_record_assign	medium	No string or named field in the callers pins the rating record layout.
+0x4a2090	comp_screens.cpp	Comp_Stats::save_team_runs	medium	No string or high global pins the run fields at +0x19 to +0x55.
+0x4a22f0	comp_screens.cpp	Comp_Stats::restore_team_runs	medium	No string or high global pins the run fields, and g_current_date only sets the second date of each run.
+0x4a25f0	comp_screens.cpp	Comp_Stats::accumulate_match_player_totals	medium	No string or high global pins the player total fields at +0x56a to +0x5c6.
+0x4a4b20	comp_screens.cpp	Comp_Stats::get_sorted_team_table	medium	No string pins the sort, and the callers do not pass the rows to a named field.
+0x4a4dc0	comp_screens.cpp	Comp_Stats::get_sorted_player_table	medium	The award callers are medium, and g_player_data_table does not pin the sort or the mask.
+0x4a54c0	comp_screens.cpp	Comp_Stats::is_record_type_shown	medium	No string pins which record types the codes 2 and 8 are.
+0x4ab5d0	comp_screens.cpp	comp_run_record_assign	medium	No string or named field in the callers pins the run record layout.
+0x4ae300	comp_screens.cpp	Comp_Stats::get_club_projected_positions	medium	Slots 32 and 33 have no base slot name, and the board caller does not pass the positions to a named field.
+0x4aeaf0	comp_text.cpp	Text::draw_wrapped	medium	No string, assert or high caller names what the wrapped text is for, and its globals are a debug buffer, a one-letter string and a screen slot.
+0x4afbd0	comp_util.cpp	comp_util_sort_and_shuffle_top_clubs	medium	No caller names the club +0x80 sort or the three times picks shuffle band, and the assert pins only the argument check.
+0x4b02e0	comp_util.cpp	comp_util_get_league_clash_type	medium	No string or caller field names title clash or promotion clash, and the globals are generic tables.
+0x4b0700	comp_util.cpp	comp_util_is_league_division	medium	The three key id globals pin the placeholders, but nothing pins what a league division means for the true result.
+0x4ba8f0	comp_util.cpp	comp_util_get_stage_name_gender	medium	g_config gives only the language, and no string or caller names the gender code of the jump tables.
+0x4bf850	comp_util.cpp	comp_util_scale_by_round	medium	The five high callers are cup status updates that do not name what the scaled value is.
+0x4c2070	con_merc_cup.cpp	ConMercCup::start_new_season_fragment_4c2070	medium	A false entry has no string or caller of its own, so nothing quotes it.
+0x4c37a0	conmebol_liber.cpp	ConmebolLiber::build_first_group_table	medium	The only new global is the assert text buffer, and the group table calls are medium evidence.
+0x4c4b40	conmebol_merc.cpp	ConmebolMerc::create_schedule_fragment_4c4b40	medium	A false entry has no string or caller of its own, so nothing quotes it.
+0x4c4e60	conmebol_merc.cpp	ConmebolMerc::create_first_group_table	medium	The only new global is the assert text buffer, and the group table calls are medium evidence.
+0x4c5420	conmebol_merc.cpp	ConmebolMerc::create_quarter_final_stage_fragment_4c5420	medium	A false entry has no string or caller of its own, so nothing quotes it.
+0x4c9f60	contract_manager.cpp	CONTRACT_MANAGER::add_talks_record	medium	The only caller is the set role screen, and no string or high field names the list as talks.
+0x4ca470	contract_manager.cpp	contract_manager_get_deserved_squad_status	medium	The new neighbour TRANSFER_MANAGER::set_player_squad_status is medium, and no string names the deserved status.
+0x4cb0a0	contract_manager.cpp	contract_manager_raise_match_morale	medium	The only caller update_after_match names no field for contract +0x44 and no string names form morale.
+0x4cb250	contract_manager.cpp	contract_manager_lower_match_morale	medium	The only callers name no field for contract +0x44 and no string names form morale.
+0x4cb990	contract_manager.cpp	staff_can_take_job	medium	The new neighbour contract_manager_get_offer_job is medium, and no string names the job codes.
+0x4cc0b0	contract_manager.cpp	CONTRACT_MANAGER::move_to_first_team	medium	The placement codes come from a callee, and its only caller 0x83cb40 does not pass the result to a named field or text.
+0x4cc0f0	contract_manager.cpp	CONTRACT_MANAGER::move_to_reserves	medium	The placement codes come from a callee, and no high caller passes the result to a named field or text.
+0x4cc130	contract_manager.cpp	CONTRACT_MANAGER::get_squad_flags_for_club	medium	The globals are the staff count and debug buffer, and the squad flag mask rests on the forum offset index only.
+0x4cc930	contract_manager.cpp	CONTRACT_MANAGER::schedule_decision_for_transfer	medium	The new caller accept_loan_offer does not name the return value, and the scheduling callee is medium.
+0x4ccbf0	contract_manager.cpp	CONTRACT_MANAGER::remove_pending_offers_for_staff	medium	The transfer manager flag callee is medium, and no caller names the pending offer list.
+0x4cd120	contract_manager.cpp	CONTRACT_MANAGER::reset_division_clauses	medium	The only caller League::move_club_to_division is medium, and no string or high global pins why the clauses are cleared.
+0x4cd230	contract_manager.cpp	CONTRACT_MANAGER::schedule_offer_decision	medium	The caller add_contract_offer passes a schedule flag that was named from this call, and no string names the type 3 date.
+0x4cda70	contract_manager.cpp	contract_manager_offer_contract	medium	No string or caller field names the wage budget step, and the callers vary in use.
+0x4ce4e0	contract_manager.cpp	CONTRACT_MANAGER::resolve_contract_offers	medium	The only caller is medium and its description comes from this call, and no string names the offer choice.
+0x4cf4a0	contract_manager.cpp	CONTRACT_MANAGER::resubmit_held_offers	medium	The only caller withdraw_transfer_offer does not name the staff id it passes, and no string names held offers.
+0x4cf5f0	contract_manager.cpp	CONTRACT_MANAGER::get_contract_for_club	medium	No caller names the club or linked club match, and the new neighbours only use the returned contract.
+0x4d42d0	contract_manager.cpp	contract_manager_get_human_asking_price	medium	The human club test human_manager_is_human_club is medium, and no caller names the result as the human club asking price.
+0x4d4830	contract_manager.cpp	CONTRACT_MANAGER::prefill_offer_from_pending	medium	The only caller copies other fields around the call and shows no string or named field that pins the pending offer.
+0x4d49a0	contract_manager.cpp	contract_manager_post_offer_response_news	medium	No string names the offer answer news text, and the callers do not name the news item 3000 role.
+0x4e0180	contract_screens.cpp	contract_screens_add_disabled_menu_item	medium	No string or named field shows what flag 0x21 does to the item.
+0x514c60	cro_a1.cpp	CroA1::create_playoff_stage	medium	No string, caller or named global says what the pair count and the play-off stage are for beyond the medium callee names.
+0x5160f0	cro_a2a.cpp	CroA2a::create_tiebreak_playoff_stage	medium	No string, caller or named global says what the row value at +0x19 counts, so the tiebreak meaning stays a reading of the code.
+0x517210	cro_a2b.cpp	CroA2b::create_tiebreak_playoff_stage	medium	No string, caller or named global says what the row value at +0x19 counts, so the tiebreak meaning stays a reading of the code.
+0x519c90	Cup.cpp	Cup::find_tree_slot_for_fixture	medium	The only caller Cup::process_fixture does not name the returned index, and no string or named global pins the tree slot.
+0x519d90	Cup.cpp	Cup::find_scheduled_fixture_for_tie	medium	g_fixture_manager and g_current_date show a fixture search from today, but the lookup FIXTURE_MANAGER::find_next_fixture is medium and the caller does not name the result.
+0x51cb90	Cup.cpp	Cup::create_tie_fixtures	medium	g_fixture_manager and g_stadium name the objects used, but FIXTURE_MANAGER::add_fixture is medium and no string or caller pins the tie and defer logic.
+0x51ebe0	Cup.cpp	Cup::move_round_fixtures_to_set_dates	medium	g_fixture_manager and g_stadium name the objects used, but no string or caller pins the match day list or the news type 3.
+0x51f2f0	Cup.cpp	Cup::decide_tie_winner	medium	Cup vtable slot 39 has no base slot name, and no string pins the return codes.
+0x521790	Cup.cpp	Cup::get_fixture_side_teams	medium	The only caller comp_screens_draw_cup_rounds_tab does not name the result, and no string or named global pins the side teams.
+0x5219b0	Cup.cpp	Cup::collect_possible_teams	medium	The only outside caller 0x521790 is medium, and no string or named global pins the team walk.
+0x521f10	Cup.cpp	cup_set_round_match_day	medium	The reader 0x51ebe0 is medium, and no string or caller names the entry fields.
+0x522950	Cup.cpp	Cup::post_draw_news	medium	g_news shows a news item, but the news type 0x26 has no name and no string pins the draw news.
+0x522c70	Cup.cpp	Cup::label_round_extra_fixtures	low	g_fixture_manager shows the fixture search, but nothing says what the labels plus 3 and plus 4 mean, and the caller is medium.
+0x524550	cup_stage.cpp	Cup_Stage::map_fixture_tree_fragment_524550	medium	A fragment needs its parent pinned, and 0x5241e0 Cup_Stage::map_fixture_tree is not pinned by any new evidence.
+0x524f50	Database.cpp	database_trim_staff_tables_fragment_524f50	medium	The row marks a false entry inside 0x524d70, and the globals belong to that parent, so nothing pins it further.
+0x533710	Database.cpp	database_shuffle_squad_player_attributes	medium	The club and staff tables only show the walk, and no string or caller pins the attribute shuffle.
+0x538bc0	Database.cpp	staff_normalise_player_attributes	medium	g_training_manager only gates the training wrapper, and no string or caller pins the trim of the attribute vector.
+0x538ec0	Database.cpp	staff_normalise_player_physical_attributes	medium	g_training_manager only gates the training wrapper, and the attribute offsets rest on the forum offset index.
+0x53ce90	Database.cpp	database_get_contract_rating_modifier	low	CONTRACT_MANAGER::get_contract_for_club is medium, and nothing names the low nibble of contract byte 0x4f.
+0x5407e0	Database.cpp	database_get_staff_reputation_for_viewer	medium	No string, caller or global pins the viewer rule, and the +9, +0xb and +0xd reputation fields rest on the forum offset index.
+0x541e60	Database.cpp	database_trim_senior_and_b_team_squads	medium	The club table globals only show the walk, and no string or caller pins the 48 player trim.
+0x544410	Database.cpp	non_player_attribute_rating	medium	Float constants pin nothing, and the ability field at +4 rests on the forum offset index.
+0x544820	Database.cpp	club_can_be_managed	medium	No string or assert names the manageable test, and the callers use it only as one gate among others.
+0x545e90	Database.cpp	club_reputation_for_staff	medium	The club reputation blend, the 2.1 to 0.9 table and the 500 liked club bonus rest on medium globals and the forum offset index, and the only caller is a medium function.
+0x546ab0	Database.cpp	staff_get_player_strength_flags	medium	The bit meaning of the mask is not pinned: the strengths and weaknesses reader 0x7bdee0 tests different attributes for its bits, and callers only store the mask in news slots.
+0x5470d0	Database.cpp	staff_get_player_weakness_flags	medium	The bit meaning of the weakness mask is not pinned by a string or by a caller that names its bits.
+0x547770	Database.cpp	club_is_in_season	medium	The row is a 10 instruction wrapper of key_nation_club_in_season, which is itself medium, and no caller string names the season test.
+0x547d60	Database.cpp	staff_favours_club	medium	The fields at prefs +0x4 to +0xc are named only by the forum offset index, and the new caller is medium.
+0x549100	Database.cpp	club_has_enough_defenders	medium	No string or caller names the defender test, and the position and attribute fields come only from the forum offset index.
+0x549200	Database.cpp	club_has_enough_midfielders	medium	No string or caller names the midfielder test, and the position and attribute fields come only from the forum offset index.
+0x5492c0	Database.cpp	club_has_enough_strikers	medium	No string or caller names the striker test, and the position and attribute fields come only from the forum offset index.
+0x5493c0	Database.cpp	club_has_enough_hard_workers	medium	No string or caller names the hard worker test, and the position and attribute fields come only from the forum offset index.
+0x549470	Database.cpp	club_has_fit_goalkeeper	medium	No string or caller names the goalkeeper test, and the position and attribute fields come only from the forum offset index.
+0x5494d0	Database.cpp	club_lacks_aerial_strikers	medium	No string or caller names the aerial striker test, and the position and attribute fields come only from the forum offset index.
+0x5495b0	Database.cpp	club_lacks_aerial_defenders	medium	No string or caller names the aerial defender test, and the position and attribute fields come only from the forum offset index.
+0x549690	Database.cpp	club_lacks_fast_defenders	medium	No string or caller names the fast defender test, and the position and attribute fields come only from the forum offset index.
+0x549770	Database.cpp	club_has_fast_striker	medium	No string or caller names the fast striker test, and the position and attribute fields come only from the forum offset index.
+0x549850	Database.cpp	club_has_ball_winning_midfielders	medium	No string or caller names the ball winning midfielder test, and the position and attribute fields come only from the forum offset index.
+0x549940	Database.cpp	club_has_two_creative_midfielders	medium	No string or caller names the creative midfielder test, and the position and attribute fields come only from the forum offset index.
+0x549a30	Database.cpp	club_squad_strength_band	medium	No string or caller names the band values, and g_staff_count is general.
+0x549c90	Database.cpp	staff_clear_opinion_links	medium	g_staff_state_table is medium and no string names the slots that this function clears.
+0x549cf0	Database.cpp	staff_add_opinion_link	medium	g_staff_state_table is medium and no string names the slots that this function fills.
+0x549d60	Database.cpp	staff_remove_opinion_link	medium	g_staff_state_table is medium and no string names the slots that this function clears.
+0x54a130	Date.cpp	Date::set	medium	Only the Date.cpp asserts and the callee Date::get_nearest_weekday support the name, and no string or global names the setter role.
+0x54d130	Date.cpp	date_get_time_of_day_gender	medium	No string or caller says the returned code is grammatical gender, and the callers pass it only as a sprintf argument.
+0x556270	discipline.cpp	Discipline::clear_bans_invalid_for_club	medium	No string, global or caller names the ban rule that the nation and continent test applies, and the only caller is the move_player_to_club.
+0x556830	discipline.cpp	Discipline::remove_player	medium	The only caller is the medium regenerate_as_youth_player, and no string or global pins the removal of a ban record.
+0x556e90	discipline.cpp	Discipline::update_ban_progress	medium	No string or caller pins the served-match count versus date test, and the date global is generic.
+0x55ca00	discipline.cpp	Discipline::process_match	medium	No string pins the friendly branch, and g_friendly with the reserve competition key shows only the test, not the purpose of passing matches to ruling bodies.
+0x55cbc0	discipline.cpp	Discipline::get_ban_history	medium	No string or caller names the ban history, and the only caller is a staff screen history tab that does not pin the ban data.
+0x55d360	discipline.cpp	Discipline::is_one_booking_from_ban	medium	The only caller get_player_status_code does not name a one-booking field, and no string or global pins the purpose.
+0x55d3c0	discipline.cpp	Discipline::get_slot_text	medium	The only caller is a profile screen build that does not name the ban text field, and no string or global pins it.
+0x55e1d0	discipline.cpp	Discipline::clear_ban_history	medium	The assert lines are not tied to a string that names ban history, and the callers are medium.
+0x55fba0	network.h	Display::add_area	medium	No string names an area, and the packet buffer globals do not say the buffer holds area records.
+0x560290	network.h	NetworkBuffer::put_ushort	medium	The network.h line of the overload is known but the source order of the nine put overloads is not, so the signed or unsigned type is a guess.
+0x560340	network.h	NetworkBuffer::put_ulong	medium	The network.h line of the overload is known but the source order of the nine put overloads is not, so the signed or unsigned type is a guess.
+0x560c30	display.cpp	Display::track_popup_hover	medium	No string names the popup, and the cursor mode global is shared by several callers.
+0x562370	display.cpp	Display::send_screen_section	medium	No string names the section layout, and the Unable to send data string is shared by all senders in the file.
+0x564080	display.cpp	Display::process_command_packet	medium	The Network Error string is shared by the senders, and no string, vtable slot or caller names the packet opcode table.
+0x567b40	network.h	NetworkBuffer::put_int	medium	The network.h line of the overload is known but the source order of the nine put overloads is not, so the signed or unsigned type is a guess.
+0x567d30	network.h	NetworkBuffer::get_long	medium	The network.h line of the overload is known but the source order of the nine get overloads is not, so the signed or unsigned type is a guess.
+0x567de0	network.h	NetworkBuffer::get_int	medium	The network.h line of the overload is known but the source order of the nine get overloads is not, so the signed or unsigned type is a guess.
+0x567e90	network.h	NetworkBuffer::get_ushort	medium	The network.h line of the overload is known but the source order of the nine get overloads is not, so the signed or unsigned type is a guess.
+0x567f40	network.h	NetworkBuffer::get_ulong	medium	The network.h line of the overload is known but the source order of the nine get overloads is not, so the signed or unsigned type is a guess.
+0x568290	display.cpp	display_send_status_packet	medium	The Unable to send data string is shared by the senders and no caller names the status byte.
+0x568470	display.cpp	Display::send_keepalive	medium	The Unable to send data string is shared, and the caller run_network_client is medium so it does not pin keepalive.
+0x5694a0	network.h	NetworkBuffer::put_long	medium	The network.h line of the overload is known but the source order of the nine put overloads is not, so the signed or unsigned type is a guess.
+0x569e30	dispute.cpp	DISPUTE::is_in_dispute	medium	No string names the dispute flag, and the FIFA rules global is shared by other callers.
+0x569ed0	dispute.cpp	DISPUTE::process_hearings	medium	The only caller is game_main_day_loop, and no string or global names the hearing outcome.
+0x56a100	dispute.cpp	DISPUTE::file_complaint	medium	No string names the complaint, and the callers do not pin the reasons.
+0x56b3c0	eng_auto_cup.cpp	EngAutoCup::collect_entrants	medium	No string, global or caller names the cup entrants. Only the debug text global is high, and the two callers are generic season setup.
+0x56bab0	eng_auto_cup.cpp	EngAutoCup::create_section_stage	medium	No string, global or caller names the stage that this builds. Only the debug text global is high.
+0x5708f0	eng_fa_cup.cpp	fa_cup_open_fifth_round_entry_screen	medium	Only the medium paired draw function and the screen manager global link it to the fifth round. No string or high global sits in this body.
+0x57e7e0	euro_champ_qual.cpp	EuroChampQual::init_group_one_table	medium	No string or global names the table. The caller update_for_date and the callees only show a group draw step.
+0x57fa10	euro_champ_qual.cpp	EuroChampQual::update_runners_up_table	medium	No string or global pins the runners up ranking. The three callers do not name what the table holds.
+0x584990	european_cup.cpp	EuropeanCup::build_qualifying_entry_table	medium	No string or global names the qualifying table. The two callers are the constructor and start_new_season only.
+0x585a00	european_cup.cpp	EuropeanCup::draw_phase1_groups_fragment_585a00	medium	No caller or string pins this chunk. It has only data pointers, and it repeats the loop of 0x585920.
+0x585a20	european_cup.cpp	EuropeanCup::draw_phase1_groups_fragment_585a20	medium	No caller or string pins this chunk. It has only data pointers, and it repeats the store block of 0x585a00.
+0x585d00	european_cup.cpp	EuropeanCup::draw_phase2_groups_fragment_585d00	medium	No string, global or caller pins what byte +5 of an entry means, so the pairing rule stays a guess.
+0x585f80	european_cup.cpp	EuropeanCup::draw_phase2_groups_fragment_585f80	medium	No string or caller pins this chunk alone. The parent 0x585ab0 does not name the third place step, and the key global pins only that step.
+0x58d460	fifa_rankings.cpp	FIFA_RANKINGS::update_rankings	medium	No string, assert or high caller pins the 18th-of-month schedule or the yearly roll, and the only caller NationalTeams::daily_update is medium.
+0x58e190	fifa_rankings.cpp	FIFA_RANKINGS::get_nation_strength_tier	medium	The only caller record_match_result is high partly through this tier function, and no string or global pins the tier bands.
+0x5968d0	finance.cpp	Finance::get_max_wage	medium	No string or high global names the wage cap, and the high callers name this function as the source of the cap in their own evidence.
+0x599a20	fin_prm.cpp	Finance::sell_season_tickets	medium	No string, assert or named caller pins season tickets, and the sale step table g_season_ticket_sale_step_fraction_table is medium.
+0x599e00	fin_prm.cpp	Finance::upgrade_stadium_for_league	medium	The callers only use the result as a ground check, and no string or high global pins the seat and capacity upgrade or the maintenance charge.
+0x59af40	fin_prm.cpp	FinanceTable::calc_gate_receipts	medium	No string names gate receipts, and the caller Match_Stats::fill_match_record stores the result in a record field that no high row names.
+0x59b4c0	fin_prm.cpp	finance_get_days_to_season_start	medium	No string, assert or high caller pins the season start date, and the world cup split globals are medium.
+0x59b7e0	fin_prm.cpp	FinanceTable::add_weekly_merchandising_income	medium	No string or named caller pins the merchandising field, and the forum offset index names are hints only.
+0x5a5820	Fine.cpp	Fine::daily_update	medium	No string names the class, and the only caller game_main_day_loop gives a daily call without naming the fine lists.
+0x5a69b0	Fine.cpp	Fine::is_fine_justified	medium	No string or assert names the justification test, and the caller Fine::fine_player does not name its result.
+0x5aac70	fix_man.cpp	FIXTURE_MANAGER::queue_fixture_moved_news	medium	No string names the news item, and the callers are medium rows, so no quote pins that the item reports a moved fixture.
+0x5aaf00	fix_man.cpp	FIXTURE_MANAGER::daily_update	medium	The callers only show that it runs once a day, and no string pins the reserve scheduling, news sending or cup relabelling.
+0x5ab230	fix_man.cpp	FIXTURE_MANAGER::insert_fixture	medium	The only string is the generic error format, and the only caller is medium add_fixture, so no quote pins the unchecked insert.
+0x5ab3c0	fix_man.cpp	FIXTURE_MANAGER::add_away_trip_illness_risk	medium	The high global g_injury does not say illness outbreaks for visiting clubs, and no string or high caller pins the third world rule.
+0x5ab510	fix_man.cpp	FIXTURE_MANAGER::find_new_fixture_date	medium	The high globals are generic and no string names the date search, and the callers are medium or load ECX only.
+0x5abb10	fix_man.cpp	FIXTURE_MANAGER::reschedule_club_fixtures_near_date	medium	The only caller is medium and no string or high global pins the one day window around the date.
+0x5abd90	fix_man.cpp	FIXTURE_MANAGER::collect_comp_fixtures_on_day	medium	The only high global is the generic debug text buffer, and the callers are medium rows.
+0x5ad780	fix_man.cpp	FIXTURE_MANAGER::find_fixture_clashes	medium	The only callers are medium rows of the same file, and no string or global pins the clash codes.
+0x5adba0	fix_man.cpp	FIXTURE_MANAGER::collect_day_clashes	medium	The only caller is the medium find_fixture_clashes, and no string or global pins the clash codes.
+0x5ae380	fix_man.cpp	FIXTURE_MANAGER::resolve_same_day_clash	medium	The only caller is medium add_fixture and no string or high global pins the weaker fixture rule.
+0x5ae9d0	fix_man.cpp	FIXTURE_MANAGER::move_nearby_club_fixtures	medium	The high g_friendly is a minor use, and no string or high caller pins the two day move.
+0x5aee60	fix_man.cpp	FIXTURE_MANAGER::get_club_last_fixture_year	medium	The year global is high but the club fixture year table at 0xae2a5c is medium, so no high quote pins the last fixture year.
+0x5af180	fix_man.cpp	fix_man_record_club_fixture_years	medium	The table it writes, 0xae2a5c, is medium, and the only string is the generic error format.
+0x5af2f0	fix_man.cpp	FIXTURE_MANAGER::get_time_slice	medium	The four high nation keys name the nations but not the time slice, and the slice use at fixture +0x3f has no high quote.
+0x5afe00	fog_of_war.cpp	fog_of_war_reveal_match_players	medium	No string or high global pins the reveal of match players, and its only caller is medium.
+0x5b31b0	formation.cpp	Formation::get_slots_in_position_order	medium	The caller club_screen_draw_squad_tab does not name what it does with the slot order, and no string pins the sort.
+0x5b3460	formation.cpp	Formation::check_duplicate_position	medium	The caller tactics_screen_build is a large screen builder, so it does not pin the duplicate position flag.
+0x5b47a0	formation.cpp	Formation::mirror_zone_coordinates	medium	The caller tactics_screen_handle_event is a large handler, so it does not pin the mirror action.
+0x5b4a60	formation.cpp	Formation::is_slot_customised	medium	A sample check undid its raise to high, because the caller it quoted is high only through this row.
+0x5b4b70	formation.cpp	Formation::is_slot_coordinate_customised	medium	A sample check undid its raise to high, because the caller it quoted is high only through this row.
+0x5b4ee0	formation.cpp	Formation::check_duplicate_coordinate	medium	The caller tactics_screen_build is a large screen builder, so it does not pin the duplicate coordinate flag.
+0x5b7160	formation.cpp	Formation::build_position_lookup	medium	No string and no caller names the grid tables, and the callers only call it after the formation is built or loaded.
+0x5b87e0	formation.cpp	formation_check_file_password	medium	The function has no caller, string or high global that pins the password check, and its callees are not quotes.
+0x5b88a0	formation.cpp	formation_check_file_password_obfuscated	medium	The function has no caller, string or high global that pins the obfuscated password check, and its callees are not quotes.
+0x5b8960	formation.cpp	Formation::has_no_wide_midfield_or_attack	medium	The only caller CM3_MATCH_ENGINE::side_has_no_wide_midfield_or_attack is medium.
+0x5b8dc0	formation.cpp	Formation::has_no_wide_defenders	medium	The only caller CM3_MATCH_ENGINE::side_has_no_wide_defenders is medium.
+0x5b9fa0	fra_cfa.cpp	FraCfa::create_group_table	medium	The French division key globals pin only the flag, and no string or caller pins the group table purpose.
+0x5c27a0	friendly.cpp	Friendly::plan_ai_preseason_friendlies	medium	All three planning callees are medium and no string or global pins the pre-season plan.
+0x5c2ae0	friendly.cpp	Friendly::create_due_planned_friendlies	medium	The callees send_friendly_request and get_club_date_status are medium and g_current_date does not pin the planning action.
+0x5c2d40	friendly.cpp	Friendly::set_preseason_windows	medium	The only caller is medium and the league table, club table and date globals do not pin the window rule.
+0x5c3040	friendly.cpp	Friendly::plan_preseason_tournaments_and_tours	medium	The tour and opponent callees are medium and the Inter-toto key global does not pin the tour plan.
+0x5c4040	friendly.cpp	Friendly::schedule_tour_matches	medium	The only caller is medium and no string or high global pins the tour match run.
+0x5c4380	friendly.cpp	Friendly::plan_friendly_on_free_date	medium	The only caller is medium and the new neighbour candidate_has_nearby_date is also medium.
+0x5c4770	friendly.cpp	Friendly::plan_club_friendlies	medium	The Inter-toto key and date globals do not pin the friendly plan, and the only caller is medium.
+0x5c4cb0	friendly.cpp	Friendly::find_friendly_opponent	medium	Both callers are medium and no string or high global pins the opponent rules.
+0x5c5040	friendly.cpp	Friendly::find_tour_opponent	medium	The only caller is medium and no string or high global pins the tour opponent search.
+0x5c5310	friendly.cpp	Friendly::send_tournament_invitations	medium	g_news is generic and the callers do not pass the result to a named field, so the invitation purpose has no pin.
+0x5c5570	friendly.cpp	Friendly::send_friendly_request	medium	g_news is generic and no caller or string pins the request message type.
+0x5c6350	friendly.cpp	Friendly::pick_replacement_invitee	medium	The only caller is high but does not name the replacement choice, and the globals are generic tables.
+0x5c6570	friendly.cpp	Friendly::on_friendly_fixture_cancelled	medium	The callers do not name the cancel action and g_news and g_fixture_manager are generic.
+0x5c75a0	friendly.cpp	Friendly::get_club_date_status	medium	The status codes have no high quote, and the callers are screen builders that do not name them.
+0x5c87b0	friendly.cpp	Friendly::remove_friendly_match	medium	No caller or string pins the list semantics beyond the assert, and the only high global is the generic error text buffer.
+0x5c88f0	friendly.cpp	Friendly::find_friendly_match	medium	Callers use the result in several screens, but none names the field that the lookup returns, and no string or global pins it.
+0x5cb9e0	friendly.cpp	Friendly::remove_national_fixture	medium	The only high global is g_fixture_manager, which does not pin the national friendly purpose, and the only caller is medium.
+0x5cbb00	friendly.cpp	Friendly::update_international_friendlies	medium	The date globals do not pin the twelve week friendly arrangement, and the single caller update_for_date does not name the purpose.
+0x5cc3e0	friendly.cpp	Friendly::is_banned_nation_pair	medium	The nation key globals only affect the discarded high dword of the return, and no string or caller names the banned pair table.
+0x5ce0b0	game.cpp	game_spread_squad_morale_by_leadership	medium	The high globals are counts and tables, and no string or caller pins the leadership morale rule.
+0x5ce2d0	game.cpp	game_daily_staff_update	medium	No string names the staff update, and the only caller game_main_day_loop only shows a daily call.
+0x5d5f20	game.cpp	game_update_nation_coefficients	medium	The day table and the coefficient history flag are medium globals, and no string or caller pins the coefficient rule.
+0x5d6aa0	game.cpp	game_check_players_missing_training	medium	The new favoured and disliked staff names do not pin the training miss rule, and AWOL::miss_training is medium.
+0x5d6d10	game.cpp	game_update_squad_relationships	medium	The callees name favoured and disliked staff, but callee names are not a quote and the caller is the generic day loop.
+0x5d7190	game.cpp	game_check_club_dressing_room_unrest	medium	The medium caller game_update_squad_relationships and a callee name are the only evidence, and no string or global pins it.
+0x5e18a0	goldcup.cpp	GoldCup::create_knockout_stage	medium	Only the generic assert string is high, and the single caller advance_stage does not name the knockout stage.
+0x5e7840	goldcup.cpp	gui_draw_circle	medium	g_back_surface is generic for every drawing function, and the callers do not name the circle.
+0x5ed070	gui_utils.cpp	gui_add_text_area	medium	g_screen_manager_current_slot is generic, and the many callers do not pin the text area purpose.
+0x5ef270	hall_of_fame.cpp	HallOfFame::add_calendar_year_entry	medium	The only caller Staff_Records::daily_update is medium, and g_staff_count only pins the staff id bound.
+0x5f3d70	hol_cup.cpp	HolCup::create_group_table	medium	No caller or string pins the group size or the table layout, and the one global is the generic debug text.
+0x5f7330	hol_first.cpp	HolFirst::add_period_winner_news	medium	The only caller is medium-level evidence of a period winner, and no string names the news item type or its text.
+0x5fc010	human_manager.cpp	HUMAN_MANAGER::get_tactic_zone_selection_ptr	medium	No caller names what the zone selection holds, and the globals only pin the manager record lookup.
+0x5fc130	human_manager.cpp	HUMAN_MANAGER::get_tactic_prev_zone_selection_ptr	medium	No caller names the previous zone selection, and the globals only pin the manager record lookup.
+0x5fc370	human_manager.cpp	HUMAN_MANAGER::get_tactic_prev_view_mode_ptr	medium	No caller names the previous view mode, and the globals only pin the manager record lookup.
+0x5fe040	human_manager.cpp	HUMAN_MANAGER::is_computer_controlled	medium	Its callers are medium or only draw a status screen, so none pins the computer control flag.
+0x5fe290	human_manager.cpp	HUMAN_MANAGER::is_watching_fixture	medium	The callers draw fixture rows, and no string or caller name pins that the stored fixture is the watched match.
+0x5fe420	human_manager.cpp	HUMAN_MANAGER::is_fixture_watched	medium	The only caller is medium-confidence in effect through is_watching_fixture, and no string names the watched fixture.
+0x5fe500	human_manager.cpp	HUMAN_MANAGER::set_watched_fixture	medium	The only caller menubar_handle_object_link is medium and no string pins the watch action.
+0x5fe700	human_manager.cpp	HUMAN_MANAGER::can_watch_fixture	medium	Both callers are medium and no string names the rule for a watchable fixture.
+0x5fe8d0	human_manager.cpp	HUMAN_MANAGER::clear_invalid_watched_fixtures	medium	The only caller is a refresh routine and no string names the watched fixture clear.
+0x5fe950	human_manager.cpp	HUMAN_MANAGER::get_squad_view_settings	medium	No caller or string names the squad view settings, and the offset is only seen in squad screen callers.
+0x600ee0	human_manager.cpp	HUMAN_MANAGER::prune_squad_numbers	medium	The only caller is the squad tab and no string pins the pruning of squad numbers.
+0x601070	human_manager.cpp	HUMAN_MANAGER::get_squad_number_player	medium	One caller is medium and the other only draws the squad tab, so none pins the squad number table.
+0x601200	human_manager.cpp	HUMAN_MANAGER::set_squad_number_player	medium	This function has no caller in the dossier and no string pins the squad number table.
+0x6013c0	human_manager.cpp	HUMAN_MANAGER::clear_player_squad_number	medium	This function has no caller in the dossier and no string pins the squad number table.
+0x601560	human_manager.cpp	HUMAN_MANAGER::clear_squad_number	medium	This function has no caller in the dossier and no string pins the squad number table.
+0x6016e0	human_manager.cpp	HUMAN_MANAGER::swap_squad_numbers	medium	This function has no caller in the dossier and no string pins the squad number table.
+0x601880	human_manager.cpp	HUMAN_MANAGER::get_player_squad_number	medium	One caller is medium and the other two draw or rank players, so none pins the squad number table.
+0x617780	index.cpp	get_region_article_form	medium	No string names the article form, and the callers only pass the result as an extra format argument.
+0x62a920	injury.cpp	Injury::init_squad_fitness	medium	No string or high global pins the fitness formula, and the only caller names the start-date run, not the injury field.
+0x62bd10	injury.cpp	Injury::set_match_condition	medium	The callers are medium and the high g_staff_count only bounds the index, so nothing pins the condition and fatigue fields.
+0x62c080	injury.cpp	Injury::apply_match_effects	medium	Callers match_day_apply_match_result and play_daily_matches name the match result, but no string or global pins the knock-severity mapping.
+0x62c2f0	injury.cpp	Injury::recover_fatigue	medium	The only caller is medium and the high globals only give the staff table bound, so nothing pins the fatigue step.
+0x62c3d0	injury.cpp	Injury::get_fatigue	medium	No string or named field pins that the short at +0xc is fatigue, and the callers only use it as a number.
+0x62c510	injury.cpp	Injury::get_match_condition	medium	The only caller is medium and no string or global pins the match condition scale.
+0x62ce30	injury.cpp	injury_player_in_close_season	medium	The close-season test rests on medium key_nation_club_in_season and a 40 day constant, and g_national_teams does not pin the purpose.
+0x62e010	injury.cpp	Injury::post_due_recovery_news	medium	No string pins the recovery news timing, and the globals are only the staff table and the current date.
+0x62e500	injury.cpp	Injury::roll_recurring_injury	medium	The recurring flag global 0x9e7ae0 is medium, and no string or high global pins the 4250 reputation or the treatment types.
+0x62ece0	injury.cpp	Injury::get_recurring_injury_level	medium	All callers are medium or name other uses, and g_staff_count only bounds the index, so nothing pins the recurring level meaning.
+0x6306e0	injury.cpp	injury_get_type_name_gender	medium	The caller passes the result as a format argument but no string or doc names the returned class as grammatical gender.
+0x631f90	injury.cpp	Injury::reset_player_history	medium	Only the generic error text strings and a medium callee pin it, and no caller or global names the injury history chain.
+0x63c9d0	ita_c1_super.cpp	ItaC1Super::init_team_list	medium	Only the generic allocation error strings are used, and no global names the Italian Super Cup teams.
+0x63d5e0	ita_c_cup.cpp	ItaCCup::init_first_group	medium	Only the generic allocation error strings are used, and no global names the cup entrants.
+0x63f250	ita_cup.cpp	ItaCup::create_first_group_table	medium	Only the generic allocation error strings are used, and no global names the cup entrants.
+0x641a70	ita_ser_a.cpp	ItaSerA::create_tiebreak_playoffs	medium	No string or global pins the tiebreak play-off rule, and g_uefa_seeding with the zone code is only a hint.
+0x65746c	ita_ser_c2b.cpp	ItaSerC2b::ItaSerC2b_fragment_65746c	medium	No caller exists, only data pointers, and no string or global names more than the shared error tail of the constructor.
+0x669140	key_nation.cpp	key_nation_number_active_entries	medium	The only global that names the numbered field is high because of this function, and no caller or string says what the index means.
+0x669bd0	key_nation.cpp	key_nation_club_in_season	medium	The start and end date slots of the entry only have medium globals, and no caller or string names the in-season test.
+0x683ee0	league.cpp	League::send_fixture_list_news	medium	No string or global names the news type 0xd, and the caller evidence only says first news items at game creation by inference.
+0x684230	league.cpp	League::send_group_draw_news	medium	The caller names rely on this row for the news part, and no string or global names the news type 0x15.
+0x6854a0	league.cpp	League::would_result_clinch_title	medium	No string or doc gives the text of event 0x2170, and the caller's title clinched reading comes from this row.
+0x685640	league.cpp	League::move_fixtures_for_tv	medium	No string, global or caller names the TV purpose, which comes from the fixture kind byte only by inference.
+0x689c20	league.cpp	League::process_promotion_relegation_chain	medium	The vtable slot 44 has no base name in the slot table, and the override name in ArgPrm comes from this row.
+0x68a030	league.cpp	league_next_schedule_round	medium	The medium Champions League key only remaps rounds 2 and 5, and no string or caller pins the jump order.
+0x68a850	league.cpp	League::set_predicted_positions	medium	The callee stores a final position and only constructors call this, so no quote shows that the stored rank is a prediction.
+0x68aa80	league.cpp	League::set_club_season_expectations	medium	The callee MANAGER_MANAGER::set_season_expectations is medium, and the callers only give the season start timing.
+0x68d040	main.cpp	LLIST::~LLIST	medium	Every high caller calls it on a list object at scope end, but earlier checks found those callers circular, and the exit stub 0x5a9ce0 takes its name from this row.
+0x68f130	manager_manager.cpp	MANAGER_MANAGER::init_club_board_records	medium	No string or high caller pins board confidence, because the globals only name the tables it loops over.
+0x690730	manager_manager.cpp	MANAGER_MANAGER::remove_player_from_squad	medium	No string or named field pins the 50 squad slot clear, and the callers do not pass a named result.
+0x690890	manager_manager.cpp	MANAGER_MANAGER::remove_staff_from_club	medium	The high globals name objects only, and no string or high caller pins the club slot clearing.
+0x694c80	manager_manager.cpp	MANAGER_MANAGER::reset_board_for_new_manager	medium	The board record fields it writes are named only by medium siblings, and no string pins the new manager reset.
+0x695240	manager_manager.cpp	MANAGER_MANAGER::update_board_after_match	medium	The only caller 0x6951e0 takes its meaning from this row, and no string pins the confidence changes.
+0x696570	manager_manager.cpp	MANAGER_MANAGER::assess_transfer_deal	medium	The only caller 0x6978f0 takes its meaning from this row, and the record fields are named only by medium rows.
+0x696b10	manager_manager.cpp	MANAGER_MANAGER::check_board_transfer_veto	medium	Its only caller is medium, and no string pins the veto codes 0x2000 and 0x800.
+0x697240	manager_manager.cpp	MANAGER_MANAGER::judge_player_release	medium	Its only caller 0x697430 is medium, and no string pins the reaction codes.
+0x697430	manager_manager.cpp	MANAGER_MANAGER::apply_release_confidence_penalty	medium	The assert strings give only the file, and the caller does not name the board confidence record.
+0x69aba0	manager_manager.cpp	MANAGER_MANAGER::consider_sacking_manager	medium	No string or high caller pins the 4275 confidence limit or the sacking decision.
+0x69b350	manager_manager.cpp	MANAGER_MANAGER::get_departure_reason	medium	The only caller is medium and no string pins the reason code meanings.
+0x69b650	manager_manager.cpp	MANAGER_MANAGER::process_pending_departures	medium	The assert string gives only the file, and no high callee pins the departure list.
+0x69b790	manager_manager.cpp	MANAGER_MANAGER::remove_club_manager	medium	Callers are mixed and no string pins the departure type and keep_ratings arguments.
+0x69c540	manager_manager.cpp	MANAGER_MANAGER::best_manager_candidate_score	medium	The only caller is medium, and no string or named field pins the candidate score.
+0x69d1b0	manager_manager.cpp	score_staff_for_job	medium	No string pins the score, and the callers that use it are not named by a field that it sets.
+0x69eb50	manager_manager.cpp	MANAGER_MANAGER::is_club_in_financial_trouble	low	The single caller is high but passes the result to commentary choice without a named field, and no string pins the 3000 limit.
+0x69f810	manager_manager.cpp	MANAGER_MANAGER::is_staff_suitable_for_job	medium	Both callers are mixed and no string or high global pins the thresholds.
+0x69fc60	manager_manager.cpp	MANAGER_MANAGER::is_vacancy_candidate	medium	The assert strings give only the file, and callers do not name the vacancy candidate field.
+0x6a3770	manager_manager.cpp	MANAGER_MANAGER::set_season_expectations	medium	No string or named field pins the expectation values, and the news callee names are not quotes.
+0x6a5610	manager_manager.cpp	MANAGER_MANAGER::review_national_team_performance	medium	The only caller is a medium row, and no string or high global pins the FA confidence field or the grade it reads.
+0x6a5fa0	manager_manager.cpp	MANAGER_MANAGER::post_board_match_reaction_news	medium	The only caller is a medium row, and no string used by the function or high global pins the board reaction news type.
+0x6aaee0	manager_manager.cpp	MANAGER_MANAGER::collect_board_match_reaction_players	medium	The only caller is a medium row, and no string or high global pins the favoured and disliked player selection.
+0x6ab670	manager_manager.cpp	get_player_match_rating_verdict	medium	The only caller is a medium row, and no string or high global names the rating byte or the 7 threshold.
+0x6ac470	manager_manager.cpp	MANAGER_MANAGER::resolve_board_ultimatum	medium	The only caller consider_sacking_manager is medium, and no string or high global pins the ultimatum list at this+0x10.
+0x6ac560	manager_manager.cpp	MANAGER_MANAGER::issue_board_ultimatum	medium	The only caller is medium, and the new high callee post_board_ultimatum_news is a hint only, not a caller, string or global quote.
+0x6b6570	match_day.cpp	match_day_get_period_rank	medium	No string pins the period ranks, and the callers only compare ranks without a named field.
+0x6b6970	match_day.cpp	match_day_drop_viewer_and_finish_match	medium	No string or high caller names the purpose, because the only real caller setup_on_network_player_left is medium and the assert text pins only the file.
+0x6b6cc0	match_day.cpp	match_day_apply_post_match_player_changes	medium	No high caller or string pins the write-back of reputations, and the high globals only name the objects that it reads.
+0x6b74a0	match_day.cpp	match_day_process_player_incidents	medium	The incident list global is medium and the caller is too broad to pin it, so no quote names the incident codes.
+0x6b79a0	match_day.cpp	match_day_post_player_reaction_news	medium	The caller is too broad to pin it, and no string or high global names the pleased and ecstatic news conditions.
+0x6bac40	match_eng.cpp	CM3_MATCH_ENGINE::award_pending_foul	medium	No string or high caller names the foul award, because the callers are the engine loop and shot routines that do not name this routine and add_event is a callee.
+0x6bb8d0	match_eng.cpp	CM3_MATCH_ENGINE::scale_side_anger_from_player	medium	The callers are medium or fragment rows and no string pins the anger field, so the factor semantics rest on hints.
+0x6bbb60	match_eng.cpp	CM3_MATCH_ENGINE::recalc_side_score	medium	No string pins the +0x1ce team modifier, and the callers do not name what it holds.
+0x6bc030	match_eng.cpp	CM3_MATCH_ENGINE::choose_marking_target	medium	No string pins the marking choice, and the only caller run_match_steps does not name this result in its own evidence.
+0x6bce80	match_eng.cpp	CM3_MATCH_ENGINE::choose_move_cell	medium	No string pins the cell choice, and the callers are medium routines that do not name the out pointers.
+0x6be520	match_eng.cpp	CM3_MATCH_ENGINE::choose_shootout_takers	medium	The only caller run_penalty_shootout_step is medium, and no string or high global pins the taker slots.
+0x6be710	match_eng.cpp	CM3_MATCH_ENGINE::run_penalty_shootout_step	medium	No string or caller names the shoot-out step, and the shoot-out events 0x2005 and 0x2006 are not named in the data.
+0x6c06b0	match_eng.cpp	CM3_MATCH_ENGINE::adjust_attacking_side_ratings	medium	The only caller quick_simulate_match is high on its own caller, but its evidence does not name this rating adjustment, and no string or global pins it.
+0x6c07a0	match_eng.cpp	CM3_MATCH_ENGINE::adjust_defending_side_ratings	medium	The only caller quick_simulate_match does not name this rating adjustment in its own evidence, and no string or global pins it.
+0x6c0890	match_eng.cpp	CM3_MATCH_ENGINE::adjust_shooting_side_ratings_set_piece	medium	The only caller quick_simulate_match does not name this rating adjustment in its own evidence, and no string or global pins it.
+0x6c0980	match_eng.cpp	CM3_MATCH_ENGINE::adjust_shooting_side_ratings	medium	The only caller quick_simulate_match does not name this rating adjustment in its own evidence, and no string or global pins it.
+0x6c0a70	match_eng.cpp	CM3_MATCH_ENGINE::adjust_defending_side_ratings_set_piece	medium	The only caller quick_simulate_match does not name this rating adjustment in its own evidence, and the 0.5 constant pins nothing.
+0x6c0b70	match_eng.cpp	CM3_MATCH_ENGINE::reward_defenders_for_stopped_shot	medium	The only caller quick_simulate_match does not name this reward in its own evidence, and no string or global pins it.
+0x6c0c60	match_eng.cpp	CM3_MATCH_ENGINE::compute_side_phase_strengths	medium	No string pins the seven phase totals, and the key nation globals only show a nation test inside the underdog bonus.
+0x6c2050	match_eng.cpp	CM3_MATCH_ENGINE::pick_shot_taker	medium	The only caller quick_simulate_match does not name the shot taker in its own evidence, and no string or global pins it.
+0x6c2310	match_eng.cpp	CM3_MATCH_ENGINE::pick_booked_player	medium	The only caller quick_simulate_match does not name the booked player pick in its own evidence, and no string or global pins it.
+0x6c23f0	match_eng.cpp	CM3_MATCH_ENGINE::pick_assist_provider	medium	The only caller quick_simulate_match does not name the assist pick in its own evidence, and no string or global pins it.
+0x6c2750	match_eng.cpp	CM3_MATCH_ENGINE::pick_random_forward	medium	The only caller quick_simulate_match does not name the forward pick in its own evidence, and no string or global pins it.
+0x6c2880	match_eng.cpp	CM3_MATCH_ENGINE::pick_tackling_defender	medium	The only caller quick_simulate_match does not name the tackling pick in its own evidence, and no string or global pins it.
+0x6c3010	match_eng.cpp	CM3_MATCH_ENGINE::is_closest_teammate_to_cell	medium	The only caller run_match_steps does not name this test in its own evidence, and no string or global pins it.
+0x6c38c0	match_eng.cpp	CM3_MATCH_ENGINE::get_player_position	medium	No string pins the position array, and the 34 callers are mostly medium routines that read it without naming it.
+0x6c6a30	match_eng.cpp	CM3_MATCH_ENGINE::find_best_pass_receiver	medium	No string pins the receiver scoring, and the only caller decide_ball_action is medium.
+0x6c9cd0	match_eng.cpp	CM3_MATCH_ENGINE::resolve_ball_challenge	medium	No string names the challenge routine, and the only caller run_match_steps does not name it in its own evidence.
+0x6cb780	match_eng.cpp	CM3_MATCH_ENGINE::check_clear_run_on_goal	medium	No string pins the clear run test, and the callers are medium routines or a fragment that do not name its return codes.
+0x6cb9b0	match_eng.cpp	can_run_into_central_box	medium	No caller pins the purpose, and the distance table only shows a cell distance test.
+0x6cbc00	match_eng.cpp	CM3_MATCH_ENGINE::count_interceptors_on_line	medium	The only caller is a medium function, and the distance table does not pin interceptor counting.
+0x6cc070	match_eng.cpp	CM3_MATCH_ENGINE::count_shot_blockers_on_line	medium	The only caller is a medium function, and the distance table does not pin shot blocker counting.
+0x6cc540	match_eng.cpp	CM3_MATCH_ENGINE::check_shot_blocked_on_path	medium	The callee and the caller read-back are strong, but no string, global or vtable slot pins the shot block walk.
+0x6ccb60	match_eng.cpp	CM3_MATCH_ENGINE::check_pass_intercepted_on_path	medium	Callers are the high pass routines, but no quote pins the interception walk itself.
+0x6cda20	match_eng.cpp	CM3_MATCH_ENGINE::send_off_player	medium	No string pins the send-off routine, and the high callers do not name it in their own evidence.
+0x6cdd50	match_eng.cpp	CM3_MATCH_ENGINE::remove_player_from_pitch	medium	The assert line numbers read 0 in the dossier, and no high caller or global pins the removal purpose.
+0x6ce310	match_eng.cpp	CM3_MATCH_ENGINE::get_goal_margin	medium	No string pins the margin result, and the high callers use the margin without naming its meaning in their own evidence.
+0x6cfe10	match_eng.cpp	CM3_MATCH_ENGINE::roll_challenge_injuries	medium	The high global g_injury names the injury domain only, and no string or caller pins the challenge roll.
+0x6d1210	match_eng.cpp	CM3_MATCH_ENGINE::process_queued_fouls	medium	No string pins the queued foul loop, and the only caller run_match_steps does not name it in its own evidence.
+0x6d1770	match_eng.cpp	CM3_MATCH_ENGINE::build_pitch_position_snapshot	medium	The caller add_event does not name the snapshot buffer in its own evidence, and no string or global pins what the snapshot is for.
+0x6d1cc0	match_eng.cpp	match_eng_update_post_match_reputations	medium	The high globals do not pin the reputation update, and the callees are medium.
+0x6d3610	match_eng.cpp	update_manager_reputation_after_match	medium	The high globals pin nothing here, and the only caller is medium.
+0x6d3de0	match_eng.cpp	match_eng_compute_club_reputation	medium	The high globals pin nothing here, and the only caller is medium.
+0x6d4330	match_eng.cpp	CM3_MATCH_ENGINE::find_marking_target	medium	The distance table is high, but all callers are medium and none pins the marking target purpose.
+0x6d4a20	match_eng.cpp	CM3_MATCH_ENGINE::record_referee_rating	medium	The high callee OfficialsManager::record_match_stats and g_officials_manager are not a caller or string quote, and nothing pins the rating formula.
+0x6d4b70	match_eng.cpp	CM3_MATCH_ENGINE::is_context_commentary_allowed	medium	The high globals do not pin the commentary check, and no string pins which context events are allowed.
+0x6d5d00	match_events.cpp	Match_Events::add_event_at_front	medium	No caller or string names the front insertion; the only caller add_event is high on its tables and does not say why it queues at the front.
+0x6d60b0	match_events.cpp	Match_Events::combine_with_previous_event	medium	No string, global or caller use names what the returned ids 0x213f and 0x2151 mean, so the combine purpose rests on the code alone.
+0x6db2d0	match_events.cpp	match_events_format_player_name	medium	No string or high global pins the name rule; the callers only print the result and the club table is a hint for the squad scan.
+0x6dbb10	match_man.cpp	MATCH_MAN::save_team_selection	medium	No caller is known, and the globals only show the human manager and tactics objects, so nothing pins that the stored record is the team selection.
+0x6ddab0	match_man.cpp	MATCH_MAN::set_computer_instructions	medium	The high globals are generic managers and the callee names are mostly hints, so no string or caller pins the instruction rules.
+0x6df460	match_man.cpp	MATCH_MAN::choose_mentality	medium	The high globals are generic (date, competition table, 0.5 constant), and no caller or string pins the mentality code.
+0x6e0230	match_man.cpp	MATCH_MAN::choose_computer_tactic	medium	The only strings are the generic error format, and the high globals are generic, so no quote pins the tactic choice.
+0x6e1aa0	match_man.cpp	MATCH_MAN::reassign_positions	medium	The callers send-off, injury, foul and substitution paths do not name the reposition, and the human manager global is generic.
+0x6e6340	match_man.cpp	match_man_score_player_for_selection	medium	No string and no caller with a named result pins the score formula; the many high globals are generic objects.
+0x6e8910	match_man.cpp	match_man_apply_squad_restriction	medium	No string pins the squad rule bytes, and database_is_staff_foreign is a callee, which is not a quote.
+0x6e9630	match_official.cpp	MATCH_OFFICIAL::decide_booking	medium	The new neighbour referee_decide_booking is a medium wrapper named from this function, so it pins nothing.
+0x6e9820	match_official.cpp	MATCH_OFFICIAL::judge_tackle	medium	The high globals g_f64_0_5 and g_friendly pin nothing about tackle judging, and the callers are medium.
+0x6ea4e0	match_official.cpp	MATCH_OFFICIAL::decide_foul_punishment	medium	The new neighbour referee_decide_foul_punishment is a medium wrapper, and no string or global pins the card decision.
+0x6ea760	match_official.cpp	MATCH_OFFICIAL::find_offside_player	medium	The only caller referee_check_offside is medium, and the high global is the generic error text buffer that pins nothing.
+0x6ebd70	match_pl.cpp	MATCH_PLAYER::calc_influence_score	low	The high globals are generic, and the callers recalc_side_score and calc_match_attributes are medium.
+0x6ec010	match_pl.cpp	MATCH_PLAYER::calc_match_attributes	medium	The nation and league key globals show a North American check, but no string or caller pins the attribute block as a whole.
+0x6eecb0	match_pl.cpp	MATCH_PLAYER::calc_ratings	medium	The only high global is the 0.5 constant, and the callers are mostly medium engine functions.
+0x6f0630	match_pl.cpp	MATCH_PLAYER::take_possession	medium	No string or single caller pins the possession side effects; the set-up callers only describe giving the ball to a taker.
+0x6f55c0	match_pl.cpp	MATCH_PLAYER::update_ratings_and_condition	medium	The only caller run_match_steps is a generic driver, and the only high global is the 0.5 constant.
+0x6f5c30	match_pl.cpp	MATCH_PLAYER::try_intercept_ball	medium	The assert has no line number and only one medium caller, and the debug text global is generic.
+0x6f6c00	match_pl.cpp	MATCH_PLAYER::receive_ball	medium	The cell distance table and 0.5 constant are generic, and run_match_steps does not name the first touch rules.
+0x6f9f90	match_pl.cpp	MATCH_PLAYER::is_cell_in_view	medium	The cell distance table is a minor input here, the view arc comes from the medium bearing table, and no caller pins it.
+0x6fa250	match_pl.cpp	MATCH_PLAYER::play_pass_to	medium	The only caller decide_ball_action is medium, so no high caller, string or global names the pass type use.
+0x6fa490	match_pl.cpp	MATCH_PLAYER::play_ball_into_area	low	No string or high caller pins the target area logic, and the cell distance table is only a hint here.
+0x700420	match_pl.cpp	MATCH_PLAYER::get_save_score	medium	The cell distance table is only one input, and the callers take_shot, fluke and own goal chance do not name the save score.
+0x70d630	match_pl.cpp	MATCH_PLAYER::is_last_defender	medium	The table is compared with 1.0 for the own goal cell, but nothing pins that the result means the last defender.
+0x70d690	match_pl.cpp	MATCH_PLAYER::get_challenge_score	medium	The error format and cell table are generic here, and the only caller get_opposition_challenge does not name the score.
+0x70df20	match_pl.cpp	MATCH_PLAYER::is_on_wing	medium	The callers are medium or a fragment, and no string or global is read.
+0x70ec80	match_pl.cpp	MATCH_PLAYER::hold_ball	medium	The only caller decide_ball_action is medium, and the add_event neighbour is a callee, not a quote.
+0x7103e0	match_pl.cpp	MATCH_PLAYER::take_turn	medium	run_match_steps is high but its use does not name the per-tick split, and the cell table is generic.
+0x7109f0	match_pl.cpp	MATCH_PLAYER::decide_ball_action	medium	The assert has no line number and the callers are medium or the shootout step, so no quote pins the decision order.
+0x713d90	match_pl.cpp	MATCH_PLAYER::is_goal_side_of_cell	medium	The only fact is the high callee get_cell_distance, a callee is not a quote type, and the angle part comes from a medium function.
+0x713fc0	match_pl.cpp	MATCH_PLAYER::choose_attacking_off_ball_move	medium	Only the generic error format string and medium callee names appear, and no string or high caller names the move choice.
+0x714d40	match_pl.cpp	MATCH_PLAYER::choose_defensive_off_ball_move	medium	The assert has no line number and the callers are medium or move_to, so no quote pins the defensive move choice.
+0x7160e0	match_pl.cpp	MATCH_PLAYER::set_action_delay	medium	No named field for byte +0x2b exists in the data map or forum offset index, so the delay meaning rests on callers storing 0, 3, 5 or 10.
+0x7165b0	match_pl.cpp	MATCH_PLAYER::get_foul_chance	medium	No high caller names the foul value and no string or global pins the dirtiness formula.
+0x717410	match_pl.cpp	MATCH_PLAYER::get_position	medium	The only fact is that it forwards to the medium get_player_position, and its callers do not rename it.
+0x725ca0	match_screens.cpp	match_screens_handle_continue_command	medium	The string covers only the network wait branch, and no caller or high global pins the pending command handling.
+0x729500	match_stats.cpp	Match_Stats::fixture_entry_matches	medium	The assert string cites match_stats.CPP but no string or high caller states what the entry match tests, and the many callers are text writers.
+0x729bd0	match_stats.cpp	match_stats_get_record_bucket	medium	The two high globals are not tied to the bucket choice, and the only caller does not name what a bucket holds.
+0x72b810	media.cpp	Media::pick_former_international_pundit	medium	The new neighbour is a caller that does not name the pundit use, and no string pins the former international rule.
+0x72b940	media.cpp	Media::pick_rival_manager_id	medium	The new neighbour is a caller that does not name the rival manager use, and no string pins the choice.
+0x72c1f0	media.cpp	Media::create_player_media_story	medium	No string, assert, vtable or caller pins the story kinds, and the new neighbour PlayerStats::get_stat is a callee.
+0x732c80	media.cpp	Media::queue_player_gratitude_news	medium	The text writer 0x733000 is not named high, and no string in this function pins the gratitude news.
+0x733a60	media.cpp	Media::create_player_outburst_story	medium	The callers are medium, and no string or global pins that this builds the outburst news.
+0x735870	media.cpp	Media::pick_ai_manager_response	medium	No high caller or string names the manager response, and the callers are many story posters.
+0x736720	media.cpp	Media::rate_player_form_for_story	medium	No caller names the score it returns, and the high globals and PlayerStats::get_stat callee do not pin the story kind scoring.
+0x736c00	media.cpp	Media::apply_story_effect_flags	medium	No string or high caller pins the effect flag meanings, and database_is_staff_foreign is a callee.
+0x738340	media.cpp	Media::adjust_supporter_confidence	medium	The fans news text writer is not named high here, and no string in the function pins the supporter confidence.
+0x755340	media.cpp	Media::apply_squad_reaction_to_player_story	medium	The Glasgow Celtic and Rangers key globals pin only an Old Firm side rule, and no caller names the dislike roll.
+0x758010	media.cpp	Media::warn_squad_of_position_rival	medium	The callers are not about the position rival warning, and no string pins it.
+0x7643d0	Menubar.cpp	menubar_handle_object_link	medium	No string, assert or vtable names it, and its 90 callers only delegate their unhandled clicks to it.
+0x766290	mini_cup.cpp	MiniCup::set_up_clubs	medium	No string or caller says what the four-club entrant table is used for beyond the constructor that calls it.
+0x767ee0	month_ratings.cpp	MONTH_RATINGS::record_match_ratings	medium	The only quotes are the staff globals and one caller, and none pins that the ratings are month ratings.
+0x768130	month_ratings.cpp	MONTH_RATINGS::find_best_player	medium	No caller passes the result to a named field, and no string or global pins the sort key or the stepwise match count.
+0x7683c0	nation_awards.cpp	NationAwards::award_player_of_year_from_ratings	medium	The assert strings are generic and the twelve callers are awards daily_update overrides, so nothing pins the filter arguments.
+0x768720	nation_awards.cpp	nation_awards_award_top_three_from_ratings	medium	The assert strings are generic and no caller names the award that receives the three winners.
+0x768940	nation_awards.cpp	nation_awards_award_manager_of_year	medium	The assert text carries no line number and no caller or global names the award that gets the three managers.
+0x768b20	nation_awards.cpp	nation_awards_award_from_shortlist	medium	The assert strings are generic and no caller passes the result to a named field.
+0x768cf0	nation_awards.cpp	nation_awards_award_player_of_year	medium	The assert strings are generic and no caller names the stat or award that the filters serve.
+0x7690c0	nation_awards.cpp	nation_awards_award_tournament_player	medium	No string or caller names the award, and the only caller WorldCupAwards::daily_update does not pin the stat type.
+0x769380	nation_awards.cpp	nation_awards_award_player_of_year_by_stats	medium	The assert text names only the file, and the ten award callers do not name which year award the four calls give.
+0x7698f0	nation_awards.cpp	NationAwards::award_team_of_season	medium	The callers are daily_update overrides and the globals are generic, so nothing pins the team award by a quote.
+0x769af0	nation_awards.cpp	NationAwards::award_tournament_team	medium	No string or global pins the tournament team award, and the only caller WorldCupAwards::daily_update passes no named field.
+0x76abf0	national_teams.cpp	NationalTeams::build_selection_pools	medium	The Portugal key global has no obvious role here, and no string or caller pins the pool layout.
+0x76b100	national_teams.cpp	NationalTeams::daily_update	medium	The key comp globals show only which finals are tested, and the callers do not pin the dates of the daily jobs.
+0x76bab0	national_teams.cpp	NationalTeams::select_squads_for_fixture	medium	The Olympic key global and g_current_date do not pin the squad slot logic, and no caller passes the result to a named field.
+0x76d560	national_teams.cpp	national_teams_collect_fixture_opponents	medium	The nine key globals only test finals, and the two news callers are not quoted as passing the list to a named field.
+0x76d780	national_teams.cpp	national_teams_get_squad_slot	medium	The new callers pass the result as a slot but no string or global pins the slot meaning.
+0x76d9b0	national_teams.cpp	national_teams_player_is_eligible	medium	The Portugal key global is a special case and no string pins the eligibility tests, which rest on forum offsets.
+0x774f30	national_teams.cpp	NationalTeams::end_duty_for_competition	medium	No string or global pins the duty list, and g_current_date only supports the end date of tomorrow.
+0x774f90	national_teams.cpp	NationalTeams::end_duty_for_nation_in_competition	medium	No string or global pins the duty list entry layout, and g_current_date only supports the end date.
+0x775000	national_teams.cpp	NationalTeams::clear_current_competition	medium	The callers are staff record updates, and no quote shows what the field at record+4 holds.
+0x775070	national_teams.cpp	NationalTeams::release_competitions_of_continent	medium	The Europe key global is a special case, and no quote pins the continent and world level tests.
+0x775220	national_teams.cpp	NationalTeams::set_current_competition	medium	The nine key globals only name the finals set, and no quote shows what the field at record+4 or the queue holds.
+0x775420	national_teams.cpp	NationalTeams::clear_competition_for_comp_clubs	medium	The callers record_season_honours do not pin that the clubs are cleared per national team, and the globals are generic.
+0x776fc0	national_teams.cpp	NationalTeams::can_schedule_club_fixture	medium	The new caller find_fixture_clashes is medium, and no quote pins the call-up record layout or the two player limit.
+0x7771c0	national_teams.cpp	NationalTeams::record_club_call_ups	medium	No string or named field pins what the call-up record means, and the high caller national_squad_selection_screen_handle_input only calls it after posting the news.
+0x7774b0	national_teams.cpp	NationalTeams::prune_club_call_up_records	medium	The 70 day prune and the call-up record meaning come from a medium caller and medium table, and no string or named field pins them.
+0x7775c0	national_teams.cpp	NationalTeams::mark_clubs_with_fixtures	medium	The meaning of codes 1 to 3 comes from medium globals and a medium friendly test, and no string or caller pins the table at this+0x24.
+0x7777e0	national_teams.cpp	NationalTeams::reschedule_clashing_club_fixtures	medium	The medium callee reschedule_club_fixtures_near_date and the medium daily_update leave the more than two players away rule unpinned.
+0x784eb0	news.cpp	NewsItem::is_important_for	medium	No string or named field pins byte +4 as an importance flag, and the flag name comes from reading News::has_urgent_items.
+0x7875e0	news.cpp	news_club_has_human_manager	medium	No string pins the test, and the callers only use the bool to decide who gets news.
+0x79d3b0	officials_manager.cpp	OfficialsManager::get_last_match_rating	medium	No string or global pins the stats row, and both callers are the ban appeal code that compares it with 6.
+0x7a0140	olympics.cpp	Olympics::init_group_a_table	medium	The only high global is the shared error text buffer, and the caller Olympics::update_for_date does not say what group A holds.
+0x7a2650	physio.cpp	physio_assess_player_fitness	medium	No caller or string names the report flags, and the high globals are generic managers and the date.
+0x7a2900	physio.cpp	physio_get_days_to_judge	medium	The only high global is the shared error text buffer, and the only caller is a medium function.
+0x7a5790	player_regen.cpp	PLAYER_REGEN::find_new_retirements	medium	No high global holds the retirement list, and the callees that pick candidates are medium.
+0x7a59e0	player_regen.cpp	PLAYER_REGEN::process_retirements	medium	No string pins the retirement list, and the only caller game_main_day_loop does not name it.
+0x7a6e60	player_regen.cpp	player_regen_pick_staff_for_non_player_data	medium	No high global or caller says what the non-player record is for, and the scorer is medium.
+0x7a6f10	player_regen.cpp	player_regen_sign_for_club	medium	No string or caller names the signing step, and the only caller is a medium row.
+0x7a7310	player_regen.cpp	player_regen_check_retirement	medium	The retirement flag globals are medium, and the only caller is a medium row.
+0x7a79c0	player_regen.cpp	player_regen_check_initial_retirement	medium	The retirement flag globals are medium, and the only caller build_initial_retirement_list is not named in the evidence as a source of the entry layout.
+0x7a7eb0	player_regen.cpp	player_regen_get_retirement_status	medium	The state table global is medium, and no caller names the two bits as retirement status.
+0x7a8050	player_regen.cpp	player_regen_check_unemployed_retirement	medium	The only caller is medium and no high global names the unemployed days field.
+0x7a81a0	player_regen.cpp	PLAYER_REGEN::add_spare_non_player_record	medium	The only high global is the shared error text buffer, and the list at +0x1c has no named global.
+0x7aaeb0	player_regen.cpp	player_regen_retire_from_non_playing_staff	medium	The manager globals show which objects change, and no string or caller names the job slot layout.
+0x7ab340	player_regen.cpp	player_regen_regenerate_as_non_player	medium	No string or high global pins the non-player field layout, and the only caller is medium.
+0x7abac0	player_regen.cpp	PLAYER_REGEN::regenerate_as_youth_player	medium	No string or caller pins the youth regen purpose, and the high globals only show which records the rebuild resets.
+0x7acfc0	player_regen.cpp	PLAYER_REGEN::build_nation_club_lists	medium	The club and nation counts are generic tables, and the MLS key globals show only an exclusion list.
+0x7ad0e0	player_regen.cpp	PLAYER_REGEN::pick_best_club_for_player	medium	The Basque key club globals pin only the Basque special case, and the club scoring callee is medium.
+0x7ad220	player_regen.cpp	player_regen_score_club_for_player	medium	The key globals only show special cases, and the only caller is medium.
+0x7ad590	player_regen.cpp	PLAYER_REGEN::pick_club_from_nation_list	medium	The nation and club key globals only show special rules, and the only caller is medium.
+0x7ae780	player_search.cpp	PLAYER_SEARCH::set_manager_name	medium	Nothing names why the field at +0x70 holds the manager name, and g_staff_table is generic.
+0x7ae8a0	player_search.cpp	PLAYER_SEARCH::set_scout	medium	No string or high caller pins the scout fields at +0x174 and +0x180, and the new neighbour refresh_scout_assignments is medium.
+0x7ae950	player_search.cpp	PLAYER_SEARCH::get_scout	medium	No string pins the scout fields, and the callers that name a scout request are fragments with no stated use of the result.
+0x7b0e40	player_search.cpp	PLAYER_SEARCH::add_own_squad	medium	The only caller get_result_list names the own squad only through this row and remove_own_squad.
+0x7b11b0	player_search.cpp	PLAYER_SEARCH::remove_own_squad	medium	The only caller get_result_list names the own squad only through add_own_squad, which is medium.
+0x7b1520	player_search.cpp	PLAYER_SEARCH::purge_invalid_results	medium	No string pins the purge, and the retirement status callee and the globals are medium or generic.
+0x7b3e20	player_search.cpp	PLAYER_SEARCH::run_scout_day	medium	The strings are the generic error text, and the only caller SCOUT_MANAGER::daily_update is medium.
+0x7b5be0	player_search.cpp	PLAYER_SEARCH::scout_match	medium	The only caller SCOUT_MANAGER::scout_match is medium, and no string names the match assessment.
+0x7b62a0	player_search.cpp	PLAYER_SEARCH::report_on_player	medium	The strings are the generic error text, and both callers are medium rows.
+0x7b7490	player_search.cpp	PLAYER_SEARCH::scout_covers_nation	medium	No string pins the area test, and the callers are medium rows or a fragment of a function.
+0x7bca90	player_search.cpp	player_search_get_club_target_rating	medium	No caller passes the result to a named target rating field, and the finance globals pin only the wealth input.
+0x7bd310	player_search.cpp	player_search_record_scouted_club_match	medium	The only caller scout_match is medium, and the globals do not name the ten-match history.
+0x7bd9d0	player_search.cpp	player_search_assess_player_traits	medium	The callers store the output flags in news slots without naming them as strengths and weaknesses, and the callee notice test is medium.
+0x7bdd70	player_search.cpp	player_search_judge_notices_trait	medium	The only caller assess_player_traits is medium, and the date global does not pin the notice rule.
+0x7c47b0	player_stats.cpp	PlayerStats::get_club_league_stat	medium	Both callers are high but none states that the result is league apps or goals of the current club, and no string names it.
+0x7c6830	player_stats.cpp	PlayerStats::get_language_fluency	medium	Callers are many and score players, but none states what the 0 to 10 value means, and no string or global names languages.
+0x7c6930	player_stats.cpp	player_stats_get_native_language_points	medium	The key nation globals name Belgium, Denmark, Norway and Sweden only, and no caller states what the points mean.
+0x7c7340	plot.cpp	Plot::draw_line_graph	medium	No string, assert or high global names the plot class or the graph, and the only caller is a medium-confidence neighbour pattern, so the plot.cpp placement and line graph role stay unquoted.
+0x7c7580	plot.cpp	Plot::draw_axes	medium	No string names the axes, and the high globals are two GUI colours, the %d format and the screen manager, which fit many drawing functions.
+0x7daf50	printouts.cpp	apply_obscene_gesture_ban	medium	The incident type 0xb comes only from the medium caller, and no string or high global names an obscene gesture.
+0x7e4920	record_utils.cpp	fill_staff_name_ref	medium	The only high global is the file debug info text, and no caller names what the compact reference record holds.
+0x7e4be0	record_utils.cpp	match_record_has_more_goals	medium	Only the file debug text global is high, and the two callers do not name what the goal comparison decides.
+0x7e5160	record_utils.cpp	write_staff_name_ref_to_news	medium	Only the file debug text global is high, and the callers do not name the slot layout.
+0x7e52c0	record_utils.cpp	read_staff_name_ref_from_news	medium	Only the file debug text global is high, and the callers do not name the slot layout.
+0x7e5420	record_utils.cpp	write_date_span_record_to_news	medium	Only the file debug text global is high, and the two callers do not name what the date span value is.
+0x7e5570	record_utils.cpp	read_date_span_record_from_news	medium	Only the file debug text global is high, and the two callers do not name what the date span value is.
+0x7e56d0	record_utils.cpp	match_record_result_code	medium	Only the file debug text global is high, and the only caller does not use a named field to show what 3, 2, 1 and minus 3 mean.
+0x7e5e30	record_utils.cpp	handle_treatment_confirm_screen	medium	No string names the treatment or the screen, and the codes 0x4e, 0x4f and 0x51 have no named meaning in the data map.
+0x7e8e10	ruling_body.cpp	RulingBody::make_points_ban	medium	Only the date global is high, and it does not pin the ban scale or the offence mapping.
+0x7eba90	rus_prm.cpp	RusPrm::create_title_playoff_stage	medium	Only the debug text global is high, and no caller or string pins the title play-off.
+0x7f6af0	scout_manager.cpp	SCOUT_MANAGER::set_edit_session	medium	No string or global names what the per-manager slot at this+0xc holds, and the callers do not pin it.
+0x7f6be0	scout_manager.cpp	SCOUT_MANAGER::get_edit_session	medium	No string or global names what the per-manager slot holds, and the only caller does not pin it.
+0x7f6e30	scout_manager.cpp	SCOUT_MANAGER::get_selected_list	medium	No string or global names the list index byte, and the only caller does not pin it.
+0x7f6f20	scout_manager.cpp	SCOUT_MANAGER::set_selected_list	medium	No string or global names the list index byte, and the only caller is a medium name.
+0x7f7010	scout_manager.cpp	SCOUT_MANAGER::collect_current_duty_comps	medium	The national team and date globals are high, but the callee collect_duty_competitions and Comp::build_match_date_list are medium, so nothing pins the near-today test.
+0x7f7270	scout_manager.cpp	SCOUT_MANAGER::sync_scout_lists	medium	No caller or string names what the scout lists of kind 4 hold, and the globals only locate the human manager slot.
+0x7f7a20	scout_manager.cpp	SCOUT_MANAGER::remove_from_shortlist	medium	The callees are high, but no string or global pins that this removes from the shortlist.
+0x7f82f0	scout_manager.cpp	SCOUT_MANAGER::scope_current_search_to_club	medium	The set_assigned_club callee is medium, and no string or global pins the search scope.
+0x7f8420	scout_manager.cpp	SCOUT_MANAGER::current_search_has_no_club	medium	No string or global pins the unset club value -2 as a no-club scope.
+0x7f8500	scout_manager.cpp	SCOUT_MANAGER::is_club_in_session_searches	medium	No string or global pins that the compared field is the club scope of a search.
+0x7f8610	scout_manager.cpp	SCOUT_MANAGER::find_club_search_entry	medium	No string or global pins the club scope field, and the callee find_or_claim is only a hint.
+0x7f8750	scout_manager.cpp	SCOUT_MANAGER::daily_update	medium	The only caller is the day loop, but it does not pin the request pruning or the report building, and the callees are mostly medium.
+0x7f8c00	scout_manager.cpp	SCOUT_MANAGER::scout_match	medium	The only caller names match result handling, but no string or global pins the scout search order.
+0x7f8ff0	scout_manager.cpp	SCOUT_MANAGER::get_scout_request_status	medium	No string or global pins the status codes, and the called fragment is a split piece.
+0x7f9190	scout_manager.cpp	SCOUT_MANAGER::can_club_scout_nation	medium	The finance table global is high, but no string or global pins the 5000 reputation test or the region rule.
+0x7f9520	scout_manager.cpp	SCOUT_MANAGER::record_scout_report	medium	No string or global pins the report record update, and the only caller is medium.
+0x7f9690	scout_manager.cpp	SCOUT_MANAGER::collect_club_scout_targets	medium	The staff table global is high but pins only the record stride, and the only caller is medium.
+0x7f9720	scout_manager.cpp	SCOUT_MANAGER::fixture_has_scouted_player	medium	The scout manager is only the ECX of the single caller, and no string or high global names what a watched club or scout request means.
+0x7fc690	network.h	ScreenManager::disconnect_network	medium	No string or caller names the quit packet, and the high callers end_network_session and the destructor do not pin the quit packet 4.
+0x7fdc00	scrman.cpp	ScreenManager::run_network_client	medium	No caller or string pins the loop beyond the generic 'Contacting Server...' message, and the high globals are only buffers and colours.
+0x7ff630	scrman.cpp	scrman_add_player_record	medium	The high globals are generic screen record fields, and no string or named caller pins the join callback role.
+0x7ff7b0	scrman.cpp	scrman_remove_player_records	medium	The high globals are generic, and no string or named caller pins the leave callback role.
+0x7ffdd0	scrman.cpp	ScreenManager::is_manager_away	medium	The callers skip or reset on the flag, but no string or caller says that the flag at record +0x1a means away and not done or absent.
+0x800000	scrman.cpp	ScreenManager::send_clear_click	medium	No string or high global names opcode 0x11, and its callers are menu handlers without a named field.
+0x800080	scrman.cpp	ScreenManager::send_clear_click_fragment_800080	medium	It is a fragment of 0x800000, and the only high global is the shared error text buffer.
+0x800330	scrman.cpp	ScreenManager::send_area_scroll_row	medium	The high globals only show a network send buffer, and the opcode meaning rests on a medium applier.
+0x800800	scrman.cpp	ScreenManager::set_widget_flags_fragment_800800	medium	It is a fragment of 0x800580, and the only high global is the shared error text buffer.
+0x803bf0	scrman.cpp	ScreenManager::print_screen	medium	No high global or string pins the print meaning, and the only caller is medium.
+0x803d80	scrman.cpp	ScreenManager::close_all_screens	medium	Callers only reach it in the network waiting flow, and no string or caller names the screen-closing purpose.
+0x8042e0	search_edit_session.cpp	SearchEditSession::revert_current_slot	medium	g_scout_manager is a generic object, and no string or caller name pins the revert meaning.
+0x8043c0	search_edit_session.cpp	SearchEditSession::refresh_scout_assignments	medium	g_scout_manager is a generic object, and the only caller and the set_scout and get_scout callees are medium.
+0x804450	search_edit_session.cpp	SearchEditSession::save_all_slots	medium	g_scout_manager is a generic object, and set_selected_list is medium.
+0x807130	search_filters.cpp	SearchFilters::set_language_option	medium	The only high global is the error text buffer, and no string names the language filter.
+0x807310	search_filters.cpp	SearchFilters::set_value_band	medium	The only high global is the error text buffer, and no string names the value band.
+0x8073b0	search_filters.cpp	SearchFilters::set_job_filter	medium	The only high global is the error text buffer, and no string names the job filter.
+0x8189f0	search_screens.cpp	search_screens_compare_results_by_note_rating	medium	g_staff_table is a generic table, and no string or high caller pins the note rating sort.
+0x818ab0	search_screens.cpp	search_screens_compare_results_by_best_stars	medium	g_staff_table is a generic table, and no string or high caller pins the stars sort.
+0x818b60	search_screens.cpp	search_screens_compare_results_by_matches_watched	medium	The high globals are generic, and find_club_search_entry is medium.
+0x818ce0	search_screens.cpp	search_screens_compare_results_by_scouted_goals	medium	The high globals are generic, and the goals sum callee is medium.
+0x818e70	search_screens.cpp	search_screens_compare_results_by_scouted_assists	medium	The high globals are generic, and the assists sum callee is medium.
+0x819000	search_screens.cpp	search_screens_compare_results_by_scouted_goals_conceded	medium	The high globals are generic, and the goals conceded sum callee is medium.
+0x819190	search_screens.cpp	search_screens_compare_results_by_scouted_average_rating	medium	The high globals are generic, and find_club_search_entry is medium.
+0x819340	search_screens.cpp	search_screens_compare_results_by_last_scouted_match	medium	The high globals are generic, and find_club_search_entry is medium.
+0x819620	search_screens.cpp	search_screens_compare_results_by_ability_stars	medium	g_staff_table is a generic table, and no string or high caller pins the ability stars sort.
+0x8196e0	search_screens.cpp	search_screens_compare_results_by_potential_stars	medium	g_staff_table is a generic table, and no string or high caller pins the potential stars sort.
+0x819780	search_screens.cpp	search_screens_compare_results_by_national_squad_slot	medium	The high globals are generic, and the squad slot callee is medium.
+0x819ba0	search_screens.cpp	search_screens_compare_staff_by_league	medium	g_screen_records_manager pins only the human manager, and no string or high caller pins the league sort key.
+0x81a0f0	search_screens.cpp	search_screens_compare_staff_by_stat	medium	No caller names the sort field and the stat byte comes from a medium search settings global.
+0x826f20	Setup.cpp	appoint_human_manager_to_club	medium	No string or global names what the function does, and the assert only places it in Setup.cpp.
+0x8387e0	Setup.cpp	setup_assign_restored_network_managers	medium	The only caller does not name this call, and the callees HUMAN_MANAGER::get_password and set_computer_controlled are not quotes.
+0x838a80	Setup.cpp	setup_on_network_player_joined	medium	The join callback global 0xdd6bf0 is medium and no string or high global pins the join handling.
+0x838c00	Setup.cpp	setup_on_network_player_left	medium	The leave callback global 0xdd6bf4 is medium and no string or high global pins the leave handling.
+0x838de0	Setup.cpp	is_current_manager_being_created	medium	The high globals give the slot and manager but nothing names the being-created state, which rests on the +0x5f value in a research doc.
+0x839590	Setup.cpp	get_heading_colour	medium	The two colour globals pin the colours but no string, caller or high global names them as heading colours.
+0x83a780	shortlist_manager.cpp	Shortlist_Manager::sort_position_lists	medium	The sort key writes depend on medium shortlist fields, and no caller or string names the position lists.
+0x83b6e0	shortlist_manager.cpp	Shortlist_Manager::allocate_transfer_budget	medium	No string or high global names the transfer budget split or the slot priority, and the budget callee is medium.
+0x83f3a0	shortlist_manager.cpp	Shortlist_Manager::fill_shortlist_slot	medium	No string or caller pins the slot target search, and the many nation key globals only gate special cases.
+0x840d80	shortlist_manager.cpp	Shortlist_Manager::value_player_for_club	medium	No string, caller or high global pins that the result is a fee for a club slot.
+0x842740	shortlist_manager.cpp	Shortlist_Manager::try_loan_offer_for_player	medium	No string or high global names the loan offer purpose, and the loan callees are hints only.
+0x842c00	shortlist_manager.cpp	Shortlist_Manager::add_player_to_club_shortlists	medium	The callers do not name the five club limit, and the club shortlist table is only a medium inference.
+0x843800	shortlist_manager.cpp	Shortlist_Manager::club_wants_player	medium	No string or caller pins the commit flag meaning, and the shortlist slot fields are only medium.
+0x843e10	shortlist_manager.cpp	Shortlist_Manager::update_staff_status	medium	No string names the event codes 1 to 5, and the cooldown dates come from medium fields.
+0x844300	shortlist_manager.cpp	shortlist_staff_fits_slot_position	medium	The assert places the function in shortlist_manager.cpp but no string or global names the position fit tests.
+0x844540	shortlist_manager.cpp	Shortlist_Manager::count_slots_with_bids	medium	No string or high global names the bid marker or the twenty day clear.
+0x844660	shortlist_manager.cpp	shortlist_manager_release_club_slot_targets	medium	No string or high global names the slot target release, and the only callers are the rebuild paths.
+0x844780	shortlist_manager.cpp	staff_interest_in_job_at_club	medium	The three person name strings show hard-coded refusals but no string or caller pins the job willingness score as a whole.
+0x846920	shortlist_manager.cpp	Shortlist_Manager::staff_interest_in_joining_club	medium	No string, caller or high global pins the reason bits as willingness to join a club.
+0x849ce0	shortlist_manager.cpp	Shortlist_Manager::find_club_shortlist_entry	medium	Callers such as Staff_Records add record functions and CONTRACT_MANAGER::daily_update do not say what the 0x25 byte entries at this+0xdc hold.
+0x849d60	shortlist_manager.cpp	shortlist_manager_estimate_squad_status	medium	No string or high global names the squad status estimate, and the single caller is only medium for this purpose.
+0x84af00	shortlist_manager.cpp	shortlist_manager_predict_selling_club_response	medium	No string or caller says the byte 0, 1 or 2 means accept, haggle or reject.
+0x84b180	shortlist_manager.cpp	shortlist_manager_passes_work_permit_check	medium	The only global is the transfer manager and the work permit callee is medium, so no quote pins the check.
+0x84b230	shortlist_manager.cpp	shortlist_manager_max_fee_for_squad_status	medium	The key nation globals show the country specific multipliers but nothing names the fee limit by squad status.
+0x84b580	shortlist_manager.cpp	Shortlist_Manager::mark_player_under_offer	medium	No string, global or caller passes the result to a named field, and the bit 0x20 meaning rests on a medium caller.
+0x84b6f0	shortlist_manager.cpp	shortlist_manager_is_compensation_deal	medium	No string or caller says the out fee is a compensation fee.
+0x84be20	simulated_stats.cpp	SimulatedStats::play_daily_matches	medium	The only caller game_main_day_loop does not pin this routine, and the high globals are generic manager pointers or only high because of this function.
+0x8500c0	spa_first.cpp	SpaFirst::exchange_second_division_clubs_unplayed	medium	The globals name the Spanish divisions, but no string or caller pins the exchange rule or the word unplayed.
+0x850300	spa_first.cpp	spa_first_exchange_second_division_b_clubs	medium	The globals name Spain, A Lower Division and Segunda B, but no string or caller pins the exchange rule.
+0x850970	spa_first.cpp	SpaFirst::resolve_b_team_clashes	medium	No string, caller or global pins the meaning of B team clashes, since the B in the division ids is a different B.
+0x859e20	squad_manager.cpp	SQUAD_MANAGER::assign_league_squad_numbers	medium	No string pins the purpose and the high globals only bound staff ids, the year and the news object.
+0x859fe0	squad_manager.cpp	SQUAD_MANAGER::assign_club_squad_numbers	medium	No string or caller pins the ranking by position and sign rule for squad numbers.
+0x85a470	squad_manager.cpp	SQUAD_MANAGER::allocate_squad_number	medium	No string pins the free number search, and the staff count global gives no purpose.
+0x85aae0	squad_manager.cpp	SQUAD_MANAGER::select_euro_registered_players	medium	No string or assert pins the purpose, and the callers do not name the euro registration flag.
+0x85add0	squad_manager.cpp	SQUAD_MANAGER::club_uses_squad_numbers	medium	The error box is generic, and no single caller or global pins the squad numbers flag.
+0x85b820	stadium.cpp	Stadium::daily_update	medium	The England key global pins only the national stadium branch, and no string pins the rest of the daily update.
+0x85c800	stadium.cpp	Stadium::find_available_venue	medium	The Oceania qualifying key global pins one branch only, and no string or caller pins the booking rule.
+0x85cba0	stadium.cpp	Stadium::calculate_match_attendance	medium	Constants and the friendly and reserve globals only select crowd factors, and no string pins the attendance formula.
+0x85d8a0	stadium.cpp	Stadium::get_travel_distance_factor	medium	Only a double constant is high, and the only caller is a medium function.
+0x85da00	stadium.cpp	Stadium::score_venue_for_fixture	medium	The England key, year and constant globals pin side conditions only, and the only caller is medium.
+0x85e480	staff_contracts.cpp	STAFF_CONTRACT::init_trial_offer	medium	No string pins the trial offer meaning, and the sole caller dialog does not name a trial.
+0x85e590	staff_contracts.cpp	STAFF_CONTRACT::init_from_current_contract	medium	The assert text is generic and the callers are loan functions of medium or mixed confidence.
+0x85e960	staff_contracts.cpp	STAFF_CONTRACT::generate_initial_contract	medium	No string pins the contract fields, and the nation key globals have no named use here.
+0x85fa00	staff_contracts.cpp	STAFF_CONTRACT::days_to_end_date	medium	The only candidate caller quote, compare_players_by_contract_expiry_then_name, takes its name from this function, so it is circular.
+0x866620	staff_contracts.cpp	STAFF_CONTRACT::get_contract_satisfaction	medium	No string or caller pins the scale of 1 to 3, and the globals are generic.
+0x866830	staff_contracts.cpp	STAFF_CONTRACT::calc_contract_value	medium	No string or caller pins the contract value formula, and the globals are generic.
+0x866ee0	staff_contracts.cpp	STAFF_CONTRACT::reset_morale_state	medium	The only caller sign_contract does not name the morale reset, and no string or global pins it.
+0x866f60	staff_contracts.cpp	STAFF_CONTRACT::wants_to_leave	medium	No caller passes the result to a named field, and the many callers use it for different decisions.
+0x867240	staff_contracts.cpp	STAFF_CONTRACT::check_transfer_request_withdrawal	medium	No string pins the withdrawal rule, and the callers are medium.
+0x8674e0	staff_contracts.cpp	STAFF_CONTRACT::clear_grievances	medium	No string pins the grievance mask, and the new caller name does not describe this function.
+0x867520	staff_contracts.cpp	STAFF_CONTRACT::clear_all_grievances	medium	No string pins the purpose, and the only caller is medium.
+0x867560	staff_contracts.cpp	STAFF_CONTRACT::set_flags	medium	The assert text is generic and no caller or global pins the flag bits.
+0x867700	staff_contracts.cpp	STAFF_CONTRACT::apply_event_flags	medium	No string pins the grievance rule, and the callers are mostly medium.
+0x867b50	staff_contracts.cpp	STAFF_CONTRACT::has_active_release_clause	medium	No string or global exists, and the callers use the result only as a price cap test.
+0x867b70	staff_contracts.cpp	STAFF_CONTRACT::increase_wage_step	medium	No string pins the wage step, and the callee Cash::step_up is a callee, not a quote kind.
+0x867c50	staff_contracts.cpp	STAFF_CONTRACT::decrease_wage_step	medium	Only g_config is high and it is generic. The wage option bits are not named by a string or a named field.
+0x869aa0	staff_records.cpp	Staff_Records::record_manager_job_change	medium	Only generic date and debug globals are high. No string or named field pins the manager spell record layout.
+0x86d6e0	staff_records.cpp	Staff_Records::end_season_for_nation	medium	The caller game_season_update_pass does not pin this per nation step, and g_hall_of_fame only shows the callee target.
+0x86da20	staff_records.cpp	Staff_Records::add_loan_records	medium	Only the current date and debug text globals are high. The history kinds 0x69 and 0x6a are not named by a string in the function itself.
+0x86dda0	staff_records.cpp	Staff_Records::daily_update	medium	g_hall_of_fame and the staff table are generic, and add_calendar_year_entry is medium. No string names the monthly or yearly points.
+0x86fb80	staff_records.cpp	Staff_Records::rewind_staff_history	medium	Only the debug text global is high. No caller or string names what the history list read position is.
+0x86fc70	staff_records.cpp	Staff_Records::clear_human_manager_record	medium	Only the staff count and non-player count are high. They bound the id mapping but do not pin the manager record reset.
+0x88b2f0	staff_screens.cpp	staff_screens_handle_profile_tab_action	medium	Only g_screen_manager and its current slot are high, and no string or named slot pins the meaning of slots 4 and 0x13.
+0x88b4b0	staff_screens.cpp	staff_screens_handle_history_tab_action	medium	The screen manager globals and g_staff_count are generic. No string or named slot pins the History tab filter and page slots.
+0x88b910	staff_screens.cpp	staff_screens_add_squad_and_history_menu	medium	The History string and history_his_file_exists pin only the History item. build_squad_list_for_staff_history is medium and the colour and buffer globals are generic.
+0x88d5a0	swe_cup.cpp	SweCup::collect_entrants	medium	Only the debug text global is high. Nothing names the 30-entry entrant list at +0xa7.
+0x897bb0	tactics.cpp	Tactics::set_set_piece_taker	medium	Only the debug text global is high. The role and choice layout is not named by a string or field name.
+0x897dc0	tactics.cpp	Tactics::get_playmaker	medium	g_staff_table is generic and the main caller find_best_pass_receiver is medium. No string names the playmaker field.
+0x897ee0	tactics.cpp	Tactics::set_playmaker	medium	Only the debug text global is high and the caller names are not enough. No string names the playmaker field.
+0x8a84a0	tactics_screens.cpp	Tactics_Screen::auto_select_captain	medium	No string, assert or caller names the captain choice here, and the message text sits in 0x8a8630, not in this function.
+0x8a9020	tactics_screens.cpp	Tactics_Screen::set_playmaker	medium	The caller is a dialog event handler whose name does not say playmaker, and no string or high global pins the playmaker field.
+0x8a9370	tactics_screens.cpp	Tactics_Screen::set_default_penalty_takers	medium	The high globals g_human_manager and g_tactics are generic managers, and no string or caller name pins penalty takers.
+0x8a9e90	tactics_screens.cpp	Tactics_Screen::set_formation_slot_coordinate	medium	No string or high global pins the formation slot coordinate, and the caller is the generic event handler.
+0x8aaaa0	tactics_screens.cpp	Tactics_Screen::is_slot_on_bench	medium	No string or named caller pins the bench test, and the only high global is the error text buffer.
+0x8aacb0	tactics_screens.cpp	Tactics_Screen::get_slot_red_cards	medium	No string, global or caller name pins red cards, and the byte +0x23 meaning rests on a medium neighbour.
+0x8aba70	tactics_screens.cpp	Tactics_Screen::get_slot_marking_target_row	medium	The callee find_marking_target is medium, and no string, global or caller name pins the marking target row.
+0x8abb50	tactics_screens.cpp	Tactics_Screen::get_slot_marked_player	medium	Callees are high but callees are not quotes, and no string, global or caller name pins the marked player.
+0x8abd00	tactics_screens.cpp	Tactics_Screen::get_slot_marker	medium	The only callers are the screen build function and no string or global pins the marker search.
+0x8abe30	tactics_screens.cpp	Tactics_Screen::predict_opponent_lineup	medium	The high globals g_discipline, g_injury, g_national_teams and g_tactics are generic managers, and no string or caller name pins the opposition line-up.
+0x8ac600	tactics_screens.cpp	draw_pitch	medium	The high global g_screen_manager_current_slot is unrelated, and the many callers only draw a pitch area without naming the function.
+0x8ad780	tactics_screens.cpp	get_pitch_point_for_position_flags	medium	No string or high global pins the position flag mapping, and the caller names do not describe the flags.
+0x8b1750	training_manager.cpp	TRAINING_MANAGER::update_player_training	medium	The assert text is generic, and no caller or global pins the training catch up logic.
+0x8b2250	training_manager.cpp	TRAINING_MANAGER::set_player_schedule	medium	The only caller is the edit session commit, and the new neighbour get_training_load is a callee, not a quote for the slot change.
+0x8b23b0	training_manager.cpp	TRAINING_MANAGER::set_coach_assignments	medium	The only caller is the edit session commit, and no string or global pins the coach assignment copy.
+0x8b2470	training_manager.cpp	TRAINING_MANAGER::reassign_squad_schedules	medium	The new caller appoint_manager_to_club does not mention schedules, and the high globals are generic.
+0x8b2880	training_manager.cpp	TRAINING_MANAGER::update_coach_assignments	medium	No string or global pins the coach slots, and the callers do not name them.
+0x8b2be0	training_manager.cpp	TRAINING_MANAGER::apply_training_progress	medium	The high global g_staff_count only bounds an id check, and no caller or string pins the progress application.
+0x8b3410	training_manager.cpp	TRAINING_MANAGER::collect_squad_schedules	medium	The only caller is the edit session constructor, and the high global g_staff_count does not pin the schedule list.
+0x8b35a0	training_manager.cpp	TRAINING_MANAGER::get_coach_assignments_copy	medium	The only caller is the edit session constructor, and no global or string pins the coach table copy.
+0x8b3640	training_manager.cpp	TRAINING_MANAGER::remove_or_restore_training_progress	medium	The callers are normalisation functions that are medium, and the saved delta globals are medium.
+0x8b37c0	training_manager.cpp	TRAINING_MANAGER::get_training_attribute_change	medium	The only caller is the training screen draw function, which does not name the attribute change, and no string pins it.
+0x8b39f0	training_manager.cpp	TRAINING_MANAGER::get_player_schedule	medium	The high globals are generic managers and tables, and no caller or string pins the schedule lookup.
+0x8b41d0	training_manager.cpp	TRAINING_MANAGER::get_coaching_factor	medium	The only caller is a medium function, and g_staff_count does not pin the coaching factor.
+0x8b4450	training_manager.cpp	TRAINING_MANAGER::set_position_training_rate	medium	The high global g_staff_table is generic, and no string or caller pins the learning rate byte.
+0x8b4770	training_manager.cpp	TRAINING_MANAGER::get_position_aptitude	medium	No string or high global pins the aptitude formula, and both callers are medium.
+0x8b49b0	training_manager.cpp	TRAINING_MANAGER::add_position_training	medium	The only caller is medium, and g_staff_table is generic.
+0x8b4b20	training_manager.cpp	TRAINING_MANAGER::find_position_training	medium	All callers are medium, and no string or high global pins the entry search.
+0x8b4cd0	training_manager.cpp	TRAINING_MANAGER::get_coach_assignments	medium	The high global g_staff_count only gives the manager index, and all callers are medium.
+0x8b5000	training_schedule.cpp	TRAINING_SCHEDULE::count_players	medium	Callers name the count and list uses, but the purpose of the sort option and the squad filters comes from no string or high global.
+0x8bb6d0	training_screens.cpp	training_screens_compare_by_form_then_name	medium	No string or caller is recorded for this sort callback, and g_player_stats is generic, so the form sort rests only on the callee get_recent_form.
+0x8bb7d0	training_screens.cpp	training_screens_compare_by_morale_then_name	medium	No string or caller is recorded for this sort callback, and g_contract_manager is generic.
+0x8bb8d0	training_screens.cpp	training_screens_compare_by_injury_then_name	medium	No string or caller is recorded for this sort callback, and g_injury is generic.
+0x8bee50	transfer_manager.cpp	TRANSFER_MANAGER::add_loan_negotiation	medium	The only caller is a screen handler that submits loan offers, and no string or global pins the copy and contract terms.
+0x8bf680	transfer_manager.cpp	TRANSFER_MANAGER::reject_transfer_offer	medium	No string pins the rejection, and the callers span several screens and AI paths, so no single caller names the purpose.
+0x8c0080	transfer_manager.cpp	TRANSFER_MANAGER::accept_transfer_bid	medium	No string pins the bid acceptance step, and the callers do not name the offer state.
+0x8c0810	transfer_manager.cpp	TRANSFER_MANAGER::review_ai_club_bid	medium	No string pins the bid review, and the callers do not name the budget test.
+0x8c0f40	transfer_manager.cpp	TRANSFER_MANAGER::submit_loan_contract_offer	medium	The assert text is generic, and the callers do not name the loan wage share.
+0x8c1290	transfer_manager.cpp	TRANSFER_MANAGER::unsettle_player_after_bid	medium	No string pins the unsettle logic, and the three callers are medium or generic.
+0x8c1780	transfer_manager.cpp	TRANSFER_MANAGER::count_club_free_transfer_queue	medium	The assert line is a null club check only, and the only caller is a medium function.
+0x8c1e40	transfer_manager.cpp	TRANSFER_MANAGER::offer_contract_to_offer_player	medium	No string pins this step, and the callers do not name the exchange player handling.
+0x8c28c0	transfer_manager.cpp	TRANSFER_MANAGER::handle_player_rejected_terms	medium	The assert text is generic, and the only caller resolve_contract_offers is medium.
+0x8c2f50	transfer_manager.cpp	TRANSFER_MANAGER::advance_offer_to_club_approval	medium	No string pins the club approval step, and the callers are mixed medium and high functions.
+0x8c34e0	transfer_manager.cpp	TRANSFER_MANAGER::try_complete_offer	medium	No string pins the completion step, and both callers are generic transfer paths.
+0x8c36b0	transfer_manager.cpp	TRANSFER_MANAGER::club_rejects_offer	medium	No string pins the club refusal, and the callers are mixed.
+0x8c38b0	transfer_manager.cpp	TRANSFER_MANAGER::complete_accepted_contract_offer	medium	The only caller resolve_contract_offers is medium, and no string or global pins the sign and charge step.
+0x8c39f0	transfer_manager.cpp	TRANSFER_MANAGER::update_appearance_clauses_after_match	medium	The callers are the match result paths, and no string or global pins the appearance and cap flags.
+0x8c3e50	transfer_manager.cpp	TRANSFER_MANAGER::get_clause_count	medium	The callers are display functions of the transfer tab, and no string or global pins the clause meaning.
+0x8c41c0	transfer_manager.cpp	TRANSFER_MANAGER::remove_exchange_player	medium	The callers are mixed, and no string or global pins the exchange removal.
+0x8c44e0	transfer_manager.cpp	TRANSFER_MANAGER::collapse_offer	medium	The callers are generic transfer paths, and no string pins the collapse.
+0x8c47d0	transfer_manager.cpp	TRANSFER_MANAGER::collapse_offers_for_player	medium	Both callers are inside the offer logic, and no string pins the collapse for a player.
+0x8c4950	transfer_manager.cpp	TRANSFER_MANAGER::cancel_club_offers	medium	The callers are three different manager or retire paths, and g_staff_count is only a bound.
+0x8c4e10	transfer_manager.cpp	TRANSFER_MANAGER::hold_offers_at_window_close	medium	The only caller is high but names a news update, and no string pins the hold rule.
+0x8c5800	transfer_manager.cpp	transfer_manager_get_squad_status_for_reason	medium	The only caller is a reject bid handler, and no string or global pins the flag values.
+0x8c5cf0	transfer_manager.cpp	TRANSFER_MANAGER::get_offers_for_player	medium	No caller or string names the offer states it skips, and g_staff_count only bounds the staff id.
+0x8c5e40	transfer_manager.cpp	TRANSFER_MANAGER::get_exchange_offers_for_player	medium	No caller or string pins the part exchange meaning, and the contract and club globals only support the lookups.
+0x8c5fc0	transfer_manager.cpp	TRANSFER_MANAGER::get_exchange_negotiations_for_player	medium	The callers are a screen and two medium functions, and g_staff_count is only a bound.
+0x8c6100	transfer_manager.cpp	TRANSFER_MANAGER::get_open_offers_for_club_players	medium	Only one high caller, and no string or global names what the open-offer count feeds.
+0x8c6ae0	transfer_manager.cpp	TRANSFER_MANAGER::detach_offer_players	medium	The sole caller try_complete_offer is medium, and no string or global pins the detach step.
+0x8c6db0	transfer_manager.cpp	transfer_manager_close_offer_contract_offers	medium	Callers are many and varied, and the contract offer state value 4 has no string or named global.
+0x8c6e60	transfer_manager.cpp	TRANSFER_MANAGER::init_work_permits	medium	Only the constructor calls it, and no string or global names the permit or nationality setup beyond the callee names.
+0x8c7330	transfer_manager.cpp	TRANSFER_MANAGER::update_work_permits	medium	The only caller daily_update does not pin the permit upkeep, and no string or named global does.
+0x8c7470	transfer_manager.cpp	transfer_manager_offer_needs_work_permit	medium	It has no string, assert or pinning global, its callee 0x8c7560 quotes it back, and its only caller 0x8c2f50 is medium.
+0x8c7690	transfer_manager.cpp	TRANSFER_MANAGER::check_offer_work_permits	medium	No string or high caller pins the permit application step, and the refusal news code is only a callee.
+0x8c7950	transfer_manager.cpp	TRANSFER_MANAGER::is_work_permit_granted	medium	The Collin, Devon and Falkirk strings pin one special case only, and no caller or global pins the grant rules.
+0x8c7e20	transfer_manager.cpp	TRANSFER_MANAGER::update_work_permit_on_move	medium	The only strings are the generic assert, and its two callers do not name the permit update on a move.
+0x8c8090	transfer_manager.cpp	TRANSFER_MANAGER::ai_respond_to_bid	medium	No string or caller pins the accept, reject or counter decision, and the asking price callee is not a quote.
+0x8c8860	transfer_manager.cpp	TRANSFER_MANAGER::build_exchange_offer_option	medium	The sole caller is a medium row, and no string or global pins the part exchange picking.
+0x8c8fd0	transfer_manager.cpp	TRANSFER_MANAGER::build_clause_offer_option	medium	The sole caller ai_respond_to_bid is medium, and the clause values come from numeric fields with no string or global.
+0x8caee0	transfer_manager.cpp	TRANSFER_MANAGER::pay_transfer_instalments	medium	The caller daily_update does not pin the instalment payment, and only callee names Finance::pay_players_bought support it.
+0x8cb340	transfer_manager.cpp	TRANSFER_MANAGER::pay_appearance_money	medium	Callers are medium or settle a clause, and only callee names such as post_appearance_money_news support the name.
+0x8cb6d0	transfer_manager.cpp	transfer_manager_fill_vacated_staff_job	medium	The sole caller move_player_to_club does not pin the vacated job fill, and no string or global does.
+0x8cc5b0	transfer_manager.cpp	TRANSFER_MANAGER::get_offer_response_delay	medium	No caller passes the delay to a named field, and the strings are generic assert text.
+0x8cca10	transfer_manager.cpp	TRANSFER_MANAGER::get_future_transfer	medium	No caller passes the entry to a named field, and the callers mostly only test whether a future transfer exists.
+0x8cd240	transfer_manager.cpp	transfer_manager_selling_club_must_accept	medium	The reason codes 0x1b and 0x1c have no string, and the callers are mostly medium rows or screens that only test the result.
+0x8cd450	transfer_manager.cpp	transfer_manager_check_squad_limits	medium	The reason codes and the slot limits have no string, and no caller names the squad limit check.
+0x8cdb80	transfer_manager.cpp	TRANSFER_MANAGER::check_board_veto	medium	The sole caller is medium and the veto callee check_board_transfer_veto is medium.
+0x8cde70	transfer_manager.cpp	TRANSFER_MANAGER::is_player_under_offer	medium	Callers do not pin the under offer meaning, and the globals are generic tables and screen slots.
+0x8ce0e0	transfer_manager.cpp	TRANSFER_MANAGER::set_player_squad_status	medium	The high caller handle_transfer_status_screen has no string of its own for the call, and its evidence names this row as the main fact.
+0x8ce990	transfer_manager.cpp	TRANSFER_MANAGER::can_club_bid_for_player	medium	The key nation globals pin only the Basque and nationality bars, and no string or caller pins the whole approach check.
+0x8cee70	transfer_manager.cpp	transfer_manager_get_offer_completion_date	medium	The caller names and the timing switch do not pin the completion date, and no string or global does.
+0x8cf0e0	transfer_manager.cpp	TRANSFER_MANAGER::find_next_allowed_transfer_date	medium	The caller names do not pin the day search, and the transfer rules slot has no string.
+0x8cf470	transfer_manager.cpp	TRANSFER_MANAGER::find_next_window_open_date	medium	The sole caller set_to_desired_contract does not pin the window search, and only generic strings and globals appear.
+0x8cfc90	transfer_manager.cpp	TRANSFER_MANAGER::check_offer_restrictions	medium	Callers are the offer state machine and screens, and no string or global pins the restriction checks.
+0x8d0a70	transfer_manager.cpp	transfer_manager_player_club_uses_bosman	medium	No caller names the Bosman rule by a string, and nation_allows_free_transfers is a callee, which is not a quote.
+0x8d0bb0	transfer_manager.cpp	transfer_manager_get_next_window_dates	medium	The window dates come from date constants with no string, and callers do not pin the fixed window rule.
+0x8e5d60	transfer_offer.cpp	TRANSFER_OFFER::build_bid	medium	The strings are only the generic assert, and no caller or global pins the bid building as a whole.
+0x8e78f0	transfer_offer.cpp	TRANSFER_OFFER::init_transfer_offer	medium	The three callers are cash, exchange and clause option builders, and no string or global pins the +0x2d flag rule.
+0x8e7b50	transfer_offer.cpp	TRANSFER_OFFER::get_weighted_value	medium	No string, caller or global pins the weighting scheme, and the callees are not quotes.
+0x8e8330	transfer_offer.cpp	TRANSFER_OFFER::restructure_fee_into_clauses	medium	Only g_finance_table pins the budget source, and no string or caller pins the clause split.
+0x8e8ed0	transfer_offer.cpp	TRANSFER_RULES::get_days_until_window_closes	medium	g_current_date pins only today, and the only caller is medium, so no quote pins the window closing purpose.
+0x900ab0	tur_second_b.cpp	TurSecondB::create_promotion_group	medium	Only the debug text global is high, and no string or caller pins stage 4 as the promotion group.
+0x900d00	tur_second_b.cpp	TurSecondB::create_classification_groups	medium	Only the debug text global is high, and no string or caller pins the classification groups.
+0x901040	tur_second_b.cpp	TurSecondB::create_playoff_stage	medium	Only the debug text global is high, and no string or caller pins the playoff stage.
+0x9086e0	usa_mls.cpp	UsaMls::create_season_fixtures	medium	The fixture manager and stadium globals are generic, and the string patterns do not name the cross-division rule.
+0x90cf20	utils.cpp	utils_copy_path_limited	medium	The callers use it to build paths but no string names the 256 byte buffer rule.
+0x90d4f0	virtual_staff.cpp	VIRTUAL_STAFF::fill_viewed_club_squad	medium	The only caller is a screen builder, and the human manager globals do not pin the squad top-up purpose.
+0x90d8f0	virtual_staff.cpp	VIRTUAL_STAFF::count_available_players	medium	The injury, discipline and tactics globals are generic object pointers, and no string pins the counting rule.
+0x90dae0	virtual_staff.cpp	VIRTUAL_STAFF::top_up_club_squad	medium	The Japanese and MLS key globals show special cases only, and no string or caller pins the target table.
+0x90e0a0	virtual_staff.cpp	VIRTUAL_STAFF::create_virtual_player	medium	The name and table globals show what it writes, and no string or caller pins the virtual player rules.
+0x90e9a0	virtual_staff.cpp	VIRTUAL_STAFF::relocate_virtual_players	medium	The staff and player table globals are generic, and no string or caller pins the relocation rule.
+0x910120	wc_african_cup.cpp	WcAfricanCup::build_first_round_entries	medium	Only the debug text global is high, and no string or global pins the African cup entry counts.
+0x912ad0	wc_asia_league.cpp	WcAsiaLeague::init_first_group_table	medium	Only the debug text global is high, and no string or global pins the first round group table.
+0x912bd0	wc_asia_league.cpp	WcAsiaLeague::draw_first_round_groups	medium	Only the debug text global is high, and no string or global pins the draw of ten groups.
+0x912db0	wc_asia_league.cpp	WcAsiaLeague::get_first_round_group_size	medium	Only the debug text global is high, and no string or global pins the group sizes.
+0x913b60	wc_asia_league.cpp	WcAsiaLeague::create_third_round_tie	medium	Only the debug text global is high, and no string or global pins the third round tie.
+0x913d50	wc_asia_league.cpp	WcAsiaLeague::create_playoff_tie	medium	The European qualifying key names one side of the tie, and the partner function is only medium.
+0x915d40	wc_concacaf_cup.cpp	WcConcacafCup::build_team_table	medium	No string or global names the table beyond the debug text, and the callers are the constructor and start_new_season.
+0x917110	wc_concacaf_cup.cpp	WcConcacafCup::create_play_off_stage	medium	No string or global pins the stage, and the caller advance_stage does not name the six-team play-off.
+0x9190d0	wc_europe_league.cpp	WcEuropeLeague::init_own_group_table	medium	No string names the group, and the only high global is the debug text buffer.
+0x91a240	wc_europe_league.cpp	WcEuropeLeague::fill_runners_up_table	medium	No string or global pins the runners-up table, and the callers do not name its use.
+0x91a7e0	wc_europe_league.cpp	WcEuropeLeague::mark_play_off_qualifiers	medium	No string or global pins status 7 as qualified, and the only caller is a generic update_positions_and_status.
+0x91f1a0	wc_oceania_league.cpp	WcOceaniaLeague::create_second_group_stage	medium	No string or global names the second group, and the callers and callees only say a League_Stage is built.
+0x923010	weather.cpp	Weather::get_match_weather	medium	g_current_date is generic and no string or caller field pins the weather record layout.
+0x9232c0	weather.cpp	Weather::get_temperature	medium	Only g_current_date and a float constant appear, and neither pins the temperature bands.
+0x923630	weather.cpp	Weather::check_postponement	medium	The caller MATCH_DAY::MATCH_DAY names the call as one fact, and no string or global pins the postponement rolls.
+0x923cc0	weather.cpp	Weather::post_postponed_news	medium	The news type 2 and the caller MATCH_DAY::MATCH_DAY do not name the postponement, and g_news and the dates are generic.
+0x924050	weather.cpp	Weather::post_abandoned_news	medium	The news type 0x2a is not named by any string, and g_news and the dates are generic.
+0x929aa0	world_club_champ.cpp	WorldClubChamp::draw_first_group	medium	No string or global names the seeding pots, and the caller update_for_date is generic.
+0x929e60	world_club_champ.cpp	WorldClubChamp::create_second_and_third_groups	medium	No string or global names the second and third groups, and the caller update_for_date is generic.
+0x9315d0	year_ratings.cpp	YEAR_RATINGS::record_match_ratings	medium	The globals g_staff_table and g_staff_count are generic, and the caller process_fixture does not name the year ratings use.
+0x934b10	library_without_asserts	glyph_hint_collect_stem_widths_checked	medium	The caller takes the median of the two output lists into unnamed parameter slots, and no string names them as stem widths.
+0x934b60	library_without_asserts	glyph_hint_run_pass	medium	Both callers and most callees are medium or low, and no string or global names the hinter pass.
+0x935cb0	library_without_asserts	glyph_hint_outline_pair_stem_edges	low	Only the medium helper 0x935f90 and a medium caller back the pairing, and no string or high caller names it.
+0x9362b0	library_without_asserts	glyph_hint_collect_stem_widths	medium	The only caller is the medium run_pass in mode 2, so no high caller or string pins the width lists.
+0x9365d0	library_without_asserts	glyph_hint_create	medium	The only caller 0x93e5b0 is medium, and no string or high caller names the hinter creation.
+0x936840	library_without_asserts	glyph_hint_destroy	medium	A sample check undid its raise to high, because the caller it quoted is high only through this row.
+0x93c680	library_without_asserts	glyph_hint_fit_outline_both_axes	medium	The only caller run_pass is medium, and no string or high caller names the both axes fit.
+0x93ddb7	library_without_asserts	t2k_scaler_new_fragment_93ddb7	medium	The parent 0x93dd90 t2k_scaler_new is medium, so the continuation has no high caller.
+0x93e5b0	library_without_asserts	t2k_set_up_hinting_for_size	medium	No caller or string names hinting, and the T2KG tag is a constant not a string.
+0x93fb70	library_without_asserts	t2k_apply_five_tap_bitmap_filter	medium	The only caller 0x93e8d6 is a medium fragment, and no string names the five tap filter.
+0x940160	library_without_asserts	t2k_scan_edge_pool_grow	medium	The caller calls it once as set up and add_line calls it on a full pool, but no string or named field pins the edge pool.
+0x941ba0	library_without_asserts	tt_exec_set_ppem	medium	No string, vtable or open source match pins the prep rerun, and the only caller is a medium row.
+0x942140	library_without_asserts	tt_exec_destroy	medium	No high caller or string pins that this frees an exec context, because lib_mem_free only shows the frees.
+0x942ff0	library_without_asserts	tt_font_new	medium	The only caller is a medium row and no string or open source match pins the font object layout.
+0x943960	library_without_asserts	tt_kern_free_format0_table	medium	The only caller loads kern subtables, but no string or open source match pins format 0.
+0x944250	library_without_asserts	lib_ctx_acquire_scratch_buffer	medium	No caller names what the six slots hold, and no string pins the scratch buffer role.
+0x9442c0	library_without_asserts	lib_ctx_reset_scratch_buffers	medium	The only caller is a delete fragment, and no string or named field pins the six scratch slots.
+0x944350	library_without_asserts	lib_ctx_free_all_blocks	medium	Callers use it on error exits but no caller or string names the tracked block table it frees.
+0x9447e0	library_without_asserts	f2dot14_mul	medium	No open source function was confirmed, and the callers show use but not the exact 2.14 rounding.
