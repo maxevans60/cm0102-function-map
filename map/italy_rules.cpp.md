@@ -1,0 +1,17 @@
+# italy_rules.cpp: 9 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x661380 | 32 (+1 unwind) | `ITALY_RULES::ITALY_RULES` | thiscall (this, u8 flag, int nation_index, int continent_index, int arg4, int arg5) ret 0x14 | Constructs the Italian transfer rules on the TRANSFER_RULES base, builds its three transfer windows and sets the non-EU squad limit to 40. | high | opus | 2026-10-16-season-change-points.md, 2026-10-16-sweep-rulebooks.md |
+| 0x6613f0 | 93 | `ITALY_RULES::init_transfer_windows` | thiscall (this) ret 0 | Allocates and fills the three 12-byte Italian transfer windows, the third being the free transfer window, with an error box on failure. | high | opus | 2026-10-16-sweep-rulebooks.md |
+| 0x661520 | 106 | `ITALY_RULES::can_sign_player` | thiscall (ITALY_RULES *this, club_t *club, staff_t *player, club_t *seller or NULL, Date *date, u16 *reason or NULL) ret 0x14, returns 1 or 0 | Uses the base checks in the first two Italian windows, and in the third allows only free agents or players leaving on a free. | high | opus | 2026-10-16-sweep-rulebooks.md |
+| 0x661630 | 131 | `ITALY_RULES::can_make_offer` | thiscall (ITALY_RULES *this, TRANSFER_OFFER *offer, club_t *club, Date *date, u16 *reason or NULL) ret 0x10, returns 1 or 0 | Checks an offer against the Italian windows, allowing third window bids only on free transfers and refusing third window sales. | high | opus | 2026-10-16-sweep-rulebooks.md |
+| 0x661770 | 133 | `ITALY_RULES::can_loan_player` | thiscall (this, club_t *club, staff_t *player, char *message or NULL, u16 *reason or NULL) ret 0x10, returns 1 or 0 | Refuses a loan outside the first two Italian windows, or when a club in five listed divisions already holds four loan players. | high | opus | 2026-10-16-sweep-rulebooks.md |
+| 0x6618f0 | 81 | `ITALY_RULES::can_end_loan` | thiscall (this, club_t *club, staff_t *player, char *message or NULL, date_t *date or NULL, int month_check) ret 0x14, returns 1 or 0 | Refuses to send back or recall a loan player outside the first two Italian windows, except in month 5 when the flag is set. | high | opus |  |
+| 0x6619e0 | 22 | `ITALY_RULES::fill_squad_restrictions` | thiscall (this, fixture_t *fixture, u8 *record_out) ret 8 | Fills the squad restriction record with 0xff, then sets byte +6 to 21 and byte +8 to 4 or 5 by competition. | high | opus | 2026-10-16-foreign-and-tactics-positions.md, 2026-10-16-sweep-rulebooks.md |
+| 0x661a30 | 73 (+2 unwind) | `ITALY_RULES::post_deadline_news` | thiscall (ITALY_RULES *this, transfer_window_t *window, char kind, s16 year) ret 0xc | Posts transfer deadline news item 0xfb2 to the managers of Italian clubs, skipping kind 3 for the third window type. | high | opus |  |
+| 0x661b40 | 166 | `ITALY_RULES::write_deadline_news_text` | thiscall (this, int unused, int nation_news, int arg3) ret 0xc | Writes the Italian deadline headline, choosing transfer or free transfer wording for the passed, today and next week states. | high | opus |  |

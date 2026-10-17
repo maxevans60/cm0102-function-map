@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CM 01/02 Function Map</title>
+<meta name="description" content="Search every function of cm0102.exe 3.9.68 by address or word.">
+<style>
+:root {
+  --bg: #f7f6f2; --panel: #ffffff; --text: #1d1d1b; --muted: #66645e; --line: #e2dfd6;
+  --accent: #1f5f8b; --high: #2e7d32; --medium: #a66a00; --low: #b3261e; --code: #f0eee8;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161614; --panel: #1f1f1c; --text: #ecebe6; --muted: #a09e96; --line: #34332e;
+    --accent: #7db8e0; --high: #81c784; --medium: #e0a64a; --low: #f28b82; --code: #2a2a26;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161614; --panel: #1f1f1c; --text: #ecebe6; --muted: #a09e96; --line: #34332e;
+  --accent: #7db8e0; --high: #81c784; --medium: #e0a64a; --low: #f28b82; --code: #2a2a26;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+main { max-width: 1100px; margin: 0 auto; padding: 32px 16px 64px; }
+h1 { font-size: 1.6rem; margin: 0 0 4px; }
+p.lead { color: var(--muted); margin: 0 0 24px; }
+a { color: var(--accent); }
+form { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-bottom: 8px; }
+input[type=search] { flex: 1 1 320px; font: inherit; font-size: 1.1rem; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); color: var(--text); }
+label { color: var(--muted); white-space: nowrap; }
+.hint { color: var(--muted); font-size: .9rem; margin: 0 0 20px; }
+#status { margin: 16px 0 8px; color: var(--muted); }
+.note { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; margin: 12px 0; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; margin: 10px 0; }
+.card .top { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; }
+.addr { font-family: ui-monospace, Menlo, Consolas, monospace; color: var(--muted); }
+.name { font-family: ui-monospace, Menlo, Consolas, monospace; font-weight: 600; overflow-wrap: anywhere; }
+.conf { font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .03em; }
+.conf.high { color: var(--high); } .conf.medium { color: var(--medium); } .conf.low { color: var(--low); }
+.conv { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .85rem; background: var(--code); border-radius: 4px; padding: 2px 6px; display: inline-block; margin: 6px 0 2px; overflow-wrap: anywhere; }
+.purpose { margin: 4px 0 0; }
+.file { font-size: .9rem; }
+footer { margin-top: 40px; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>CM 01/02 Function Map</h1>
+  <p class="lead">Every function of cm0102.exe 3.9.68 with its source file, name, calling convention and purpose. <a href="https://github.com/maxevans60/cm0102-function-map">About the map</a></p>
+  <form id="f" autocomplete="off">
+    <input type="search" id="q" placeholder="008E7810, 0x8e7810, loan, League::" aria-label="Address or word" autofocus>
+    <label><input type="checkbox" id="off"> file offset</label>
+  </form>
+  <p class="hint">Type an address as OllyDbg shows it, or a word to search names and purposes. Tick "file offset" for an offset from a patch list: the page adds 0x400000.</p>
+  <div id="status">Loading the map…</div>
+  <div id="out"></div>
+  <footer>Medium and low names are hints: read the code before you rely on them. The map holds no code of the original. <a href="https://github.com/maxevans60/cm0102-function-map/issues">Report a wrong name</a>. CC BY 4.0. Not affiliated with Sports Interactive, SEGA, Eidos or Square Enix.</footer>
+</main>
+<script>
+const REPO = "https://github.com/maxevans60/cm0102-function-map/blob/main/map/";
+const TEXT_END = 0x9660e5, RDATA = [0x967000, 0x9861ce], DATA = [0x987000, 0xde463c];
+let named = new Map(), rows = [], starts = [];
+
+function parseTsv(t) {
+  const lines = t.trim().split("\n"), head = lines.shift().split("\t");
+  return lines.map(l => { const c = l.split("\t"), o = {}; head.forEach((h, i) => o[h] = c[i] || ""); return o; });
+}
+const hex = n => "0x" + n.toString(16);
+const esc = s => s.replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+
+function card(r, extra) {
+  return `<div class="card"><div class="top"><span class="addr">${r.address}</span><span class="name">${esc(r.name)}</span>` +
+    `<span class="conf ${r.confidence}">${r.confidence}</span><a class="file" href="${REPO}${encodeURIComponent(r.doc)}.md">${esc(r.doc)}</a></div>` +
+    (extra ? `<div class="note" style="margin:8px 0 0">${extra}</div>` : "") +
+    `<div class="conv">${esc(r.convention)}</div><p class="purpose">${esc(r.purpose)}</p></div>`;
+}
+
+function findStart(a) {
+  let lo = 0, hi = starts.length - 1, best = -1;
+  while (lo <= hi) { const m = (lo + hi) >> 1; if (starts[m].a <= a) { best = m; lo = m + 1; } else hi = m - 1; }
+  return best;
+}
+
+function byAddress(a) {
+  if (a < 0x401000 || a > DATA[1]) return `<div class="note">${hex(a)} is outside cm0102.exe. The exe loads at 0x400000. If this number is a file offset, tick "file offset".</div>`;
+  if (a >= DATA[0]) return `<div class="note">${hex(a)} is in the data section, so it is a global variable, not a function. A data map of the globals is planned.</div>`;
+  if (a >= RDATA[0]) return `<div class="note">${hex(a)} is in the read-only data section: strings, vtables and constant tables.</div>`;
+  if (a >= TEXT_END) return `<div class="note">${hex(a)} is in the free space at the end of the code section.</div>`;
+  const i = findStart(a);
+  if (i < 0) return `<div class="note">No function starts at or before ${hex(a)}.</div>`;
+  let s = starts[i], note = "";
+  if (s.a !== a) note = `${hex(a)} lies inside the function at ${hex(s.a)}, ${hex(a - s.a)} bytes after its start.`;
+  if (s.cat === "funclet") {
+    const p = parseInt(s.file.replace("parent ", ""), 16);
+    note += ` This is an exception unwind funclet of the function at ${hex(p)}.`;
+    s = starts[findStart(p)];
+  }
+  const r = named.get(hex(s.a));
+  if (r) return card(r, note.trim());
+  const what = {crt: "a C runtime function", ehstub: "an exception handler stub", funclet: "an unwind funclet"}[s.cat] || "a function without a name";
+  return `<div class="note">${note} The function at ${hex(s.a)} is ${what}${s.file && !s.file.startsWith("parent") ? " in " + esc(s.file) : ""}. The map does not name these.</div>`;
+}
+
+function byWords(q) {
+  const words = q.toLowerCase().split(/\s+/).filter(Boolean);
+  const hits = rows.filter(r => { const t = r.hay; return words.every(w => t.includes(w)); });
+  const shown = hits.slice(0, 200).map(r => card(r)).join("");
+  return { count: hits.length, html: shown };
+}
+
+function run() {
+  const q = document.getElementById("q").value.trim(), off = document.getElementById("off").checked;
+  const st = document.getElementById("status"), out = document.getElementById("out");
+  history.replaceState(null, "", q ? "#q=" + encodeURIComponent(q) + (off ? "&off=1" : "") : location.pathname);
+  if (!q) { st.textContent = `${rows.length.toLocaleString()} named functions. Type an address or a word.`; out.innerHTML = ""; return; }
+  const m = q.match(/^0x([0-9a-f]{1,8})$/i) || q.match(/^([0-9a-f]{5,8})$/i);
+  if (m) {
+    const a = parseInt(m[1], 16) + (off ? 0x400000 : 0);
+    st.textContent = off ? `File offset ${q} is address ${hex(a)}.` : `Address ${hex(a)}.`;
+    out.innerHTML = byAddress(a);
+    return;
+  }
+  const r = byWords(q);
+  st.textContent = r.count > 200 ? `${r.count} matches. The first 200 are shown.` : `${r.count} match${r.count === 1 ? "" : "es"}.`;
+  out.innerHTML = r.html;
+}
+
+Promise.all(["map/functions.tsv", "map/function-files.tsv"].map(u => fetch(u).then(r => { if (!r.ok) throw new Error(u); return r.text(); })))
+  .then(([fn, ff]) => {
+    rows = parseTsv(fn);
+    rows.forEach(r => { r.hay = (r.address + " " + r.name + " " + r.purpose + " " + r.doc).toLowerCase(); named.set(r.address, r); });
+    starts = parseTsv(ff).map(s => ({ a: parseInt(s.address, 16), cat: s.category, file: s.file })).sort((x, y) => x.a - y.a);
+    fromHash();
+  })
+  .catch(e => { document.getElementById("status").textContent = "The map did not load: " + e.message; });
+
+function fromHash() {
+  const h = new URLSearchParams(location.hash.slice(1));
+  document.getElementById("q").value = h.get("q") || "";
+  document.getElementById("off").checked = h.get("off") === "1";
+  run();
+}
+window.addEventListener("hashchange", () => { if (rows.length) fromHash(); });
+
+let timer;
+document.getElementById("q").addEventListener("input", () => { clearTimeout(timer); timer = setTimeout(run, 150); });
+document.getElementById("off").addEventListener("change", run);
+document.getElementById("f").addEventListener("submit", e => { e.preventDefault(); run(); });
+</script>
+</body>
+</html>

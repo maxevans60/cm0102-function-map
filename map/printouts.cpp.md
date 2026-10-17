@@ -1,0 +1,28 @@
+# printouts.cpp: 20 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x7d4400 | 6 | `printouts_static_init_date_b74360` | cdecl (void) ret 0 | Constructs the static Date 0xb74360 used by the printouts and registers its empty destructor 0x7d4420 with atexit. | high | opus |  |
+| 0x7d4420 | 1 | `printouts_static_destroy_date_b74360` | cdecl (void) ret 0 | Runs the empty destructor of the static printouts Date 0xb74360 at program exit. | high | opus |  |
+| 0x7d4430 | 6 | `printouts_static_init_date_b74358` | cdecl (void) ret 0 | Constructs the static Date 0xb74358 used by the printouts and registers its empty destructor 0x7d4450 with atexit. | high | opus |  |
+| 0x7d4450 | 1 (+6 unwind) | `printouts_static_destroy_date_b74358` | cdecl (void) ret 0 | Runs the empty destructor of the static printouts Date 0xb74358 at program exit. | high | opus |  |
+| 0x7d5280 | 1193 (+1 unwind) | `printouts_write_club_squad_stats` | cdecl(Club* club, int unused, FILE* file) returns int, ret 0 | Writes the season statistics table of a club squad to the printout file, one padded row of appearances, goals and ratings per player. | high | opus |  |
+| 0x7d60c0 | 738 (+2 unwind) | `printouts_write_club_transfers` | cdecl(Club* club, int unused, FILE* file) returns int, ret 0 | Writes the season transfers of a club to the printout file, with one table of players in and one of players out with fees. | high | opus |  |
+| 0x7d69f0 | 1512 (+3 unwind) | `printouts_write_club_fixtures` | cdecl(Club* club, int unused, FILE* file) returns int, ret 0 | Writes the season fixtures and results of a club to the printout file, with venue, competition, score, attendance and scorers. | high | opus |  |
+| 0x7d7c80 | 361 | `printouts_print_comp_report` | cdecl(Comp* comp_record, byte sections, const char* filename, int send_to_printer) returns int, ret 0 | Writes a competition report to a text file with the tables and the chosen player stat tables, then sends its lines to the printer. | high | opus | print_pdf.c |
+| 0x7d8120 | 1820 | `printouts_write_league_tables` | cdecl(Comp* comp_record, FILE* file) returns int, ret 0 | Writes the league table of every league stage of a competition to the printout file, with champions, promotion, relegation and play-off marks. | high | opus |  |
+| 0x7d9720 | 773 | `printouts_write_comp_stat_table` | cdecl(Comp* comp_record, char stat, FILE* file) returns int, ret 0 | Writes the ranked player table of one statistic of a competition to the printout file, or a line saying that no stats are available. | high | opus |  |
+| 0x7da070 | 61 | `printouts_pad_string` | cdecl(char* str, unsigned width) returns char*, ret 0 | Pads a string with spaces to a fixed column width or cuts it at that width, and returns the string. | high | opus |  |
+| 0x7da130 | 41 | `printouts_compare_by_date` | cdecl(const void* a, const void* b) returning int, ret 0 | Orders two 0x25-byte transfer records by the Date at offset 0x1d, earliest first, putting a null left record last. | high | opus |  |
+| 0x7da190 | 357 (+2 unwind) | `PunditList::PunditList` | thiscall(PunditList* this, char language) returning this, ret 4 | Creates the national and local pundit lists, reads pundit.cfg or the pundit file for the language, and writes them to media.out under -media. | high | opus | 2026-10-14-game-creation-inventory.md |
+| 0x7da690 | 24 | `PunditList::~PunditList` | thiscall(PunditList* this), ret 0 | Destroys and frees the national and local pundit lists and clears both pointers. | high | opus |  |
+| 0x7da6e0 | 296 | `PunditList::read_pundit_line` | thiscall(PunditList* this, FILE* file, char* line_buf) returning bool, ret 8 | Reads one pundit line, resolves the media type, city and nation names to indices, and appends a 0xd4 byte pundit record to the matching list. | high | opus |  |
+| 0x7daa70 | 73 | `parse_media_type_name` | cdecl(const char* type_name) returning char, ret 0 | Maps a pundit media type name such as NATIONAL_DAILY, LOCAL_RADIO or WEBSITE to its numeric media type code. | high | opus |  |
+| 0x7dab30 | 42 | `PunditList::parse_quoted_token` | thiscall(PunditList* this unused, const char* src, char* dst), returns const char*, ret 8 | Copies the next double quoted token of a pundit line into a buffer of at most 98 characters and returns the position past the quote and one separator. | medium | opus |  |
+| 0x7dab90 | 125 | `PunditList::pick_random_pundit` | thiscall(PunditList* this, Club* club, char media_type, int nation_id) returning short pundit id or -1, ret 0xc | Collects up to twenty pundits of the media type, by club city for local types or by nation otherwise, and returns a random one. | high | opus |  |
+| 0x7dad20 | 168 | `PunditList::get_pundit_name` | thiscall(PunditList* this, char media_type, short pundit_id, char* out_name, char* out_gender) ret 0x10 | Writes the pundit name for an id into a buffer, or a generic outlet label such as local newspaper when the id is unknown. | high | opus |  |
+| 0x7daf50 | 125 (+2 unwind) | `apply_obscene_gesture_ban` | cdecl(Staff* player, Club* club, Fixture* fixture), ret 0 | On incident 0xb, bans a player for one match from day 14, queues the obscene gesture story and makes the rival club dislike him. | medium | opus |  |

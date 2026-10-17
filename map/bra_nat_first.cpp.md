@@ -1,0 +1,24 @@
+# bra_nat_first.cpp: 16 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x429850 | 160 (+2 unwind) | `BraNatFirst::BraNatFirst` | thiscall(BraNatFirst* this, short year, void* comp_record) ret 8 | Constructs the Brazilian first division on League, loads it from the temp file or sets rules, fills the 28-club table, fixtures and predictions. | high | opus |  |
+| 0x429a70 | 11 | `BraNatFirst::`scalar deleting destructor'` | thiscall(BraNatFirst* this, unsigned flags) ret 4 | Runs the BraNatFirst destructor and frees the object when bit 0 of the flags is set. | high | opus |  |
+| 0x429a90 | 60 (+1 unwind) | `BraNatFirst::~BraNatFirst` | thiscall(BraNatFirst* this) ret 0 | Destroys the first division: frees the table, the schedule and every stage object, then the Comp_Stats block and the League base. | high | opus |  |
+| 0x429b50 | 995 | `BraNatFirst::create_schedule` | thiscall(BraNatFirst* this, char stage, short* round_count, short* out_count, int* out_flag) ret 0x10 | Builds the 27-round league schedule for stage -1 and the two-round play-off cup schedule with a 1,000,000 prize for stage 0. | high | opus |  |
+| 0x42a480 | 94 | `BraNatFirst::create_table` | thiscall(BraNatFirst* this) ret 0, returns 1 or 0 | Allocates the 28-row league table, fills it with the clubs whose division is the national first division, then pays the clubs 150,000. | high | opus |  |
+| 0x42a5a0 | 40 | `BraNatFirst::set_up_rules` | thiscall(BraNatFirst* this) ret 0, returns 1 | Sets the first division rule bytes, no upper league and the second division as lower league with eight relegation places, then builds the schedule. | high | opus |  |
+| 0x42a640 | 237 | `BraNatFirst::start_new_season` | thiscall(BraNatFirst* this) ret 0 | Runs the Brazilian season turnover: promotion chains, Brazilian Cup entrants, third division intake and state league moves, then rebuilds itself and restarts 14 leagues. | high | opus |  |
+| 0x42a950 | 40 | `BraNatFirst::advance_stage` | thiscall(BraNatFirst* this) ret 0 | Moves to the next stage and creates the play-off cup stage when the league stage ends, or reports an error past the last stage. | high | opus |  |
+| 0x42a9e0 | 148 (+1 unwind) | `BraNatFirst::create_play_off_stage` | thiscall(BraNatFirst* this) ret 0 | Takes the top four clubs of the league table, pairs first with fourth and second with third, and creates the play-off Cup_Stage as stage 0. | high | opus |  |
+| 0x42abc0 | 68 | `BraNatFirst::update_staff_records_for_status` | thiscall(BraNatFirst* this, Club* club, char result, char stage, int a4, int a5, int a6) ret 0x18 | Adds staff records for play-off qualification and relegation in the league stage, and for the title in the play-off stage. | high | opus |  |
+| 0x42ac70 | 194 | `BraNatFirst::build_fate_news_text` | thiscall(BraNatFirst* this, int club_index, char result, char stage, int a5, int a6, int a7, int comp_id, int a9, int has_partner, int a11) ret 0x28 | Writes the news that a club qualifies for the play-offs, wins the title or loses the final, and defers other fates to the Comp base. | high | opus |  |
+| 0x42ae90 | 199 | `BraNatFirst::process_promotion_relegation_chain` | thiscall(BraNatFirst* this, int pairwise) ret 4 | Records final positions for the three national divisions and the third division stages, then moves promoted and relegated clubs between them. | high | opus |  |
+| 0x42b130 | 317 | `bra_nat_first_exchange_state_league_clubs` | cdecl(void) ret 0 | Promotes the best clubs of each state lower division into its state championship and drops the bottom clubs of each championship into the lower division. | high | opus | 2026-10-14-widescreen-inventory.md |
+| 0x42b520 | 198 | `bra_nat_first_refresh_third_division_clubs` | cdecl(void) ret 0 | Moves the sixteen best Brazilian clubs without a national division into the third division and clears the division of its relegated clubs. | high | opus |  |
+| 0x42b760 | 341 | `bra_nat_first_fill_brazilian_cup_entrants` | cdecl(void) ret 0 | Fills the 71 entry slots of the Brazilian Cup from state championship tables and the first division, skipping clubs already qualified elsewhere. | medium | opus |  |
+| 0x42bba0 | 181 | `bra_nat_first_fill_champions_cup_entrants` | cdecl(void) ret 0 | When all twelve state championships are complete, places each state champion in the Brazilian Champions Cup entrant list and starts its preliminary stage. | medium | opus |  |

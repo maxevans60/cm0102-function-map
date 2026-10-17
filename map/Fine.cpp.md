@@ -1,0 +1,27 @@
+# Fine.cpp: 19 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x5a4fc0 | 104 (+4 unwind) | `Fine::Fine` | thiscall(Fine *this, int zip_handle: saved game zip or 0) ret 4 | Constructs the Fine manager, loading fine.dat from a saved game or creating two empty lists, and allocates the per-club fine count table. | high | opus | 2026-10-14-game-creation-inventory.md |
+| 0x5a5120 | 31 | `Fine::free_data` | thiscall(Fine *this) ret 0 | Frees the Fine manager's two lists and its per-club fine count table and sets each pointer to null. | high | opus |  |
+| 0x5a5180 | 192 (+4 unwind) | `Fine::load` | thiscall(Fine *this, int zip_handle) returns char success, ret 4 | Reads fine.dat from the saved game zip into the fine list, the per-club fine count table and the coach feedback list. | high | opus |  |
+| 0x5a53d0 | 341 | `Fine::save` | thiscall(Fine *this, int zip_handle) returns int success, ret 4 | Writes the fine list, the per-club fine count table and the coach feedback list to fine.dat in the saved game zip. | high | opus |  |
+| 0x5a5820 | 104 | `Fine::daily_update` | thiscall(Fine *this: two fine lists) ret 0 | Drops the first expired entry from the fine list and posts the coach feedback news when a follow-up date passes. | medium | opus |  |
+| 0x5a5930 | 15 | `Fine::halve_club_fine_count` | thiscall(Fine *this, int *club: club id at offset 0) ret 4 | Halves the club's count of player fines in the per-club byte table at this+8. | high | opus |  |
+| 0x5a5960 | 7 | `Fine::clear_club_fine_count` | thiscall(Fine *this, int *club: club id at offset 0) ret 4 | Resets the club's count of player fines in the per-club byte table at this+8 to zero. | high | opus |  |
+| 0x5a5980 | 1242 (+7 unwind) | `Fine::fine_player` | thiscall(Fine *this, Staff *player, int period: 1 warning or n-1 week fine, char reason: 0 none to 4 poor performance, 5 AWOL) ret 0xc | Applies a warning or fine to a player, updates morale, board and squad reactions, posts news and records the fine. | high | opus |  |
+| 0x5a69b0 | 652 (+8 unwind) | `Fine::is_fine_justified` | thiscall(Fine *this, Staff *player, char period, char reason) ret 0xc, returns 1 when justified | Decides whether the player accepts the fine as fair from the reason, recent fines, AWOL state and his last eight weeks of matches. | medium | opus |  |
+| 0x5a73a0 | 69 | `fine_reason_text` | stdcall(char reason, char *buffer, short buffer_size, char lower_case) ret 0x10 | Writes the fine reason text for a reason code into a buffer, in lower case on request, or clears a buffer that is too small. | high | opus |  |
+| 0x5a74b0 | 169 (+1 unwind) | `post_fine_reaction_news` | stdcall(Staff *player, char reason, char reaction: 0 accepts, 1 squad protest, 2 player objects, char period, char effect_flags) ret 0x14 | Posts the news item about the player's or the squad's reaction to a fine, with name, reason, period and effect slots. | high | opus |  |
+| 0x5a76e0 | 558 | `write_fine_reaction_news_text` | stdcall(NewsItem *item, int body: 0 headline, 1 body, int unused) ret 0xc | Writes the headline or body text of the fine reaction news, choosing warning or fine and acceptance, protest or objection variants. | high | opus |  |
+| 0x5a7ed0 | 20 | `write_board_fine_warning_news_text` | stdcall(NewsItem *item, int body: 0 headline, 1 body, int unused) ret 0xc | Writes the headline or body text of the board's warning about the manager fining players too often. | high | opus |  |
+| 0x5a7f20 | 104 (+1 unwind) | `post_coach_fine_feedback_news` | stdcall(Staff *player, Staff *coach, char outcome: 1 or 2) ret 0xc | Posts the news item in which a coach reports how a fined player responded, sent to the player's club manager. | high | opus |  |
+| 0x5a8090 | 239 | `write_coach_fine_feedback_news_text` | stdcall(NewsItem *item, int body: 0 headline, 1 body, int unused) ret 0xc | Writes the headline or body text of the coach's report on whether discipline helped a player or he cannot handle the pressure. | high | opus |  |
+| 0x5a8380 | 27 | `open_discipline_player_screen` | cdecl(int *player_id) ret 0 | Opens the Discipline Player screen for a player with Official Warning and no reason selected. | high | opus |  |
+| 0x5a83e0 | 453 (+1 unwind) | `draw_discipline_player_screen` | cdecl(void) ret 0 | Builds the Discipline Player screen with the action period, the five reasons and the Cancel and Confirm buttons. | high | opus | 2026-10-16-slow-screens.md |
+| 0x5a8990 | 455 | `discipline_player_screen_input` | cdecl(int clicked_object: index or -1) ret 0 | Handles Discipline Player input, changing the period between warning and a two week fine, choosing the reason and confirming the fine. | high | opus | 2026-10-16-slow-screens.md |
+| 0x5a8f60 | 1 | `shared_noop_ret0_5a8f60` | cdecl(void) ret 0 | Returns at once and serves as a shared empty body for many virtual slots, empty destructors and direct calls. | high | opus | 2026-10-13-input-inventory.md, 2026-10-14-import-inventory.md, 2026-10-14-start-new-game-inventory.md, 2026-10-14-start-screen-helpers.md |

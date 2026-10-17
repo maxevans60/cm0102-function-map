@@ -1,0 +1,27 @@
+# arg_second.cpp: 19 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x406bf0 | 162 (+2 unwind) | `ArgSecond::ArgSecond` | thiscall(ArgSecond* this, short year, void* comp_record) ret 8 | Constructs the Argentine second division on League, loads it from the temp file or sets rules, fills the table, builds fixtures and the relegation averages. | high | opus |  |
+| 0x406e20 | 11 | `ArgSecond::`scalar deleting destructor'` | thiscall(ArgSecond* this, unsigned flags) ret 4 | Runs the ArgSecond destructor and frees the object when bit 0 of the flags is set. | high | opus |  |
+| 0x406e40 | 58 (+1 unwind) | `ArgSecond::~ArgSecond` | thiscall(ArgSecond* this) ret 0 | Destroys the second division: frees the table, the schedule and every stage object, then the Comp_Stats block and the League base. | high | opus |  |
+| 0x406f00 | 1413 | `ArgSecond::create_schedule` | thiscall(ArgSecond* this, char stage, short* match_days, short* out_count, int* out_flag) ret 0x10 | Builds the schedule of match dates for one stage of the Argentine second division season. | high | opus |  |
+| 0x407cd0 | 122 | `ArgSecond::fill_league_table` | thiscall(ArgSecond* this) ret 0, returns 1 or 0 | Allocates the 25-row league table and fills it with the clubs whose division is the second division, adding a fixed club when only 24 match. | high | opus |  |
+| 0x407e50 | 42 | `ArgSecond::set_up_rules` | thiscall(ArgSecond* this) ret 0, returns 1 | Sets the second division rule bytes and points values, then builds the season schedule through create_schedule. | high | opus |  |
+| 0x407f00 | 143 | `ArgSecond::start_new_season` | thiscall(ArgSecond* this) ret 0 | Starts a new season: frees the old table and stages, archives Comp_Stats, increments the year, then rebuilds rules, table, fixtures and predictions. | high | opus |  |
+| 0x4080c0 | 72 | `ArgSecond::advance_stage` | thiscall(ArgSecond* this) ret 0 | Moves to the next stage and builds the zone stages, the promotion cup stage or the promotion play-offs for stages 0, 3 and 4. | high | opus |  |
+| 0x4081b0 | 336 (+3 unwind) | `ArgSecond::create_zone_stages` | thiscall(ArgSecond* this) ret 0 | Splits 24 clubs of the first phase table into three zones of eight and builds a League_Stage for each zone. | medium | opus |  |
+| 0x408630 | 243 (+1 unwind) | `ArgSecond::create_promotion_cup_stage` | thiscall(ArgSecond* this) ret 0 | Relegates the two clubs with the worst points average, then builds the eight-club Second Promotion cup stage from the zone winners and best clubs. | medium | opus |  |
+| 0x408800 | 87 | `ArgSecond::create_promotion_cup_stage_fragment_408800` | not a function entry: body fragment of 0x408630 sharing its stack frame | Repeats the stage 3 Cup_Stage creation tail of create_promotion_cup_stage, read as a separate entry from inside that function. | medium | opus |  |
+| 0x408910 | 299 (+2 unwind) | `ArgSecond::create_promotion_playoffs` | thiscall(ArgSecond* this) ret 0 | Builds the two promotion play-off ties that pair second division clubs with first division clubs from rows 16 and 17 of the averages table. | medium | opus |  |
+| 0x408cd0 | 176 | `ArgSecond::update_staff_records_for_status` | thiscall(ArgSecond* this, Club* club, char result, char status, int a4, int a5, int a6) ret 0x18 | Updates staff records and table status for promotion, play-off and relegation outcomes, deferring codes below 3 to the League base. | high | opus |  |
+| 0x408eb0 | 4 | `ArgSecond::record_season_honours` | thiscall(ArgSecond* this), tail jump into the callee | Records the season honours by forwarding to slot 12 of the first stage object. | high | opus |  |
+| 0x408ec0 | 448 | `ArgSecond::build_fate_news_text` | thiscall(ArgSecond* this, int club_index, char result, char fate, int a5, int a6, int a7, int comp_id, int a9, int has_partner, int a11) ret 0x28 | Writes the news text for Second Promotion, Third Promotion, promotion and relegation by averages, and defers other fates to the Comp base. | high | opus |  |
+| 0x4093f0 | 497 | `ArgSecond::init_relegation_averages` | thiscall(ArgSecond* this) ret 0 | Allocates the relegation averages table and seeds each listed club with its points and games of the two previous seasons. | medium | opus | 2026-10-16-crash-fixes.md |
+| 0x409c20 | 305 | `ArgSecond::update_relegation_averages` | thiscall(ArgSecond* this, int new_season) ret 4 | Copies league and stage points into the averages table, shifts the three season columns on a new season, recomputes each average and sorts the table. | high | opus |  |
+| 0x409fe0 | 210 | `ArgSecond::set_predicted_positions` | thiscall(ArgSecond* this) ret 0 | Sorts the 25 clubs by strength and stores grouped predicted positions 1, 2, 4, 6, 8 and up to 23. | high | opus |  |
+| 0x40a240 | 83 | `ArgSecond::set_club_progress` | thiscall(ArgSecond* this, Club* club, char stage, char code_a, char code_b, char code_c) ret 0x14 | Stores a club's three progress codes in its Comp_Stats entry, scaling them by three in the first stages and mapping them in stage 3. | high | opus |  |

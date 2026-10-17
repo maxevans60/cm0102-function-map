@@ -1,0 +1,21 @@
+# award_shortlist.cpp: 13 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x417440 | 95 (+1 unwind) | `AWARD_SHORTLIST::AWARD_SHORTLIST` | thiscall(AWARD_SHORTLIST* this, const award_scope* scope, zip_file* load_file) ret 8, returns this | Builds a shortlist from a 14-byte scope record, allocating 14-byte entries for its capacity, and loads saved state when a file is given. | high | opus |  |
+| 0x417590 | 128 | `AWARD_SHORTLIST::load` | thiscall(AWARD_SHORTLIST* this, zip_file* file) ret 4, returns 1 on success | Reads the entry count, entries, sixteen manager vote slots and date from a save file, and shows an error box on a short read. | high | opus |  |
+| 0x417720 | 121 | `AWARD_SHORTLIST::save` | thiscall(AWARD_SHORTLIST* this, zip_file* file) ret 4 | Writes the entry count, entries, sixteen manager vote slots and date to a save file, and shows an error box on a short write. | high | opus |  |
+| 0x4178a0 | 101 | `AWARD_SHORTLIST::add_entry` | thiscall(AWARD_SHORTLIST* this, Staff* player, Club* club or null, float score) ret 0xc, returns bool list now full | Appends a candidate with player id, club id or minus one, score and zero votes, and returns true when the shortlist becomes full. | high | opus |  |
+| 0x417a20 | 161 (+1 unwind) | `AWARD_SHORTLIST::announce` | thiscall(AWARD_SHORTLIST* this, Date* date, int news_arg0, int news_arg1), ret 0xc | Sorts the entries by name, registers the shortlist with the award manager and sends the shortlist news to each human manager within the award scope. | medium | opus |  |
+| 0x417c10 | 16 | `Date::operator=` | thiscall(Date* this, Date* result, const Date* src) ret 8, returns result | Copies an 8-byte date (day of year, year, leap flag) into this object and returns a copy of it by value. | high | opus | 2026-10-13-database-inventory.md, 2026-10-14-game-creation-inventory.md, 2026-10-14-game-setup-spec.md, 2026-10-14-select-leagues-spec.md, 2026-10-14-start-new-game-inventory.md |
+| 0x417c50 | 311 | `AWARD_SHORTLIST::pick_winners` | thiscall(AWARD_SHORTLIST* this, Staff** out_winners, short count) ret 8 | Sorts entries by score, lets each computer club within the award scope vote for a weighted random entry, then returns the top voted players. | medium | opus |  |
+| 0x417fe0 | 103 | `AWARD_SHORTLIST::cast_vote` | thiscall(AWARD_SHORTLIST* this, Staff* manager, Staff* player) ret 8, returns pointer to the entry vote count | Records a human manager's vote for a shortlisted player in the manager's vote slot and adds one to that player's votes. | high | opus |  |
+| 0x418140 | 122 | `AWARD_SHORTLIST::get_vote_status` | thiscall(AWARD_SHORTLIST* this, Staff* manager) ret 4, returns entry index, -1 may vote or -2 not eligible | Returns the entry a human manager voted for, minus one when he may still vote, or minus two when he may not vote. | high | opus |  |
+| 0x418320 | 9 | `AWARD_SHORTLIST::clear` | thiscall(AWARD_SHORTLIST* this) ret 0 | Empties the shortlist by setting the entry count to zero and all sixteen manager vote slots to minus one. | high | opus |  |
+| 0x418340 | 52 | `award_shortlist_compare_by_name` | cdecl(const entry* a, const entry* b) ret 0, returns int | Compares two shortlist entries by the formatted name of their staff records for sorting. | high | opus |  |
+| 0x4183f0 | 18 | `award_shortlist_compare_by_score` | cdecl(const entry* a, const entry* b) ret 0, returns int | Compares two shortlist entries by the float score at offset 8 so that higher scores sort first. | high | opus |  |
+| 0x418420 | 6 | `award_shortlist_compare_by_votes` | cdecl(const entry* a, const entry* b) ret 0, returns int | Compares two shortlist entries by the vote count at offset 0xc so that the most voted entries sort first. | high | opus |  |

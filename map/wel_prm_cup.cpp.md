@@ -1,0 +1,24 @@
+# wel_prm_cup.cpp: 16 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x9277f0 | 167 (+2 unwind) | `WelPrmCup::WelPrmCup` | thiscall(WelPrmCup* this, short year, Comp* owner) ret 8, returns this | Constructs the Welsh Premier Cup on the League base, loads saved data or builds the entrants, statistics, rules, group table, fixtures and second group. | high | opus |  |
+| 0x927a30 | 11 | `WelPrmCup::`scalar deleting destructor'` | thiscall(WelPrmCup* this, unsigned flags) ret 4, returns this | Runs the Welsh Premier Cup destructor and frees the object when bit 0 of the flags is set. | high | opus |  |
+| 0x927a50 | 66 (+1 unwind) | `WelPrmCup::~WelPrmCup` | thiscall(WelPrmCup* this) ret 0 | Destroys the Welsh Premier Cup, freeing the table, schedule, entrant list, each stage object and the statistics, then runs the League destructor. | high | opus |  |
+| 0x927b30 | 330 | `WelPrmCup::create_schedule` | thiscall(WelPrmCup* this, char stage, short* round_count, short* schedule_id, int* is_league) ret 0x10, returns schedule or null | Builds the round template of a stage, six group rounds for stage 0 or the quarter-final, semi-final and final cup rounds for stage 1. | high | opus |  |
+| 0x927f40 | 98 | `WelPrmCup::build_fate_news_text` | thiscall(WelPrmCup* this, int club_index, int fate, char stage, int a4, int a5, int a6, int a7, int a8, int full_sentence, int a10) ret 0x28 | Writes the news text for a club's Welsh Premier Cup fate, from group qualification for the quarter-finals to cup tie results and the final. | high | opus |  |
+| 0x928060 | 71 | `WelPrmCup::create_group_table` | thiscall(WelPrmCup* this) ret 0, returns 1 or 0 | Sets the team count to four, allocates the league table, fills it with entrants 0, 2, 4 and 6 and sends the group draw news. | high | opus |  |
+| 0x928160 | 35 | `WelPrmCup::set_up_rules` | thiscall(WelPrmCup* this) ret 0, returns 1 | Sets the Welsh Premier Cup points, match and stage rules, then builds the schedule of the group stage. | high | opus |  |
+| 0x9281f0 | 148 | `WelPrmCup::start_new_season` | thiscall(WelPrmCup* this) ret 0 | Clears the table and schedule, archives the statistics, deletes the stages, moves the year on and rebuilds the entrants, rules, group table and fixtures. | high | opus |  |
+| 0x9283c0 | 40 | `WelPrmCup::advance_stage` | thiscall(WelPrmCup* this) ret 0 | Moves the stage counter on, asserts when it passes the last stage and creates the knockout stage when the counter reaches 1. | high | opus |  |
+| 0x928450 | 157 (+1 unwind) | `WelPrmCup::create_group_stage` | thiscall(WelPrmCup* this, int group_index) ret 4, returns 1 or 0 | Creates a four-team League_Stage for the second group from entrants 1, 3, 5 and 7 and sends its group draw news. | high | opus |  |
+| 0x928650 | 160 (+1 unwind) | `WelPrmCup::create_knockout_stage` | thiscall(WelPrmCup* this) ret 0 | Builds the eight quarter-finalists from the top two of both groups and the four seeded clubs, then creates the knockout Cup_Stage and draws it. | high | opus |  |
+| 0x928860 | 203 | `WelPrmCup::build_entrant_list` | thiscall(WelPrmCup* this) ret 0, returns 1 or 0 | Builds the twelve-club entrant list from the Welsh Cup winner, top League of Wales clubs and four fixed clubs, and shuffles both groups. | medium | opus |  |
+| 0x928af0 | 122 | `WelPrmCup::update_staff_records_for_status` | thiscall(WelPrmCup* this, Club* club, char status, char stage, int a4, CupTie* tie, int a6) ret 0x18 | Writes staff history records for a club's group qualification or exit and its knockout exit, final defeat or cup win. | high | opus |  |
+| 0x928c40 | 141 | `WelPrmCup::load_extra_data` | thiscall(WelPrmCup* this, FILE* file) ret 4, returns 1 or 0 | Reads the entrant count and the entrant club indices from the save file and converts each index into a club pointer. | high | opus |  |
+| 0x928e00 | 220 | `WelPrmCup::set_predicted_positions` | thiscall(WelPrmCup* this) ret 0 | Sorts the twelve entrants by strength and stores predicted final positions in the competition statistics from the knockout rounds down. | high | opus |  |
+| 0x9290b0 | 51 | `WelPrmCup::set_club_progress` | thiscall(WelPrmCup* this, Club* club, char stage, char code_a, char code_b, char code_c) ret 0x14 | Writes a club's three progress codes into its statistics entry, mapping group stage codes to 1, 5, 9 and 13. | high | opus |  |

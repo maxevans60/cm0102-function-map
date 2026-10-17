@@ -1,0 +1,24 @@
+# nir_lge_cup.cpp: 16 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x78c780 | 175 (+2 unwind) | `NirLgeCup::NirLgeCup` | thiscall(NirLgeCup* this, short comp_id, int owner) ret 8, returns this | Constructs the Northern Irish League Cup on League, then loads saved data or collects 20 entrants and builds the table, fixtures and three group stages. | high | opus |  |
+| 0x78c9d0 | 11 | `NirLgeCup::`scalar deleting destructor'` | thiscall(NirLgeCup* this, unsigned flags) ret 4, returns this | Runs the NirLgeCup destructor and frees the object when bit 0 of the flags is set. | high | opus |  |
+| 0x78c9f0 | 66 (+1 unwind) | `NirLgeCup::~NirLgeCup` | thiscall(NirLgeCup* this) ret 0 | Destroys the Northern Irish League Cup by freeing its table, schedule, entrant array, stage objects and Comp_Stats, then runs the League destructor. | high | opus |  |
+| 0x78cad0 | 313 | `NirLgeCup::create_schedule` | thiscall(NirLgeCup* this, char stage, short* round_count, short* first_id, int* is_league) ret 0x10, returns schedule pointer | Builds a stage's date template, with five group matchdays from late August for stages 0 to 2 or three knockout rounds for stage 3. | high | opus |  |
+| 0x78ceb0 | 98 | `NirLgeCup::build_fate_news_text` | thiscall(NirLgeCup* this, int club_index, char fate, char stage, ..., int full_sentence, ...) ret 0x28 | Writes a club's fate news, with a 'through to quarter finals' line for group qualifiers and cup tie text in the knockout stage. | high | opus |  |
+| 0x78cfd0 | 71 | `NirLgeCup::create_table` | thiscall(NirLgeCup* this) ret 0, returns 1 or 0 on allocation failure | Sets the own table to five clubs, allocates it, fills it with the first five entrants and sends the group draw news. | high | opus |  |
+| 0x78d0d0 | 38 | `NirLgeCup::set_up_rules` | thiscall(NirLgeCup* this) ret 0, returns 1 | Sets the points, tiebreak and promotion rule fields of the Northern Irish League Cup, a prize fund of 100000, and builds its season schedule. | high | opus |  |
+| 0x78d160 | 151 | `NirLgeCup::start_new_season` | thiscall(NirLgeCup* this) ret 0 | Frees last season's table, entrants and stages, archives the stats, then collects new entrants and rebuilds the rules, table, fixtures and three groups. | high | opus |  |
+| 0x78d330 | 40 | `NirLgeCup::advance_stage` | thiscall(NirLgeCup* this) ret 0 | Moves the current stage index on by one and creates the knockout stage when the index reaches stage 3. | high | opus |  |
+| 0x78d3c0 | 173 (+1 unwind) | `NirLgeCup::create_group_stage` | thiscall(NirLgeCup* this, int group) ret 4, returns 1 or 0 on failure | Takes the next five unused entrants from the pool and builds a League_Stage group for the given group index. | high | opus |  |
+| 0x78d600 | 162 (+1 unwind) | `NirLgeCup::create_knockout_stage` | thiscall(NirLgeCup* this) ret 0 | Collects the top two clubs of the own table and of the three groups and builds the eight-club knockout Cup_Stage, then draws its first round. | high | opus |  |
+| 0x78d800 | 144 | `NirLgeCup::collect_entrants` | thiscall(NirLgeCup* this) ret 0, returns 1 or 0 on allocation failure | Fills a 20-entry pool with Northern Irish clubs, placing them in four buckets of five by reserve division, then adds clubs without one. | high | opus |  |
+| 0x78d9c0 | 122 | `NirLgeCup::update_staff_records_for_status` | thiscall(NirLgeCup* this, Club* club, char status, char stage, int arg, Fixture* fixture, int arg2) ret 0x18 | Adds staff history records for group qualification or failure and for knockout exits, wins and runner-up places. | high | opus |  |
+| 0x78db10 | 141 | `NirLgeCup::load_extra_data` | thiscall(NirLgeCup* this, FILE* file) ret 4, returns 1 or 0 on read failure | Reads the entrant count and club ids from the save file and turns each id back into a club pointer. | high | opus |  |
+| 0x78dcd0 | 203 | `NirLgeCup::set_predicted_positions` | thiscall(NirLgeCup* this) ret 0 | Sorts the entrants by reputation and stores predicted final positions in Comp_Stats by the knockout round each club is expected to reach. | high | opus |  |
+| 0x78df40 | 81 | `NirLgeCup::set_club_progress` | thiscall(NirLgeCup* this, Club* club, char stage, char code1, char code2, char code3) ret 0x14 | Stores a club's three progress codes in its Comp_Stats entry, mapping group places 1 to 5 to codes 1, 5, 9, 13 and 17. | high | opus |  |

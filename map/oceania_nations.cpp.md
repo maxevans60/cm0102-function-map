@@ -1,0 +1,24 @@
+# oceania_nations.cpp: 16 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x7988b0 | 124 (+2 unwind) | `OceaniaNations::OceaniaNations` | thiscall(OceaniaNations* this, short year, Comp* owner) ret 8, returns this | Constructs the Oceania Nations Cup on the League base, moves the year to an even edition from 2002 and sets up rules and stats. | high | opus | 2026-10-16-sweep-international.md |
+| 0x798a80 | 11 | `OceaniaNations::`scalar deleting destructor'` | thiscall(OceaniaNations* this, unsigned flags) ret 4, returns this | Runs the Oceania Nations Cup destructor and frees the object when bit 0 of the flags is set. | high | opus |  |
+| 0x798aa0 | 60 (+1 unwind) | `OceaniaNations::~OceaniaNations` | thiscall(OceaniaNations* this) ret 0 | Destroys the Oceania Nations Cup by freeing its table, schedule, stage objects and stats, then runs the League destructor. | high | opus |  |
+| 0x798b60 | 684 | `OceaniaNations::create_schedule` | thiscall(OceaniaNations* this, char stage, short* round_count, short* schedule_id, int* is_league) ret 0x10, returns schedule or null | Builds the round schedule of the Oceania Nations Cup, three group rounds for the two groups and semi finals and final for stage one. | high | opus |  |
+| 0x799300 | 234 | `OceaniaNations::build_fate_news_text` | thiscall(OceaniaNations* this, int club_index, int fate, char stage, int a4, int a5, int a6, int a7, int a8, int full_sentence, int a10) ret 0x28 | Writes the news text for a nation's fate in the Oceania Nations Cup, from reaching the semi finals to winning or going out. | high | opus |  |
+| 0x7995a0 | 66 | `OceaniaNations::create_group_table` | thiscall(OceaniaNations* this) ret 0, returns 1 or 0 | Allocates the three-row table of the first group, places the first three drawn nations in it and sends the group draw news. | high | opus |  |
+| 0x799690 | 54 (+1 unwind) | `OceaniaNations::set_up_rules` | thiscall(OceaniaNations* this) ret 0, returns 1 | Sets the Oceania Nations Cup league rules and the draw date of day 5, month 2 and builds the schedule of the first group. | high | opus |  |
+| 0x799760 | 138 | `OceaniaNations::update_staff_records_for_status` | thiscall(OceaniaNations* this, Club* club, char status, char stage, int a4, CupTie* tie, int a6) ret 0x18 | Adds the staff history record for a nation's Oceania Nations Cup result, from qualification or group exit to winner or runner-up. | high | opus |  |
+| 0x7998e0 | 74 | `OceaniaNations::start_new_season` | thiscall(OceaniaNations* this) ret 0 | Clears the finished Oceania Nations Cup, archives its stats, deletes its stages, moves the year on two and sets up the rules again. | high | opus |  |
+| 0x7999d0 | 40 | `OceaniaNations::advance_stage` | thiscall(OceaniaNations* this) ret 0 | Moves the Oceania Nations Cup to its next stage and builds the knockout stage when stage one starts. | high | opus |  |
+| 0x799a60 | 149 (+1 unwind) | `OceaniaNations::create_group_stage` | thiscall(OceaniaNations* this, int group) ret 4, returns 1 or 0 | Creates the League_Stage for the second group from the next three drawn nations and sends its draw news. | high | opus |  |
+| 0x799c50 | 146 (+1 unwind) | `OceaniaNations::create_knockout_stage` | thiscall(OceaniaNations* this) ret 0 | Builds the four-team semi-final Cup_Stage from the winners and runners-up of the two groups. | high | opus |  |
+| 0x799e30 | 212 | `OceaniaNations::select_and_draw_teams` | thiscall(OceaniaNations* this) ret 0, returns 1 or 0 | Picks the six nations, seeds Australia and a second fixed nation into separate groups, then draws two Oceania and two other nations. | high | opus |  |
+| 0x79a100 | 154 (+2 unwind) | `OceaniaNations::update_for_date` | thiscall(OceaniaNations* this, Date* today, int full_update) ret 8, returns status | On the draw date draws the nations, builds the first group table, fixtures and second group, then runs the league daily update. | high | opus |  |
+| 0x79a320 | 119 | `OceaniaNations::set_predicted_positions` | thiscall(OceaniaNations* this) ret 0 | Sorts the six drawn nations and gives them predicted final places 1, 2, 3, 3, 5 and 5. | high | opus |  |
+| 0x79a490 | 61 | `OceaniaNations::set_club_progress` | thiscall(OceaniaNations* this, Club* club, char stage, char result, char position, char finish) ret 0x14, this unused | Writes a nation's stage result, position and finish code into its Comp_Stats entry, mapping group stage codes onto knockout codes. | high | opus |  |

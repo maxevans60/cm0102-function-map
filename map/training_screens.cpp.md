@@ -1,0 +1,29 @@
+# training_screens.cpp: 21 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x8b5930 | 63 (+1 unwind) | `training_screens_open` | cdecl(Club *club) ret 0 | Opens the club training screen and gives it a new edit session for the club as screen parameter 0. | high | opus |  |
+| 0x8b5a10 | 3262 (+4 unwind) | `training_screens_draw` | cdecl(short *view_state) ret 0 | Draws the club training screen with schedule tabs, Load, Save, Save As and Delete buttons, View and Filter menus and the player table. | high | opus |  |
+| 0x8b83f0 | 1482 | `training_screens_handle_event` | cdecl(short area_index, -1 for none) returns int screen result, ret 0 | Handles the club training screen, running schedule load, save and delete file dialogs, filter and view choices, the schedule editor, coaches panel and cancel. | high | opus |  |
+| 0x8b9740 | 24 (+1 unwind) | `TRAINING_EDIT_SESSION::~TRAINING_EDIT_SESSION` | thiscall(TRAINING_EDIT_SESSION *this) ret 0 | Destroys a training edit session by destroying its player list and its eleven schedule records. | high | opus |  |
+| 0x8b97a0 | 21 | `training_screens_close` | cdecl(void) ret 0 | Closes the club training screen by applying the edit session changes, destroying and freeing the session and clearing screen parameter 0. | high | opus |  |
+| 0x8b97e0 | 100 (+1 unwind) | `training_screens_open_schedule_editor` | cdecl(TRAINING_EDIT_SESSION *session) ret 0 | Copies the selected schedule of the session into a new schedule record and opens the schedule editor dialog on it. | high | opus |  |
+| 0x8b9940 | 941 | `training_screens_draw_schedule_editor` | cdecl(void) ret 0, reads screen params 0 session and 1 schedule copy | Draws the schedule editor dialog with an intensity choice for each training category, new position and new side choices, the name field and Cancel. | high | opus |  |
+| 0x8ba530 | 362 | `training_screens_schedule_editor_handle_event` | cdecl(short area_index) returns int screen result, ret 0 | Handles the schedule editor dialog, setting category intensities, position and side training and the name, then saving or discarding the copy. | high | opus |  |
+| 0x8ba920 | 11 | `TRAINING_SCHEDULE::scalar_deleting_destructor` | thiscall(TRAINING_SCHEDULE *this, byte flags) returns this, ret 4 | Runs the empty schedule destructor and frees the schedule when bit 0 of the flags is set. | high | opus |  |
+| 0x8ba940 | 400 | `training_screens_draw_coaches_panel` | cdecl(void) ret 0, reads screen params 0 session, 1 coach table copy, 2 club | Draws the Coaches panel with one row for each coach of the six-slot coach table and one toggle cell for each training category, plus Cancel. | high | opus |  |
+| 0x8baea0 | 244 | `training_screens_coaches_panel_handle_event` | cdecl(short control_index, -1 for none) returns int event code, ret 0 | Handles clicks on the training coaches panel, toggling coach assignment cells, committing the edited copy on OK and discarding it on Cancel. | high | opus |  |
+| 0x8bb190 | 101 | `training_screens_compare_by_status_then_name` | cdecl(staff **a, staff **b) returns int, ret 0 | Sorts two staff entries of a training list by player status icon code, then by formatted staff name. | high | opus |  |
+| 0x8bb2a0 | 53 | `training_screens_compare_by_name` | cdecl(staff **a, staff **b) returns int, ret 0 | Sorts two staff entries of a training list by formatted staff name, with null entries last. | medium | opus |  |
+| 0x8bb340 | 99 | `training_screens_compare_by_position_then_name` | cdecl(staff **a, staff **b) returns int, ret 0 | Sorts two staff entries of a training list by position label text, then by formatted staff name. | medium | opus |  |
+| 0x8bb460 | 60 | `training_screens_compare_by_value_then_name` | cdecl(staff **a, staff **b) returns int, ret 0 | Sorts two staff entries of a training list by transfer value, then by formatted staff name. | medium | opus |  |
+| 0x8bb510 | 105 | `training_screens_compare_by_attribute_then_name` | cdecl(staff **a, staff **b) returns int, ret 0 | Sorts two staff entries of a training list by the selected attribute rating, highest first, then by formatted staff name. | medium | opus |  |
+| 0x8bb620 | 58 | `training_screens_compare_by_age_then_name` | cdecl(staff **a, staff **b) returns int, ret 0 | Sorts two staff entries of a training list by age, oldest first, then by formatted staff name. | high | opus |  |
+| 0x8bb6d0 | 89 | `training_screens_compare_by_form_then_name` | cdecl(staff **a, staff **b) returns int, ret 0 | Sorts two staff entries of a training list by recent match form, highest first, then by formatted staff name. | medium | opus |  |
+| 0x8bb7d0 | 87 | `training_screens_compare_by_morale_then_name` | cdecl(staff **a, staff **b) returns int, ret 0 | Sorts two staff entries of a training list by player morale, highest first, then by formatted staff name. | medium | opus |  |
+| 0x8bb8d0 | 119 | `training_screens_compare_by_injury_then_name` | cdecl(staff **a, staff **b) returns int, ret 0 | Sorts two staff entries of a training list by injury status, then by condition with the fittest first, then by formatted staff name. | medium | opus |  |
+| 0x8bba10 | 8 | `training_record_init_header` | thiscall(header* this) returns this, ret 0 | Initialises the 0x11-byte header member at +0x18 of a training schedule record with default values and returns it. | low | opus |  |

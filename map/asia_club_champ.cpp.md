@@ -1,0 +1,23 @@
+# asia_club_champ.cpp: 15 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x40aae0 | 174 (+2 unwind) | `AsiaClubChamp::AsiaClubChamp` | thiscall(AsiaClubChamp* this, short season_year, void* comp_record) ret 8 | Runs the Cup constructor, installs vtable 0x9674d4, sets the cup defaults, selects the 32 qualified clubs and builds the first stage objects. | high | opus | club-world.md |
+| 0x40ad50 | 11 | `AsiaClubChamp::`scalar deleting destructor'` | thiscall(AsiaClubChamp* this, unsigned flags) ret 4 | Runs the destructor and frees the object when bit 0 of the flags is set. | high | opus |  |
+| 0x40ad70 | 90 (+1 unwind) | `AsiaClubChamp::~AsiaClubChamp` | thiscall(AsiaClubChamp* this) ret 0 | Restores the vtable, frees the team table, round table, club lists and stage objects, deletes the Comp_Stats object and runs the Cup destructor. | high | opus |  |
+| 0x40ae90 | 478 | `AsiaClubChamp::create_round_table` | thiscall(AsiaClubChamp* this, char stage, short* round_count, short* name_id, int* is_league) ret 0x10 | Allocates and fills the round table of one stage: two knockout zones, two four-club groups and the final knockout rounds. | high | opus | 2026-10-16-sweep-europe.md |
+| 0x40b460 | 161 | `AsiaClubChamp::build_fate_news_text` | thiscall(AsiaClubChamp* this, int club_index, char fate, char stage, ..., int full_sentence, ...) ret 0x28 | Writes the news text for a club that goes out or qualifies, with its own wording for clubs that fail in Phase 2. | high | opus |  |
+| 0x40b620 | 68 | `AsiaClubChamp::build_team_table` | thiscall(AsiaClubChamp* this) ret 0, returns 1 or -1 on allocation failure | Sets the team count to 16 and builds the 6-byte team records of the first zone from the first 16 qualified clubs. | medium | opus | 2026-10-16-sweep-europe.md |
+| 0x40b700 | 183 | `AsiaClubChamp::start_new_season` | thiscall(AsiaClubChamp* this) ret 0 | Frees the season data and stage objects, advances the season year, then selects new clubs and rebuilds the rounds and stages for the next edition. | high | opus |  |
+| 0x40b950 | 371 | `AsiaClubChamp::select_qualified_clubs` | thiscall(AsiaClubChamp* this) ret 0, returns 1 or 0 on allocation failure | Fills the 32 qualifier slots with one club a nation, the first 16 from one nation list and the second 16 from the other. | medium | opus | 2026-10-16-research-name-check.md, 2026-10-16-sweep-europe.md |
+| 0x40bec0 | 139 (+1 unwind) | `AsiaClubChamp::create_second_zone_cup_stage` | thiscall(AsiaClubChamp* this) ret 0 | Builds stage 0 as a Cup_Stage knockout for the second 16 qualified clubs and stores it as the first stage object. | medium | opus |  |
+| 0x40c070 | 45 | `AsiaClubChamp::advance_stage` | thiscall(AsiaClubChamp* this) ret 0 | Moves the cup to its next stage, building the group stages after stage 0 and the final knockout stage at stage 3. | high | opus |  |
+| 0x40c110 | 242 (+2 unwind) | `AsiaClubChamp::create_group_stages` | thiscall(AsiaClubChamp* this) ret 0 | Builds the two four-club group stages from the four surviving clubs of each knockout zone and sends the group draw news. | high | opus |  |
+| 0x40c3d0 | 144 (+1 unwind) | `AsiaClubChamp::create_semi_final_stage` | thiscall(AsiaClubChamp* this) ret 0 | Builds the last knockout stage that pairs each group winner with the runner-up of the other group, then draws its first round. | medium | opus |  |
+| 0x40c5b0 | 134 | `AsiaClubChamp::update_staff_records_for_status` | thiscall(AsiaClubChamp* this, Club* club, char outcome, char stage, int arg4, Fixture* fixture, int arg6) ret 0x18 | Records a club's Asian Club Championship result in staff records, such as a knockout exit, a round reached, winners, runners-up or third. | high | opus |  |
+| 0x40c720 | 264 | `AsiaClubChamp::rank_teams` | thiscall(AsiaClubChamp* this) ret 0 | Sorts the clubs of both zones and gives each its starting final position, from 1 down to 17, in the competition statistics. | high | opus |  |
+| 0x40ca20 | 114 | `AsiaClubChamp::set_club_progress` | thiscall(AsiaClubChamp* this, Club* club, char stage, char current, char best, char worst) ret 0x14 | Maps the stage and round codes of a club to final position codes and stores the current, best and worst positions in its statistics entry. | high | opus |  |

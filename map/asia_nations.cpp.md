@@ -1,0 +1,25 @@
+# asia_nations.cpp: 17 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x40e860 | 121 (+2 unwind) | `AsiaNations::AsiaNations` | thiscall(AsiaNations* this, short year, Comp* owner) ret 8, returns this | Constructs the AFC Asian Cup on the League base, moves the year to the next edition and sets up its rules and stats. | high | opus | 2026-10-16-sweep-international.md |
+| 0x40ea20 | 11 | `AsiaNations::`scalar deleting destructor'` | thiscall(AsiaNations* this, unsigned flags) ret 4, returns this | Runs the Asian Cup destructor and frees the object when bit 0 of the flags is set. | high | opus |  |
+| 0x40ea40 | 60 (+1 unwind) | `AsiaNations::~AsiaNations` | thiscall(AsiaNations* this) ret 0 | Destroys the Asian Cup by freeing its table, schedule, stage objects and stats, then runs the League destructor. | high | opus |  |
+| 0x40eb00 | 547 | `AsiaNations::create_schedule` | thiscall(AsiaNations* this, char stage, short* round_count, short* schedule_id, int* is_league) ret 0x10, returns schedule or null | Builds the round schedule of the Asian Cup, three group rounds for the group stages and four knockout rounds for stage two. | high | opus |  |
+| 0x40f130 | 234 | `AsiaNations::build_fate_news_text` | thiscall(AsiaNations* this, int club_index, int fate, char stage, int a4, int a5, int a6, int a7, int a8, int full_sentence, int a10) ret 0x28 | Writes the news text for a nation's fate in the Asian Cup, from reaching the quarter finals to winning or going out. | high | opus |  |
+| 0x40f3d0 | 66 | `AsiaNations::create_group_table` | thiscall(AsiaNations* this) ret 0, returns 1 or 0 | Allocates the four-row table of the first group, places the first four drawn nations in it and sends the group draw news. | high | opus |  |
+| 0x40f4c0 | 54 (+1 unwind) | `AsiaNations::set_up_rules` | thiscall(AsiaNations* this) ret 0, returns 1 | Sets the Asian Cup league rules and the draw date of day 5, month 5 and builds the schedule of the first group. | high | opus |  |
+| 0x40f590 | 4 | `AsiaNations::record_season_honours` | thiscall(AsiaNations* this) ret 0, tail jump | Passes the season honours call on to the knockout stage object held in the third stage slot. | high | opus |  |
+| 0x40f5a0 | 138 | `AsiaNations::update_staff_records_for_status` | thiscall(AsiaNations* this, Club* club, char status, char stage, int a4, CupTie* tie, int a6) ret 0x18 | Adds the staff history record for a nation's Asian Cup result, from qualification or group exit to winner or runner-up. | high | opus |  |
+| 0x40f720 | 74 | `AsiaNations::start_new_season` | thiscall(AsiaNations* this) ret 0 | Clears the finished Asian Cup, archives its stats, deletes its stages, moves the year on four and sets up the rules again. | high | opus |  |
+| 0x40f810 | 40 | `AsiaNations::advance_stage` | thiscall(AsiaNations* this) ret 0 | Moves the Asian Cup to its next stage and builds the knockout stage when stage two starts. | high | opus |  |
+| 0x40f8a0 | 149 (+1 unwind) | `AsiaNations::create_group_stage` | thiscall(AsiaNations* this, int group) ret 4, returns 1 or 0 | Creates the League_Stage for one of the second and third groups from the next four drawn nations and sends its draw news. | high | opus |  |
+| 0x40fa90 | 268 (+2 unwind) | `AsiaNations::create_knockout_stage` | thiscall(AsiaNations* this) ret 0 | Ranks the three third-placed nations and builds the eight-team knockout Cup_Stage from group winners, runners-up and the two best thirds. | high | opus | 2026-10-16-sweep-international.md |
+| 0x40fdf0 | 268 | `AsiaNations::select_and_draw_teams` | thiscall(AsiaNations* this) ret 0, returns 1 or 0 | Picks the twelve Asian Cup nations, hosts first and then the best Asian nations, and draws them into three groups of four. | high | opus | 2026-10-16-sweep-international.md |
+| 0x410170 | 157 (+2 unwind) | `AsiaNations::update_for_date` | thiscall(AsiaNations* this, Date* today, int full_update) ret 8, returns status | On the draw date draws the nations, builds the first group table and fixtures and the other two groups, then runs the league daily update. | high | opus |  |
+| 0x4103a0 | 149 | `AsiaNations::set_predicted_positions` | thiscall(AsiaNations* this) ret 0 | Sorts the twelve drawn nations and gives them predicted final places 1, 2, 3, 3, four 5ths, two 9ths and two 11ths. | high | opus |  |
+| 0x410560 | 68 | `AsiaNations::set_club_progress` | thiscall(AsiaNations* this, Club* club, char stage, char result, char position, char finish) ret 0x14, this unused | Writes a nation's stage result, position and finish code into its Comp_Stats entry, mapping group stage codes onto knockout codes. | high | opus |  |

@@ -1,0 +1,22 @@
+# year_ratings.cpp: 14 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x931360 | 17 | `YEAR_RATINGS::YEAR_RATINGS` | thiscall(YEAR_RATINGS* this, short year, FILE* load_source or 0) ret 8, returns this | Constructs an empty year ratings table for a year and loads it from the save file when a source is given. | high | opus |  |
+| 0x931390 | 104 | `YEAR_RATINGS::load_from_disk` | thiscall(YEAR_RATINGS* this, FILE* save_file) ret 4, returns 1 or 0 | Reads the entry count and the 21-byte player entries of the year ratings from the save file, reporting read or allocation failure. | high | opus |  |
+| 0x9314e0 | 73 | `YEAR_RATINGS::save_to_disk` | thiscall(YEAR_RATINGS* this, FILE* save_file) ret 4 | Writes the entry count and the 21-byte player entries of the year ratings to the save file, with an error box on failure. | high | opus |  |
+| 0x9315d0 | 70 | `YEAR_RATINGS::record_match_ratings` | thiscall(YEAR_RATINGS* this, Fixture* fixture, MatchData* match, int (*accept)(Staff*, Fixture*)) ret 0xc | Adds the rating of the first eleven players of both teams in a match to the year ratings when the accept callback passes them. | medium | opus |  |
+| 0x931690 | 327 | `YEAR_RATINGS::add_player_rating` | thiscall(YEAR_RATINGS* this, PlayerMatchRow* row, Fixture* fixture, Club* club) ret 0xc | Finds or appends the player's 21-byte entry, growing the table by 400, then adds competition-weighted ratings, one match and his goals and other match counts. | high | opus |  |
+| 0x931aa0 | 19 | `YEAR_RATINGS::reset_if_year` | thiscall(YEAR_RATINGS* this, short* year) ret 4 | Frees the year ratings entries and sets the count and capacity to zero when the given year equals the table year. | high | opus |  |
+| 0x931ae0 | 203 | `YEAR_RATINGS::collect_best_players` | thiscall(YEAR_RATINGS* this, Entry** out, short max_count, int club, int club_nation, int exclude_club, int club_and_nation, int division, char rating_mode, char max_age) ret 0x24, returns count | Sorts the year ratings by one of six modes and collects up to a count of entries that pass club, nation, division and age filters. | high | opus |  |
+| 0x931d50 | 198 | `YEAR_RATINGS::collect_candidates` | thiscall(YEAR_RATINGS* this, Entry** out, short max_count, int nation, u16 position_mask, char rating_mode, LLIST* exclude or 0) ret 0x18, returns count | Sorts the year ratings by a mode and collects up to a count of entries that match a nation and position mask, skipping excluded players. | high | opus |  |
+| 0x931f90 | 117 | `year_ratings_compare_mode_0` | cdecl(const Entry* a, const Entry* b) ret 0, returns -1, 0 or 1 | Orders two year rating entries for rating mode 0 by average with the +8 rating total doubled and a bonus for strikers and attacking midfielders. | high | opus |  |
+| 0x9320e0 | 117 | `year_ratings_compare_mode_1` | cdecl(const Entry* a, const Entry* b) ret 0, returns -1, 0 or 1 | Orders two year rating entries for rating mode 1 by average with the +0xa rating total doubled and the same attacking position bonus. | high | opus |  |
+| 0x932230 | 132 | `year_ratings_compare_mode_2` | cdecl(const Entry* a, const Entry* b) ret 0, returns -1, 0 or 1 | Orders two year rating entries for rating mode 2 by average with the +0xc rating total doubled, scaled by the player's current ability. | high | opus |  |
+| 0x9323b0 | 112 | `year_ratings_compare_mode_3` | cdecl(const Entry* a, const Entry* b) ret 0, returns -1, 0 or 1 | Orders two year rating entries for mode 3 by goals, a second match count and a rating total per match, scaled by reputation and ability. | high | opus |  |
+| 0x932500 | 52 | `year_ratings_compare_mode_4` | cdecl(const Entry* a, const Entry* b) ret 0, returns -1, 0 or 1 | Orders two year rating entries for rating mode 4 by the +0x13 match total per match, highest first. | high | opus |  |
+| 0x932590 | 118 | `year_ratings_compare_mode_5` | cdecl(const Entry* a, const Entry* b) ret 0, returns -1, 0 or 1 | Orders two year rating entries for rating mode 5 by the mode 3 score, scaled by current reputation and cut for poor character. | high | opus |  |

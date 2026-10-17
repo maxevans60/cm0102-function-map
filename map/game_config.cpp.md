@@ -1,0 +1,21 @@
+# game_config.cpp: 13 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x5d72c0 | 624 (+1 unwind) | `Config::Config` | thiscall(Config* this) returns this, ret 0 | Builds the game settings object, loads language.ldb, allowed_fonts.txt and game.cfg, applies command line switches, then opens the display and sound. | high | opus | 2026-10-14-import-inventory.md |
+| 0x5d7ad0 | 43 | `Config::Config` | thiscall(Config* this, const Config* source) returns this, ret 4 | Copy constructor that makes a working copy of the settings for the Game Settings box and keeps a pointer to the source object at +0. | high | opus | 2026-10-16-options-screen.md |
+| 0x5d7b70 | 21 | `Config::~Config` | thiscall(Config* this), ret 0 | Destructor that shuts down background tables, the sound player, the display and the language library when the object is the original and not a copy. | high | opus |  |
+| 0x5d7bc0 | 49 | `Config::set_defaults` | thiscall(Config* this) returns 1, ret 0 | Resets the option bits to default values and picks performance, hardware and printer bits from the CPU speed, memory size and printer. | high | opus | 2026-10-14-import-inventory.md, 2026-10-16-options-screen.md, print_pdf.c |
+| 0x5d7c60 | 208 (+1 unwind) | `Config::set_option` | thiscall(Config* this, uint option_bit) returns 1 or 0, ret 4 | Sets one option value in its bit group of the option word at +4, and starts or stops sound for the Sound bits. | high | opus | 2026-10-14-columns-and-colours-inventory.md, 2026-10-14-import-inventory.md, 2026-10-16-options-screen.md, dsound.c, print_pdf.c |
+| 0x5d8020 | 192 | `Config::set_language` | thiscall(Config* this, int language_id) returns 1 or 0, ret 4 | Selects a language, sets its default currency, picks a font that the language allows, and reloads fonts and language texts. | high | opus | 2026-10-14-start-new-game-inventory.md, 2026-10-16-options-screen.md |
+| 0x5d8270 | 38 | `Config::set_currency` | thiscall(Config* this, char currency) returns 1 or 0, ret 4 | Stores a currency index from 0 to 25 at +0xc, or shows a version error box and returns zero for an index out of range. | high | opus | 2026-10-16-options-screen.md |
+| 0x5d8310 | 66 | `Config::set_default_currency` | thiscall(Config* this) returns 1, ret 0 | Sets the currency byte at +0xc to the default currency of the language index at +8, with zero for an unknown language. | medium | opus |  |
+| 0x5d83e0 | 38 | `Config::set_auto_save_interval` | thiscall(Config* this, short days) returns 1 or 0, ret 4 | Stores an auto save interval of 7 to 365 days at +0xd, or shows a version error box and returns zero. | high | opus | 2026-10-16-options-screen.md |
+| 0x5d8480 | 523 (+1 unwind) | `Config::apply_and_save` | thiscall(Config* this) returns 1 or 0, ret 0 | Applies the settings to the game, changing language, currency, display mode, sound and backgrounds, then writes them to CM3_PREFS game.cfg. | high | opus | 2026-10-14-game-creation-inventory.md, 2026-10-14-select-leagues-spec.md, 2026-10-14-start-new-game-inventory.md, 2026-10-16-options-screen.md, setup.c |
+| 0x5d8b40 | 2 | `Config::get_font_index` | thiscall(Config* this), returns int, ret 0 | Returns the selected font index stored at offset 0x217 of the game settings. | medium | opus |  |
+| 0x5d8b50 | 9 | `Config::set_font` | thiscall(Config* this, int font_index) ret 4 | Stores the chosen font index in the game settings and copies the matching font name into the 256-byte name buffer. | high | opus | 2026-10-16-options-screen.md |
+| 0x5d8b80 | 63 | `is_font_allowed_for_language` | cdecl(int language_id, const char* font_name), returns 1 or 0, ret 0 | Returns true when a language has no allowed-font entries, or when the font name appears among that language's entries in the allowed fonts table. | medium | opus |  |

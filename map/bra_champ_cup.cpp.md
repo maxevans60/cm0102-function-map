@@ -1,0 +1,24 @@
+# bra_champ_cup.cpp: 16 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x4259a0 | 109 (+2 unwind) | `BraChampCup::BraChampCup` | thiscall(BraChampCup* this, short comp_id, Nation* owner) ret 8, returns this | Constructs the Brazilian Champions Cup on League, then loads its saved state or selects the entrants, creates its statistics and sets up its rules. | high | opus |  |
+| 0x425b30 | 11 | `BraChampCup::`scalar deleting destructor'` | thiscall(BraChampCup* this, unsigned flags) ret 4, returns this | Destroys the Brazilian Champions Cup and frees its memory when bit 0 of the flags is set. | high | opus |  |
+| 0x425b50 | 60 (+1 unwind) | `BraChampCup::~BraChampCup` | thiscall(BraChampCup* this) ret 0, ECX is this | Frees the table, the round table, every stage object and the statistics of the Brazilian Champions Cup, then runs the League destructor. | high | opus |  |
+| 0x425c10 | 313 | `BraChampCup::create_schedule` | thiscall(BraChampCup* this, char stage, short* round_count, short* extra, int* out_flag) ret 0x10, returns schedule pointer | Builds the round dates for the preliminary group, the two main groups or the knockout rounds of the Brazilian Champions Cup. | high | opus |  |
+| 0x425fd0 | 126 | `BraChampCup::build_fate_news_text` | thiscall(BraChampCup* this, int club_index, char fate, char stage, ..., int full_sentence, int extra) ret 0x28 | Writes news for a club that reaches the group phase or semi final, or passes knockout results to the shared news writers. | high | opus |  |
+| 0x426130 | 72 | `BraChampCup::create_preliminary_table` | thiscall(BraChampCup* this) ret 0, returns 1 or 0 on failure | Sets the team count to three, allocates the preliminary group table, fills it from the first three entrants and sends the group draw news. | medium | opus |  |
+| 0x426230 | 38 | `BraChampCup::set_up_rules` | thiscall(BraChampCup* this) ret 0, returns 1 | Sets the points, tiebreak and match rules of the Brazilian Champions Cup and builds the schedule of the preliminary stage. | high | opus |  |
+| 0x4262c0 | 80 | `BraChampCup::start_new_season` | thiscall(BraChampCup* this) ret 0 | Frees last season's table, schedule and stages, archives the statistics, moves the year on and sets up the rules again. | high | opus |  |
+| 0x4263c0 | 45 | `BraChampCup::advance_stage` | thiscall(BraChampCup* this) ret 0 | Moves the stage counter on, creates the group stages at stage 0 and the semi-final stage at stage 2, and asserts past the last stage. | high | opus |  |
+| 0x426470 | 216 (+2 unwind) | `BraChampCup::create_group_stages` | thiscall(BraChampCup* this) ret 0, returns 1 or 0 on failure | Builds two four-club group stages, each with one preliminary qualifier and three seeded entrants, and sends the group draw news. | high | opus |  |
+| 0x426720 | 143 (+1 unwind) | `BraChampCup::create_semi_final_stage` | thiscall(BraChampCup* this) ret 0 | Builds the four-club knockout stage from the top two clubs of each group, crossing the pairs, and makes its first draw. | high | opus |  |
+| 0x426900 | 157 | `BraChampCup::update_staff_records_for_status` | thiscall(BraChampCup* this, Club* club, char status, char stage, int arg, Fixture* tie, int arg2) ret 0x18 | Adds qualified, failed to qualify, knocked out, winner or runner-up records for a club by stage, and records the winner for CONMEBOL seeding. | high | opus |  |
+| 0x426ab0 | 122 | `BraChampCup::set_predicted_positions` | thiscall(BraChampCup* this) ret 0 | Stores fixed predicted final positions 1, 2, 3, 3, 5, 5, 7, 7 and 9 for the nine entrants in the competition statistics. | high | opus |  |
+| 0x426c20 | 101 | `BraChampCup::set_club_progress` | thiscall(BraChampCup* this, Club* club, char stage, byte code1, byte code2, byte code3) ret 0x14 | Maps the raw stage codes of a club to positions for the preliminary or group stage and stores the three codes in its statistics entry. | high | opus |  |
+| 0x426d80 | 484 | `BraChampCup::select_entrants` | thiscall(BraChampCup* this) ret 0 | Allocates the nine-slot entrant list and fills it with named Brazilian clubs, then with the strongest club of each state league for any empty slot. | high | opus |  |
+| 0x427320 | 80 | `BraChampCup::start_preliminary_stage` | thiscall(BraChampCup* this) ret 0 | Sets predicted positions, builds the preliminary table and its fixtures, sorts the table and marks the competition as started. | medium | opus |  |

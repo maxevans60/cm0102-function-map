@@ -1,0 +1,23 @@
+# ita_ser_c2a.cpp: 15 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x652e90 | 161 (+2 unwind) | `ItaSerC2a::ItaSerC2a` | thiscall(ItaSerC2a* this, short year, void* comp_record) ret 8, returns this | Constructs the Serie C2 group A league on League and, when no saved data loads, sets its rules, table, fixed fixtures, fixtures and stats. | high | opus |  |
+| 0x6530c0 | 11 | `ItaSerC2a::`scalar deleting destructor'` | thiscall(ItaSerC2a* this, unsigned flags) ret 4, returns this | Runs the ItaSerC2a destructor and frees the object when bit 0 of the flags is set. | high | opus |  |
+| 0x6530e0 | 57 (+1 unwind) | `ItaSerC2a::~ItaSerC2a` | thiscall(ItaSerC2a* this) ret 0 | Restores the ItaSerC2a vtable, frees the table, schedule, play-off stage objects and Comp_Stats, then runs the League destructor. | high | opus |  |
+| 0x6531a0 | 927 | `ItaSerC2a::create_schedule` | thiscall(ItaSerC2a* this, char stage, short* round_count, short* stage_id, int* is_league) ret 0x10, returns schedule pointer or null | Builds the 34-round league schedule for stage -1, the two-round promotion play-off for stage 0 and the one-round play-out for stage 1. | high | opus |  |
+| 0x653a90 | 84 | `ItaSerC2a::create_table` | thiscall(ItaSerC2a* this) ret 0, returns 1 when all 18 rows fill | Allocates the 18-row league table and fills it with the clubs whose division is the Serie C2 group A competition. | high | opus |  |
+| 0x653b90 | 43 | `ItaSerC2a::set_up_rules` | thiscall(ItaSerC2a* this) ret 0, returns 1 | Sets the league rule bytes, the league above and the league below, then builds the schedule. | high | opus |  |
+| 0x653c40 | 143 | `ItaSerC2a::start_new_season` | thiscall(ItaSerC2a* this) ret 0 | Frees last season's table, schedule and play-off stages, archives the stats, moves the year on and rebuilds rules, table and fixtures. | high | opus |  |
+| 0x653e00 | 40 | `ItaSerC2a::advance_stage` | thiscall(ItaSerC2a* this) ret 0 | Moves the stage counter on, reports an error after the last stage and builds the play-off stages when stage 0 starts. | high | opus |  |
+| 0x653e90 | 223 (+2 unwind) | `ItaSerC2a::create_play_off_stages` | thiscall(ItaSerC2a* this) ret 0 | Builds the promotion play-off Cup_Stage for places 2 to 5 and the relegation play-out Cup_Stage for places 14 to 17. | high | opus |  |
+| 0x654180 | 200 | `ItaSerC2a::update_staff_records_for_status` | thiscall(ItaSerC2a* this, Club* club, char status, char stage, int arg4, Fixture* fixture, int arg6) ret 0x18 | Adds league champion, relegation, play-off round and knock-out records to the staff history of a club in the league or its play-offs. | high | opus |  |
+| 0x654390 | 100 | `ItaSerC2a::build_fate_news_text` | thiscall(ItaSerC2a* this, int club_index, char status, char stage, int a4, int a5, int a6, int a7, int a8, int full_sentence, int a10) ret 0x28 | Writes the win promotion news for the play-off winner and the relegated news for the play-out loser, otherwise uses the Comp text. | high | opus |  |
+| 0x6544b0 | 65 | `ItaSerC2a::set_club_progress` | thiscall(ItaSerC2a* this, Club* club, char stage, char current, char best, char worst) ret 0x14 | Folds league places 2 to 5 and 14 to 17 into play-off codes and stores the current, best and worst progress in the club stats. | high | opus |  |
+| 0x6545c0 | 1996 (+1 unwind) | `ItaSerC2a::set_up_fixed_fixtures` | thiscall(ItaSerC2a* this) ret 0 | Allocates the fixed fixture array and fills it with the real 2001/02 Serie C2 group A fixtures by club name. | high | opus | 2026-10-16-sweep-season-end.md |
+| 0x656570 | 872 | `ItaSerC2a::set_up_fixed_fixtures_fragment_656570` | not a function entry: mid-body of ItaSerC2a::set_up_fixed_fixtures at 0x6545c0, no own convention | Marks a false entry inside the ItaSerC2a fixed fixture builder, at one push of a fixed_fixture_set_by_club_names call. | high | opus | 2026-10-16-sweep-season-end.md |
+| 0x657243 | 77 | `ItaSerC2a::set_up_fixed_fixtures_fragment_657243` | none, misaligned entry inside ItaSerC2a::set_up_fixed_fixtures, ends with ret 0 | False entry point that decodes the last bytes of the ItaSerC2a fixed fixture builder, from the final fixtures to its return. | medium | opus |  |

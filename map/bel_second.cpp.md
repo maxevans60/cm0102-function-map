@@ -1,0 +1,26 @@
+# bel_second.cpp: 18 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x41f030 | 161 (+2 unwind) | `BelSecond::BelSecond` | thiscall(BelSecond* this, short year, CompRecord* comp), ret 8 | Constructs the Belgian Second Division on League with a four-entry stage array, then loads saved data or sets up rules, table, fixtures and Comp_Stats. | high | opus |  |
+| 0x41f260 | 11 | `BelSecond::`scalar deleting destructor'` | thiscall(BelSecond* this, unsigned flags), returns this, ret 4 | Runs the BelSecond destructor and frees the object when bit 0 of the flags is set. | high | opus |  |
+| 0x41f280 | 60 (+1 unwind) | `BelSecond::~BelSecond` | thiscall(BelSecond* this), ret 0 | Destroys the Belgian Second Division, freeing its table, schedule, every stage object and Comp_Stats before the League destructor runs. | high | opus |  |
+| 0x41f340 | 1055 | `BelSecond::create_schedule` | thiscall(BelSecond* this, char stage, short* round_count, short* out2, int* out_flag), returns schedule pointer, ret 0x10 | Builds the 34-round season template for stage -1, a six-round play-off group for stage 3 or a three-round play-off cup for stage 4. | high | opus |  |
+| 0x41fd70 | 99 | `BelSecond::create_table` | thiscall(BelSecond* this), returns 1 on success and 0 on failure, ret 0 | Allocates the 18-row table, fills it with the clubs of the Belgian Second Division, pays each club 40000 and sets the prize fund. | high | opus |  |
+| 0x41fea0 | 43 | `BelSecond::set_up_rules` | thiscall(BelSecond* this), returns 1, ret 0 | Sets the Belgian Second Division rules with the First Division above and the Third Division below, clears the period flags and builds the schedule. | high | opus |  |
+| 0x41ff50 | 143 | `BelSecond::start_new_season` | thiscall(BelSecond* this), ret 0 | Frees the old table, schedule and stages, archives Comp_Stats, increments the year and rebuilds rules, table, fixtures and predictions. | high | opus |  |
+| 0x420110 | 54 | `BelSecond::add_result` | thiscall(BelSecond* this, Fixture* match, int update_stats), returns 1, ret 8 | Adds a match to the full table, then to the period stage of its round, first creating that period stage when needed. | high | opus |  |
+| 0x4201a0 | 40 | `BelSecond::advance_stage` | thiscall(BelSecond* this), ret 0 | Moves the current stage index on by one and builds the promotion play-off group when it reaches stage 3. | high | opus |  |
+| 0x420230 | 219 (+1 unwind) | `BelSecond::create_playoff_group` | thiscall(BelSecond* this), ret 0 | Fills the promotion play-off group up to four clubs with the best non-period winners, then builds its League_Stage as stage 3. | high | opus |  |
+| 0x4204d0 | 132 (+1 unwind) | `BelSecond::create_period_stage` | thiscall(BelSecond* this, char period), ret 4 | Builds the League_Stage of one of the three season periods with all 18 clubs and makes it the current stage. | high | opus |  |
+| 0x420680 | 91 | `BelSecond::update_positions_and_status` | thiscall(BelSecond* this), ret 0 | Runs the base update, then marks the winner of the next undecided period as qualified for the play-off and sends the period winner news. | high | opus |  |
+| 0x420790 | 209 | `BelSecond::update_staff_records_for_status` | thiscall(BelSecond* this, Club* club, char result, char stage, int a4, Fixture* match, int a6), ret 0x18 | Adds staff records for title, play-off and relegation outcomes, and updates table status after the play-off group and play-off cup. | high | opus |  |
+| 0x4209c0 | 258 | `BelSecond::build_fate_news_text` | thiscall(BelSecond* this, int club_index, char fate, char stage, int a5, int a6, int a7, int a8, int a9, int full_sentence, int a11), ret 0x28 | Writes the news text for the play-off group winner and losers and the play-off cup results, deferring the regular season to the Comp base. | high | opus |  |
+| 0x420ca0 | 41 (+1 unwind) | `BelSecond::send_period_winner_news` | thiscall(BelSecond* this, Club* club, char period) ret 8 | Posts a type 0x11 news item that a club won a play-off place for its third of the season, to the managers of the division. | high | opus |  |
+| 0x420d40 | 88 | `BelSecond::set_club_progress` | thiscall(BelSecond* this, Club* club, char stage, char code1, char code2, char code3), ret 0x14 | Stores the three progress codes of a club in its Comp_Stats entry, skips period winners in the season and adds one in stage 3. | high | opus |  |
+| 0x420e30 | 33 | `BelSecond::load_extra_data` | thiscall(BelSecond* this, FILE* file), returns 1, ret 4 | Reads the three period winner flags and two four-byte fields of the Belgian Second Division from the saved game file. | high | opus |  |
+| 0x420e90 | 32 | `BelSecond::save_extra_data` | thiscall(BelSecond* this, FILE* file), ret 4 | Writes the three period winner flags and two four-byte fields of the Belgian Second Division to the saved game file. | high | opus |  |

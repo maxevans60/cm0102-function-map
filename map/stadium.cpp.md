@@ -1,0 +1,25 @@
+# stadium.cpp: 17 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x85b670 | 120 | `Stadium::Stadium` | thiscall(Stadium* this) ret 0, returns this | Waits for the game CD, clears the object, loads Stadium.tmp and otherwise clears national team stadiums and builds the stadium list. | high | opus | 2026-10-14-game-creation-inventory.md |
+| 0x85b7f0 | 16 | `Stadium::~Stadium` | thiscall(Stadium* this) ret 0 | Frees the two entry lists held at offsets 0 and 12. | high | opus |  |
+| 0x85b820 | 165 | `Stadium::daily_update` | thiscall(Stadium* this, Date* today) ret 4 | Rebuilds the stadium list on day 0, keeps England's national stadium closed until its reopening date at 90000 capacity, and prunes past dated entries. | medium | opus | 2026-10-14-game-creation-inventory.md |
+| 0x85ba40 | 362 | `Stadium::load_from_temp_file` | thiscall(Stadium *this in ECX), returns int 1 on success and 0 on failure, ret 0 | Reads the stadium booking list and venue list from Stadium.tmp in CM3_TEMP into this object and relinks venue entries to stadium records. | high | opus |  |
+| 0x85bea0 | 314 | `Stadium::save_to_temp_file` | thiscall(Stadium *this in ECX), ret 0 | Writes the stadium booking list and venue list of this object to Stadium.tmp in CM3_TEMP, turning stadium pointers into ids for the file. | high | opus |  |
+| 0x85c260 | 437 (+3 unwind) | `Stadium::set_fixture_venue` | thiscall(Stadium *this in ECX = DAT_dd7ef4, uint venue_flags, Fixture *fixture, int stadium_id), ret 0xc | Chooses a fixture's stadium from the venue flags, home ground, host nations and national stadiums, then stores its pointer and id. | high | opus |  |
+| 0x85c800 | 327 | `Stadium::find_available_venue` | thiscall(Stadium *this, uint venue_flags, Continent *continent, Nation *nation, Date *date, Club *home, Club *away, Fixture *fixture), returns Stadium*, ret 0x1c | Searches the sorted venue list by nation or continent for the best stadium free on the fixture date, books it and returns it. | medium | opus |  |
+| 0x85cba0 | 990 | `Stadium::calculate_match_attendance` | thiscall(Stadium *this in ECX = DAT_dd7ef4, Fixture *fixture, int *out_crowd[3]), returns int total crowd, ret 8 | Estimates the crowd for a fixture from club reputations, league positions, travel distance and stadium capacity, and returns total, home and away supporters. | medium | opus |  |
+| 0x85d8a0 | 103 | `Stadium::get_travel_distance_factor` | thiscall(Stadium *this in ECX unused, Fixture *fixture, City *venue_city, City *club_city, double base_factor), returns double on FPU, ret 0x14 | Computes a clamped crowd multiplier that falls with the map distance between the venue city and a club's home city. | medium | opus | 2026-10-16-crash-fixes.md |
+| 0x85da00 | 292 | `Stadium::score_venue_for_fixture` | thiscall(Stadium *this in ECX unused, Stadium *stadium, uint venue_flags, Club *home, Club *away, Fixture *fixture), returns int score, ret 0x14 | Scores a stadium as a neutral venue from its capacity against the expected crowd and its distance from both clubs, plus a random factor. | medium | opus |  |
+| 0x85ddb0 | 36 | `Stadium::is_stadium_free_on_date` | thiscall(Stadium *this, Stadium *stadium, Date date), returns bool, ret 8 | Returns true when the booking list holds no entry for the stadium on the given date. | high | opus |  |
+| 0x85de20 | 125 | `Stadium::add_booking` | thiscall(Stadium *this, Stadium *stadium, Date date), ret 8 | Appends a stadium and date booking to the booking list, growing it 30 entries at a time, and re-sorts the list. | high | opus |  |
+| 0x85dfc0 | 254 | `Stadium::build_venue_list` | thiscall(Stadium *this in ECX), ret 0 | Rebuilds the venue list from every stadium with a city, nation and continent, skipping City of Manchester Stadium and small grounds in host nations. | high | opus |  |
+| 0x85e2f0 | 20 | `stadium_compare_venues_by_nation` | cdecl(const VenueEntry *a, const VenueEntry *b), returns int, ret 0 | Orders two venue entries by nation id, then by stadium capacity from largest to smallest. | high | opus |  |
+| 0x85e320 | 20 | `stadium_compare_venues_by_continent` | cdecl(const VenueEntry *a, const VenueEntry *b), returns int, ret 0 | Orders two venue entries by continent id, then by stadium capacity from largest to smallest. | high | opus |  |
+| 0x85e350 | 14 | `stadium_compare_venues_by_capacity` | cdecl(const VenueEntry *a, const VenueEntry *b), returns int, ret 0 | Orders two venue entries by stadium capacity from largest to smallest. | high | opus |  |
+| 0x85e380 | 39 | `stadium_compare_bookings` | cdecl(const Booking *a, const Booking *b), returns int, ret 0 | Orders two stadium bookings by date, then by stadium id. | high | opus |  |

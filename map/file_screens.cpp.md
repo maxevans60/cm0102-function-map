@@ -1,0 +1,19 @@
+# file_screens.cpp: 11 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x58f500 | 198 | `open_file_dialog` | cdecl(char* title, char* heading, int mode, char* directory, char* extension, char* default_name, callback on_ok, short colour_a, short colour_b, int a10, int a11, int a12, int a13, int a14) ret 0 | Opens the load or save file dialog screen and stores the title, directory, extension, file name buffers and callback in its screen params. | high | opus | 2026-10-13-screen-stack-inventory.md, savename.c |
+| 0x58f7c0 | 611 | `file_dialog_build` | cdecl(void) ret 0 | Builds the file dialog screen with the Directory and File entry boxes, a list of matching files from a directory search, and the Cancel button. | high | opus |  |
+| 0x58ff80 | 963 | `file_dialog_input` | cdecl(short widget_index: clicked widget or -1) ret 0, returns screen result | Handles a click on the file dialog, checking the directory and file name, asking to create, replace or delete, and running the callback on success. | high | opus |  |
+| 0x590000 | 914 | `file_dialog_input_fragment_590000` | no own convention: a block inside file_dialog_input 0x58ff80, entered mid-function with its registers and stack frame | Is a false function entry inside file_dialog_input that holds its confirm and error dialog branches. | medium | opus |  |
+| 0x590c00 | 898 (+2 unwind) | `create_save_file_summary_screen` | cdecl(void) ret 0 | Reads the summary block of a saved game and builds the Save Game Info screen with its file name, save time, version, date and game time. | high | opus |  |
+| 0x5917f0 | 24 | `save_game_info_input` | cdecl(short widget_index: clicked widget or -1) ret 0, returns screen result | Handles a click on the Save Game Info screen, returning -9 to close it when the button with id 1 is chosen. | high | opus |  |
+| 0x591840 | 101 | `confirm_push` | cdecl(char* title, char* heading, char* text, int buttons, short text_colour, short colour, int code) ret 0 | Opens the Please Confirm screen and stores the title, heading, text, button set, colours and result code in its eight screen params. | high | opus | 2026-10-14-game-creation-inventory.md, 2026-10-14-start-screen-helpers.md, 2026-10-14-start-screen-spec.md, 2026-10-14-widescreen-inventory.md, 2026-10-15-holiday-next-match-inventory.md |
+| 0x5919b0 | 118 (+1 unwind) | `confirm_push_text_object` | cdecl(char* title, char* heading, Text* lines, int buttons, short text_colour, short colour, int code) ret 0 | Opens the Please Confirm screen with a text line iterator in param 6 in place of a plain text, for a multi-line question. | high | opus | 2026-10-14-start-screen-spec.md, file_screens.c |
+| 0x591b70 | 189 | `confirm_build` | cdecl(void) ret 0 | Builds the Please Confirm screen with a title, heading, question text and No and Yes buttons, from the eight screen parameter slots. | high | opus | 2026-10-14-start-screen-helpers.md, 2026-10-14-widescreen-inventory.md, display.c |
+| 0x591dc0 | 91 | `confirm_input` | cdecl(int clicked) ret 0, returns screen result | Handles a click or key on the confirm screen, stores the confirm code and the chosen button, and returns -9 to close the screen. | high | opus | 2026-10-14-start-screen-helpers.md, 2026-10-15-holiday-next-match-inventory.md |
+| 0x591f80 | 238 | `build_save_game_summary` | cdecl(char* summary) ret 0 | Fills the save game summary block with the active nation lists, the human managers and their clubs, the game date, version and play time. | high | opus |  |

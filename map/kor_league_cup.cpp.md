@@ -1,0 +1,25 @@
+# kor_league_cup.cpp: 17 functions
+
+Function map of cm0102.exe 3.9.68. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+AI agents named each function from its code, and a review checked every medium and low name. Treat a medium or low name as a hint and read the code before you rely on it. "Cited in" lists research docs of the Bosman Edition repo that name the address.
+
+| Address | Size | Name | Convention | Purpose | Confidence | Model | Cited in |
+|---|---|---|---|---|---|---|---|
+| 0x66bf00 | 168 (+2 unwind) | `KorLeagueCup::KorLeagueCup` | thiscall(KorLeagueCup* this, short comp_id, Division* division) returning this, ret 8 | Constructs the Korean league cup on the League base, selects ten clubs, builds group A, its fixtures and the group B stage. | high | opus |  |
+| 0x66c140 | 11 | `KorLeagueCup::`scalar deleting destructor'` | thiscall(KorLeagueCup* this, unsigned flags) returning this, ret 4 | Runs the Korean league cup destructor and frees the object when bit 0 of the flags is set. | high | opus |  |
+| 0x66c160 | 66 (+1 unwind) | `KorLeagueCup::~KorLeagueCup` | thiscall(KorLeagueCup* this), ret 0 | Destroys the Korean league cup, freeing its table, schedule, team list, child stages and Comp_Stats, then runs the League destructor. | high | opus |  |
+| 0x66c240 | 375 | `KorLeagueCup::create_schedule` | thiscall(KorLeagueCup* this, char stage, short* round_count, short* stage_id, int* is_league) returning schedule pointer, ret 0x10 | Builds the round template for a stage, ten group rounds for stage 0 or a semi-final and final for stage 1. | high | opus |  |
+| 0x66c650 | 98 | `KorLeagueCup::build_fate_news_text` | thiscall(KorLeagueCup* this, int club_index, char outcome, char stage, ...) with ten stack arguments, ret 0x28 | Writes the news text for a club's cup fate, a semi-final place or group exit in stage 0 and cup tie results in stage 1. | high | opus |  |
+| 0x66c770 | 71 | `KorLeagueCup::create_group_a_table` | thiscall(KorLeagueCup* this), returns int 1 on success or 0, ret 0 | Allocates the five-row group A table from the even-numbered seeded clubs and sends the group draw news. | high | opus |  |
+| 0x66c870 | 34 | `KorLeagueCup::set_up_rules` | thiscall(KorLeagueCup* this), returns int 1, ret 0 | Sets the league cup rule bytes, points values and prize fund, then builds the group schedule through create_schedule. | high | opus |  |
+| 0x66c900 | 148 | `KorLeagueCup::start_new_season` | thiscall(KorLeagueCup* this), ret 0 | Resets the league cup for a new season, deletes old stages, selects the clubs again and rebuilds group A, fixtures and group B. | high | opus |  |
+| 0x66cad0 | 40 | `KorLeagueCup::advance_stage` | thiscall(KorLeagueCup* this), ret 0 | Moves the league cup to its next stage and creates the knockout stage on the first advance, or asserts when no stage is left. | high | opus |  |
+| 0x66cb60 | 152 (+1 unwind) | `KorLeagueCup::create_group_b_stage` | thiscall(KorLeagueCup* this), returns int 1 on success or 0, ret 0 | Creates the five-club group B League_Stage from the odd-numbered seeded clubs and sends its group draw news. | high | opus |  |
+| 0x66cd50 | 139 (+1 unwind) | `KorLeagueCup::create_knockout_stage` | thiscall(KorLeagueCup* this), ret 0 | Creates the four-club knockout Cup_Stage, pairing each group winner with the other group's runner-up, and draws its first round. | high | opus |  |
+| 0x66cf20 | 106 | `KorLeagueCup::select_teams` | thiscall(KorLeagueCup* this), returns int 1 or 0 on allocation failure, ret 0 | Collects the clubs of the top Korean league into the ten-entry team list and sorts them by last season's position. | high | opus |  |
+| 0x66d090 | 122 | `KorLeagueCup::update_staff_records_for_status` | thiscall(KorLeagueCup* this, Club* club, char outcome, char stage, int arg, Fixture* fixture, int arg2), ret 0x18 | Adds staff history records for a club's league cup outcome, such as qualified, failed to qualify, knocked out, winner or runner-up. | high | opus |  |
+| 0x66d1e0 | 141 | `KorLeagueCup::load_extra_data` | thiscall(KorLeagueCup* this, FILE* file), returns int 1 on success or 0, ret 4 | Reads the team list count and club indices from the save file and turns each index back into a club pointer. | high | opus |  |
+| 0x66d3a0 | 220 | `KorLeagueCup::set_predicted_positions` | thiscall(KorLeagueCup* this), ret 0 | Sorts the ten cup clubs by reputation and stores predicted final positions by knockout round, then in pairs for the group clubs. | high | opus |  |
+| 0x66d650 | 75 | `KorLeagueCup::set_club_progress` | thiscall(KorLeagueCup* this, Club* club, char stage, char code1, char code2, char code3), ret 0x14 | Stores a club's three progress codes in its Comp_Stats entry, mapping group stage codes to placing values 1, 3, 5, 7 and 9. | high | opus |  |
+| 0x66d770 | 72 | `KorLeagueCup::points_for_result` | thiscall(KorLeagueCup* this, int club, Fixture* fixture) returning byte points, ret 8 | Returns a club's points from a fixture, win points for a normal win, two for an extra time win, else draw points or zero. | high | opus |  |
