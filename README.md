@@ -52,4 +52,6 @@ Open an issue with the address, the name you think is right and what the code do
 
 The map is under [CC BY 4.0](LICENSE). You may copy, change and share it, also in your own tools and patches, if you credit "CM 01/02 function map, github.com/maxevans60/cm0102-function-map".
 
+[LLM.md](LLM.md) gives full permission for any use with AI, machine learning and large language models: training, datasets, agents and AI-built tools. That use needs no permission and no credit.
+
 This is an unofficial fan project. It is not affiliated with or endorsed by Sports Interactive, SEGA, Eidos or Square Enix. Championship Manager is a trademark of Square Enix.
