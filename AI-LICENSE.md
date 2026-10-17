@@ -1,4 +1,6 @@
-# Use of this map with AI and machine learning
+# AI licence
+
+This map is open to everyone. Use it by hand, with AI tools, or both. Nobody needs to ask.
 
 This file gives extra permission on top of the [CC BY 4.0 licence](LICENSE). Where the two differ, the wider permission applies.
 
