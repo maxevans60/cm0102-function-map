@@ -1,0 +1,43 @@
+# Copies the function map from the Bosman Edition repo once a day, and on a manual run.
+# The Bosman Edition repo is the only source: a change pushed there reaches this repo within a day.
+name: Sync the map
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: maxevans60/cm0102-bosman-edition
+          path: port
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            docs/research/function-map/
+            tools/research/function_map/publish_map.py
+      - name: Copy the map
+        run: |
+          if [ ! -f port/tools/research/function_map/publish_map.py ]; then
+            echo "publish_map.py is not on the Bosman Edition main yet. Nothing to do."
+            exit 0
+          fi
+          python3 port/tools/research/function_map/publish_map.py .
+      - name: Commit a change
+        run: |
+          git add -A map
+          if git diff --cached --quiet; then
+            echo "The map has not changed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Sync the map from cm0102-bosman-edition $(git -C port rev-parse --short HEAD)"
+          git push
