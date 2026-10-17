@@ -4,16 +4,16 @@ A map of every function in `cm0102.exe` 3.9.68, the last official patch of Champ
 
 The data map covers the 4,428 global variables that these functions touch. Each global has its address, size, type, a name, one sentence on what it holds, and the functions that read and write it.
 
-Search both by address or by word: **https://maxevans60.github.io/cm0102-function-map/**
+Search both by address (the offset that Olly shows) or by word: **https://maxevans60.github.io/cm0102-function-map/**
 
 The map came out of the [Bosman Edition](https://github.com/maxevans60/cm0102-bosman-edition), a recompiled port of the game to Mac, Windows and Linux. It is free for anyone who patches, mods or studies the game.
 
-## Look up an address
+## Look up an offset or address
 
-The map uses the addresses that OllyDbg and x64dbg show, written as `0x8e7810`. Olly shows the same address as `008E7810`.
+The map uses the addresses that OllyDbg and x64dbg show, written as `0x8e7810`. Olly shows the same address as `008E7810`. On the champman0102 forum these are called offsets.
 
-- An address from a patch list is often a file offset. Add 0x400000 to it, or tick "file offset" on the search page.
-- Most patch addresses lie inside a function. The search page shows the function that holds the address.
+- Some offsets in patch lists are positions in the exe file. Add 0x400000 to one, or tick "File offset" on the search page.
+- Most patch offsets lie inside a function. The search page shows the function that holds the address.
 - An address in the data section, such as `0xae2c90`, gives the global at that address, or the global that holds it.
 - The search also takes a word, such as `loan`, `prize`, `League::` or `g_current_date`.
 - Each result links on. A function lists the globals it uses, and a global lists the functions that read and write it.

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>CM 01/02 Function Map</title>
-<meta name="description" content="Search every function and global of cm0102.exe 3.9.68 by address or name.">
+<meta name="description" content="Search every function and global of cm0102.exe 3.9.68 by address (Olly offset) or name.">
 <style>
 :root {
   --bg: #f7f6f2; --panel: #ffffff; --text: #1d1d1b; --muted: #66645e; --line: #e2dfd6;
@@ -71,9 +71,9 @@ footer { margin-top: 40px; color: var(--muted); font-size: .9rem; }
 <body>
 <main>
   <h1><a href="./">CM 01/02 Function Map</a></h1>
-  <p class="lead">Look up any function or global variable of cm0102.exe 3.9.68 by address or by name. Each result links to the functions and globals around it. <a href="https://github.com/maxevans60/cm0102-function-map">About the map</a></p>
+  <p class="lead">Look up any function or global variable of cm0102.exe 3.9.68 by address or by name. An address is the offset that OllyDbg shows. Each result links to the functions and globals around it. <a href="https://github.com/maxevans60/cm0102-function-map">About the map</a></p>
   <form id="f" autocomplete="off">
-    <input type="search" id="q" placeholder="008E7810, 0xae2c90, loan, League::" aria-label="Address or word" autofocus>
+    <input type="search" id="q" placeholder="008E7810, 0xae2c90, loan, League::" aria-label="Address, offset or word" autofocus>
     <div class="scope" role="radiogroup" aria-label="Search in">
       <label><input type="radio" name="scope" value="all" checked> All</label>
       <label><input type="radio" name="scope" value="functions"> Functions</label>
@@ -87,14 +87,14 @@ footer { margin-top: 40px; color: var(--muted); font-size: .9rem; }
   <section id="start" hidden>
     <div class="ways">
       <div class="card">
-        <h3>I have an address</h3>
-        <p>Type it as OllyDbg or x64dbg shows it. An address inside a function or a table finds the thing that holds it.</p>
+        <h3>I have an offset or address</h3>
+        <p>Type it as OllyDbg or x64dbg shows it. An offset inside a function or a table finds the thing that holds it, so the offsets from the forum and from patch lists work too.</p>
         <div class="chips">
           <a class="chip" href="#q=008E7810">008E7810</a>
           <a class="chip" href="#q=0x8e7840">0x8e7840</a>
           <a class="chip" href="#q=0xae2c90">0xae2c90</a>
         </div>
-        <p style="margin-top:10px">A patch list often gives file offsets. Tick "File offset" and the page adds 0x400000.</p>
+        <p style="margin-top:10px">Some offsets are positions in the exe file, the kind you add 0x400000 to for Olly. Tick "File offset" and the page adds it for you.</p>
         <div class="chips"><a class="chip" href="#q=4e7810&amp;off=1">4e7810 <small>as offset</small></a></div>
       </div>
       <div class="card">
