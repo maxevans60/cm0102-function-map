@@ -1,0 +1,13 @@
+# league.cpp: 5 globals owned by league.cpp
+
+Data map of cm0102.exe 3.9.68: the globals that game and library functions touch. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+A global is high only when the evidence quotes a string, an assert, a constant in read-only data, or a high function whose name pins the purpose. Treat a medium or low name as a hint. Fields of an address group are described as `g_<object>+0x<offset> <field>`. Readers and writers link to the function map. "Cited in" lists research docs and runtime files of the Bosman Edition repo that name the address.
+
+| Address | Size | Type | Name | Description | Evidence | Confidence | Model | Writers | Readers | Cited in |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 0x96d020 | 180 | vtable | `g_vtable_league` | Vtable of League, 45 slots. | the destructor or constructor of League holds it: 0x682200 League::League, 0x682300 League::~League | high | script |  | [0x682200](../map/league.cpp.md), [0x682300](../map/league.cpp.md), [0x682380](../map/league.cpp.md) | 2026-10-16-sweep-europe.md |
+| 0x96d0d8 | 8 | double | `g_f64_0_4444444444444444` | Read-only double constant 0.4444444444444444. | the double at this address in .rdata is 0.4444444444444444, and every access reads it | high | script |  | [0x68ac40](../map/league.cpp.md) |  |
+| 0x96d0e0 | 8 | double | `g_f64_0_23` | Read-only double constant 0.23. | the double at this address in .rdata is 0.23, and every access reads it | high | script |  | [0x68ac40](../map/league.cpp.md) |  |
+| 0xb679fc | 4 | League * | `g_league_sort_current_league` | The league whose table League::sort_table is sorting. The row compare functions read the league fields through it. | written only by 0x6827d0 League::sort_table (high) from its argument. Read by 0x683210 league_compare_table_rows (high), 0x683410 league_compare_table_rows_h2h (high) and 0x6834f0 league_compare_h2h_rows (high). | high | sonnet | [0x6827d0](../map/league.cpp.md) | [0x6827d0](../map/league.cpp.md), [0x683210](../map/league.cpp.md), [0x683410](../map/league.cpp.md), [0x6834f0](../map/league.cpp.md) |  |
+| 0xb67a00 | 4 | void * | `g_league_sort_custom_compare_func` | The custom tie break compare function of the league being sorted. The row compare functions call it first when it is not null. | set from a league field by 0x6827d0 League::sort_table (high). Called by 0x683210 league_compare_table_rows (high) and 0x683410 league_compare_table_rows_h2h (high). | high | sonnet | [0x6827d0](../map/league.cpp.md) | [0x6827d0](../map/league.cpp.md), [0x683210](../map/league.cpp.md), [0x683410](../map/league.cpp.md) |  |

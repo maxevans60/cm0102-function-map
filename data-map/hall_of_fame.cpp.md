@@ -1,0 +1,12 @@
+# hall_of_fame.cpp: 4 globals owned by hall_of_fame.cpp
+
+Data map of cm0102.exe 3.9.68: the globals that game and library functions touch. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+A global is high only when the evidence quotes a string, an assert, a constant in read-only data, or a high function whose name pins the purpose. Treat a medium or low name as a hint. Fields of an address group are described as `g_<object>+0x<offset> <field>`. Readers and writers link to the function map. "Cited in" lists research docs and runtime files of the Bosman Edition repo that name the address.
+
+| Address | Size | Type | Name | Description | Evidence | Confidence | Model | Writers | Readers | Cited in |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 0x9cdc88 | 1920 | table | `g_hall_of_fame_scramble_keys` | The table of 480 key words that scrambles and unscrambles the hall of fame file by byte swaps and XOR. | 0x5f0680 hall_of_fame_unscramble_and_check is documented as using it as the key table. 0x5f00c0 HallOfFame::save indexes it by a value modulo 0x1e0. | high | sonnet |  | [0x5f00c0](../map/hall_of_fame.cpp.md), [0x5f0680](../map/hall_of_fame.cpp.md) |  |
+| 0xb0be38 | 336000 | buffer | `g_hall_of_fame_import_buffer` | The buffer of 2800 records of 120 bytes that HallOfFame::import_file reads a hall of fame file into. | 0x5efd00 hall_of_fame_import_buffer_init constructs 2800 elements of 120 bytes, and 0x5efd50 HallOfFame::import_file reads 0x52080 bytes into it. | high | sonnet |  | [0x5efd00](../map/hall_of_fame.cpp.md), [0x5efd30](../map/hall_of_fame.cpp.md), [0x5efd50](../map/hall_of_fame.cpp.md) |  |
+| 0xb5deb8 | 4 | s32 | `g_hall_of_fame_name_style` | The league name style that the hall of fame league sort stores for its compare function. | Written by 0x5f10c0 hall_of_fame_sort_league_order from its name_style argument and read by 0x5f1100 hall_of_fame_compare_league_names to format league names. | high | sonnet | [0x5f10c0](../map/hall_of_fame.cpp.md) | [0x5f1100](../map/hall_of_fame.cpp.md) |  |
+| 0xb5debc | 28 | table | `g_hall_of_fame_league_order` | The table of 28 league indices, sorted by localised league name, that the hall of fame screens use for their order. | 0x5f10c0 hall_of_fame_sort_league_order sorts 28 one byte elements here and returns this table. | high | sonnet |  | [0x5f10c0](../map/hall_of_fame.cpp.md) |  |

@@ -1,0 +1,12 @@
+# human_manager.cpp: 4 globals owned by human_manager.cpp
+
+Data map of cm0102.exe 3.9.68: the globals that game and library functions touch. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+A global is high only when the evidence quotes a string, an assert, a constant in read-only data, or a high function whose name pins the purpose. Treat a medium or low name as a hint. Fields of an address group are described as `g_<object>+0x<offset> <field>`. Readers and writers link to the function map. "Cited in" lists research docs and runtime files of the Bosman Edition repo that name the address.
+
+| Address | Size | Type | Name | Description | Evidence | Confidence | Model | Writers | Readers | Cited in |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 0xb5e138 | 7797 | buffer | `g_human_manager_load_buffer` | The first of three 7797 byte record buffers that HUMAN_MANAGER::load reads from human_manager.dat. | Used only by 0x5fee50 HUMAN_MANAGER::load, which steps through three records of 0x1e75 bytes from here up to g_human_manager_load_buffer_end. (medium until g_human_manager_load_buffer_end is high) | medium | sonnet |  | [0x5fee50](../map/human_manager.cpp.md) |  |
+| 0xb61e22 | 7797 | buffer | `g_human_manager_load_buffer_third_record` | The third record buffer of 7797 bytes that HUMAN_MANAGER::load reads, which starts two records after the first. | Used only by 0x5fee50 HUMAN_MANAGER::load as its loop bound. The address equals g_human_manager_load_buffer plus two records of 0x1e75 bytes. | medium | sonnet |  | [0x5fee50](../map/human_manager.cpp.md) |  |
+| 0xb63c97 | 1 | u8 | `g_human_manager_load_buffer_end` | The address after the last of three human manager records in the load buffer, used as the loop limit when HUMAN_MANAGER::load copies the records. | Only 0x5fee50 HUMAN_MANAGER::load touches it, as a loop bound. The distance from the buffer at 0xb5e138 is exactly three records of 0x1e75 bytes, the loop step. | medium | sonnet |  | [0x5fee50](../map/human_manager.cpp.md) |  |
+| 0xb67a48 | 4 | u32 | `g_match_day_screen_showing_flag` | The flag that is 1 while MATCH_DAY shows the match day screen. | written only by 0x6b42a0 MATCH_DAY::show_match_day_screen (high), 1 at the start and 0 at the end. Read by 0x5fe500 HUMAN_MANAGER::set_watched_fixture (medium). | medium | sonnet | [0x6b42a0](../map/match_day.cpp.md) | [0x5fe500](../map/human_manager.cpp.md), [0x725ca0](../map/match_screens.cpp.md) | 2026-10-14-assistant-and-days-inventory.md |

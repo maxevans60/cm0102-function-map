@@ -1,0 +1,11 @@
+# game_config.cpp: 3 globals owned by game_config.cpp
+
+Data map of cm0102.exe 3.9.68: the globals that game and library functions touch. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+A global is high only when the evidence quotes a string, an assert, a constant in read-only data, or a high function whose name pins the purpose. Treat a medium or low name as a hint. Fields of an address group are described as `g_<object>+0x<offset> <field>`. Readers and writers link to the function map. "Cited in" lists research docs and runtime files of the Bosman Edition repo that name the address.
+
+| Address | Size | Type | Name | Description | Evidence | Confidence | Model | Writers | Readers | Cited in |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 0xae2d28 | 1040 | table | `g_allowed_fonts_table` | The table of allowed fonts per language, ten entries of 0x68 bytes, each holding a language id and a font name. | 0x5d72c0 Config::Config sets each language id to minus one, then fills the entries from the file allowed_fonts.txt using the format %d, %s. 0x5d8020 Config::set_language searches it. | high | sonnet |  | [0x5d72c0](../map/game_config.cpp.md), [0x5d8020](../map/game_config.cpp.md), [0x5d8b80](../map/game_config.cpp.md) |  |
+| 0xae2d2c | 100 | char[100] | `g_allowed_fonts_first_name` | g_allowed_fonts+0x4 name: the font name text of the first entry in the allowed fonts table. | 0x5d72c0 Config::Config copies the second part of each allowed_fonts.txt line to this address plus 0x68 times the entry index. 0x5d8b80 is_font_allowed_for_language compares font names with it. | high | sonnet |  | [0x5d72c0](../map/game_config.cpp.md), [0x5d8020](../map/game_config.cpp.md), [0x5d8b80](../map/game_config.cpp.md) |  |
+| 0xae313c | 4 | unknown | `g_allowed_fonts_name_limit` | The address one entry past the allowed fonts table. Config code uses it as the end limit when it loops over font names. | 0x5d72c0 Config::Config, 0x5d8020 Config::set_language and 0x5d8b80 is_font_allowed_for_language compare the font name cursor with this address to stop. No code reads or writes the value. | medium | sonnet |  | [0x5d72c0](../map/game_config.cpp.md), [0x5d8020](../map/game_config.cpp.md), [0x5d8b80](../map/game_config.cpp.md) |  |

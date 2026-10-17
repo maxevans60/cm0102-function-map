@@ -1,0 +1,12 @@
+# gui_utils.cpp: 4 globals owned by gui_utils.cpp
+
+Data map of cm0102.exe 3.9.68: the globals that game and library functions touch. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+A global is high only when the evidence quotes a string, an assert, a constant in read-only data, or a high function whose name pins the purpose. Treat a medium or low name as a hint. Fields of an address group are described as `g_<object>+0x<offset> <field>`. Readers and writers link to the function map. "Cited in" lists research docs and runtime files of the Bosman Edition repo that name the address.
+
+| Address | Size | Type | Name | Description | Evidence | Confidence | Model | Writers | Readers | Cited in |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 0x9cdc2c | 40 | buffer | `g_page_count_label_text` | The text entry with id 0x3c for the page count label, with the format Pg <%d - page>/<%d - maximum page>. | Holds that format string at +4. 0x5ede20 gui_add_page_buttons passes it as button text and to 0x66f4e0 langlib_sprintf, and 0x8f5080 uses it too. | high | sonnet |  | [0x5ede20](../map/gui_utils.cpp.md), [0x8f5080](../map/transfer_screens.cpp.md) |  |
+| 0x9cdc54 | 12 | buffer | `g_indented_name_label_text` | The text entry with id 0x3e that holds the format of five spaces followed by a string, used as a page button label. | Holds the string at +4. 0x5ede20 gui_add_page_buttons and 0x8f5080 transfer_screens_build_transfers_screen pass its address as button text. | medium | sonnet |  | [0x5ede20](../map/gui_utils.cpp.md), [0x8f5080](../map/transfer_screens.cpp.md) |  |
+| 0xb0be34 | 1 | u8 | `g_tab_bar_colour_init_flags` | A byte whose bit 0 records that gui_add_tab_bar has already set up its tab bar colour. | Tested and set by 0x5ed780 gui_add_tab_bar before it computes g_tab_bar_indigo_colour. No other function touches it. | medium | sonnet | [0x5ed780](../map/gui_utils.cpp.md) | [0x5ed780](../map/gui_utils.cpp.md) |  |
+| 0xb0be36 | 2 | u16 | `g_tab_bar_indigo_colour` | The packed 16 bit pixel value for indigo (32,0,96) that gui_add_tab_bar uses for its tab buttons. | Written once by 0x5ed780 gui_add_tab_bar through graphics_rgb_to_pixel and read again in the same function when it draws the tab buttons. | medium | sonnet | [0x5ed780](../map/gui_utils.cpp.md) | [0x5ed780](../map/gui_utils.cpp.md) | 2026-10-15-team-views-frame-inventory.md |

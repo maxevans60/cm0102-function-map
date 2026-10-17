@@ -1,0 +1,12 @@
+# Area.cpp: 4 globals owned by Area.cpp
+
+Data map of cm0102.exe 3.9.68: the globals that game and library functions touch. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+A global is high only when the evidence quotes a string, an assert, a constant in read-only data, or a high function whose name pins the purpose. Treat a medium or low name as a hint. Fields of an address group are described as `g_<object>+0x<offset> <field>`. Readers and writers link to the function map. "Cited in" lists research docs and runtime files of the Bosman Edition repo that name the address.
+
+| Address | Size | Type | Name | Description | Evidence | Confidence | Model | Writers | Readers | Cited in |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 0x9cd6bc | 32 | buffer | `g_glyph_up_triangle` | The 7 by 4 upward pointing triangle bitmap glyph, stored as a width byte, a height byte and one byte for each pixel. | 0x5ee590 Guio::draw passes it to 0x5e3ce0 gui_draw_glyph. It is drawn when the text is above the widget and by 0x403c80 Area::draw_scrollbar. The exe bytes decode to that shape. | high | sonnet |  | [0x403c80](../map/Area.cpp.md), [0x5ee590](../map/Guio.cpp.md) |  |
+| 0x9cd6bd | 1 | u8 | `g_glyph_up_triangle_height` | g_glyph_up_triangle+0x1 height: the height in pixels of the up triangle glyph, which Guio::draw reads to centre it. | 0x5ee590 Guio::draw reads this byte to centre the glyph, and 0x5e3ce0 gui_draw_glyph reads byte 1 of a glyph as its height. | high | sonnet |  | [0x403c80](../map/Area.cpp.md), [0x5ee590](../map/Guio.cpp.md) |  |
+| 0x9cd6dc | 32 | buffer | `g_glyph_down_triangle` | The 7 by 4 downward pointing triangle bitmap glyph, stored as a width byte, a height byte and one byte for each pixel. | 0x5ee590 Guio::draw passes it to 0x5e3ce0 gui_draw_glyph. It is drawn when the text is below the widget and by 0x403c80 Area::draw_scrollbar. The exe bytes decode to that shape. | high | sonnet |  | [0x403c80](../map/Area.cpp.md), [0x5ee590](../map/Guio.cpp.md) |  |
+| 0xad9c58 | 4 | void * | `g_active_area_scrollbar` | Pointer to the scrollbar state of the area that currently owns the scrollbar, or null. | 0x403600 Area::setup_scrollbar stores the Area address plus 0xb7a. 0x4031a0 Area::release clears it, and 0x5621f0 display_press_scrollbar_key reads it. | high | sonnet | [0x4031a0](../map/Area.cpp.md), [0x403600](../map/Area.cpp.md) | [0x4031a0](../map/Area.cpp.md), [0x5621f0](../map/display.cpp.md) | 2026-10-14-select-leagues-spec.md |

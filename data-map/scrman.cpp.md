@@ -1,0 +1,13 @@
+# scrman.cpp: 5 globals owned by scrman.cpp
+
+Data map of cm0102.exe 3.9.68: the globals that game and library functions touch. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+A global is high only when the evidence quotes a string, an assert, a constant in read-only data, or a high function whose name pins the purpose. Treat a medium or low name as a hint. Fields of an address group are described as `g_<object>+0x<offset> <field>`. Readers and writers link to the function map. "Cited in" lists research docs and runtime files of the Bosman Edition repo that name the address.
+
+| Address | Size | Type | Name | Description | Evidence | Confidence | Model | Writers | Readers | Cited in |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 0xb74c54 | 48 | table | `g_screen_records_second_slot` | g_screen_records+0x60 second_slot: the second 48 byte record of the first channel, copied into a new channel record. | 0x7ff630 scrman_add_player_record copies 0x30 bytes from this address plus a channel offset into the channel record at 0xb74c24. | medium | sonnet |  | [0x7ff630](../map/scrman.cpp.md) |  |
+| 0xb77c7c | 2 | s16 | `g_screen_manager_last_added_slot` | g_screen_manager+0x382c last_added_slot: slot index that scrman_add_player_record last filled. | written only by 0x7ff630 scrman_add_player_record after it runs the player joined callback | medium | sonnet | [0x7ff630](../map/scrman.cpp.md) |  |  |
+| 0xb77c80 | 4 | u32 | `g_screen_manager_network_host_flag` | g_screen_manager+0x3830 network_host_flag: nonzero when this machine hosts the network game. | written only by 0x8388e0 setup_create_or_join_network_game (high) as true when its argument is 0, the host case | medium | sonnet | [0x8388e0](../map/Setup.cpp.md) | [0x7ff630](../map/scrman.cpp.md), [0x7ff7b0](../map/scrman.cpp.md) |  |
+| 0xca72f5 | 0 | Display | `g_display_remote` | The Display object that records for nonzero player ids use as their display. | 0x7ff630 scrman_add_player_record uses its address when the player id is not 0, and 0x800330 send_area_scroll_row compares against it | medium | sonnet |  | [0x7ff630](../map/scrman.cpp.md), [0x800330](../map/scrman.cpp.md), [0x8388e0](../map/Setup.cpp.md) | 2026-10-13-display-and-scrman-inventory.md |
+| 0xdd6bf8 | 4 | u32 | `g_network_client_packet_flag` | Set when the network client receives a packet whose first byte is 0, and cleared when the receive loop ends. | written only by 0x7fdc00 ScreenManager::run_network_client, which sends keepalives while it is set | low | sonnet | [0x7fdc00](../map/scrman.cpp.md) | [0x7fdc00](../map/scrman.cpp.md) |  |

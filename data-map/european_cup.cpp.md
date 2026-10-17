@@ -1,0 +1,12 @@
+# european_cup.cpp: 4 globals owned by european_cup.cpp
+
+Data map of cm0102.exe 3.9.68: the globals that game and library functions touch. Generated from the Bosman Edition repo. Do not edit by hand: report a wrong name as an issue.
+
+A global is high only when the evidence quotes a string, an assert, a constant in read-only data, or a high function whose name pins the purpose. Treat a medium or low name as a hint. Fields of an address group are described as `g_<object>+0x<offset> <field>`. Readers and writers link to the function map. "Cited in" lists research docs and runtime files of the Bosman Edition repo that name the address.
+
+| Address | Size | Type | Name | Description | Evidence | Confidence | Model | Writers | Readers | Cited in |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 0x96a1d0 | 160 | vtable | `g_vtable_european_cup` | Vtable of EuropeanCup, 40 slots. | the destructor or constructor of EuropeanCup holds it: 0x5837c0 EuropeanCup::EuropeanCup, 0x583a00 EuropeanCup::~EuropeanCup | high | script |  | [0x5837c0](../map/european_cup.cpp.md), [0x583a00](../map/european_cup.cpp.md) | 2026-10-16-sweep-europe.md |
+| 0x9c6dac | 308 | char[308] | `g_str_fa_fine_news_disciplinary_problems_text` | The news text that says a club is fined by a national football association because of continuing disciplinary problems. | 0x58a660 news_fa_disciplinary_fine_text pushes this string. The exe text names the club, the fine amount and the nationality, and ends with the hope that the fine encourages the club. | high | sonnet |  | [0x58a660](../map/european_cup.cpp.md) |  |
+| 0x9c6ee0 | 304 | char[304] | `g_str_fa_fine_news_poor_disciplinary_record_text` | The news text that says a football association fined a club because of its poor disciplinary record this season. | 0x58a660 news_fa_disciplinary_fine_text pushes this string. The exe text starts with The and the nationality placeholder, then names the club and the fine. | high | sonnet |  | [0x58a660](../map/european_cup.cpp.md) |  |
+| 0x9c7334 | 213 | char[213] | `g_str_insurance_payout_news_text` | The news text that says a club received an insurance payout because a player retired early through injury. | 0x58aa60 news_insurance_payout_text passes this string to 0x66f4e0 langlib_sprintf. The exe text names the club, the cash amount and the player. | high | sonnet |  | [0x58aa60](../map/european_cup.cpp.md) |  |
