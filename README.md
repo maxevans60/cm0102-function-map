@@ -50,6 +50,8 @@ Read the code before you build a patch on a medium or low name. A name helps you
 
 The data map lists each global on the page of its owner file: the file of most of the functions that use it. A script named 3,015 globals from facts in the exe: the key ids, the read-only constants by value, the vtables by their constructor, and the string pointers. Agents (Claude Sonnet, and Opus for one) named the other 1,413 from the functions that read and write them, then a confidence pass checked them again. The description of a field of an object reads `g_<object>+0x<offset> <field>`. Of the 4,428 globals, 3,808 are high, 574 medium and 46 low.
 
+Every name comes from reading the exe's own code. While they worked, the agents also had the Offset Index thread on the champman0102 forum to hand as a check. Where the thread names a global or a field, they compared it with the code before they used it. Rows that rest on it say "forum offset index" in their evidence. Thanks to everyone who added to that thread.
+
 ## What the map holds
 
 The map holds names, file names and short descriptions. It holds no code, decompiled code or data of the original game. To read the code you need your own copy of the game. Eidos made it free in 2008.
