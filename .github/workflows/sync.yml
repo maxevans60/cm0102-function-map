@@ -1,4 +1,4 @@
-# Copies the function map from the Bosman Edition repo once a day, and on a manual run.
+# Copies the function map and the data map from the Bosman Edition repo once a day, and on a manual run.
 # The Bosman Edition repo is the only source: a change pushed there reaches this repo within a day.
 name: Sync the map
 
@@ -22,6 +22,7 @@ jobs:
           sparse-checkout-cone-mode: false
           sparse-checkout: |
             docs/research/function-map/
+            docs/research/data-map/
             tools/research/function_map/publish_map.py
       - name: Copy the map
         run: |
@@ -32,7 +33,7 @@ jobs:
           python3 port/tools/research/function_map/publish_map.py .
       - name: Commit a change
         run: |
-          git add -A map
+          git add -A map data-map
           if git diff --cached --quiet; then
             echo "The map has not changed."
             exit 0
