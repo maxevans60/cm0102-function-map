@@ -22,18 +22,19 @@ The map uses the addresses that OllyDbg and x64dbg show, written as `0x8e7810`. 
 | `map/<file>.cpp.md` | One page for each source file: address, size, name, convention, purpose, confidence |
 | [`map/functions.tsv`](map/functions.tsv) | All named functions with every column, for scripts and spreadsheets |
 | [`map/names.tsv`](map/names.tsv) | Address, file, name, confidence, model and the research docs that cite it |
+| [`map/not-high.tsv`](map/not-high.tsv) | Every row that is not high, with one line on what is missing for high |
 | [`map/function-files.tsv`](map/function-files.tsv) | All 11,747 function starts, unwind funclets and runtime code included, with their file |
 
 The source file names come from the assert strings in the exe, such as `E:\dev\CM3\cm3 00-01\cm3\code\comp\leagues\league.cpp`. A function without an assert of its own gets the file of the code around it. A competition class keeps the method names of its base class for each vtable slot, so `SweCup::update_staff_records_for_status` is slot 17 of the cup vtable.
 
 ## How the map was made
 
-AI agents (Claude Opus, and Sonnet for 254 library functions) read each function. They read its strings, asserts, callers, callees, vtable slots and decompiled code, and gave it a name. Then fresh agents reviewed every name with medium or low confidence, every shared stub and every false entry. A third agent settled each disagreement. The review changed 842 names.
+AI agents (Claude Opus, and Sonnet for 254 library functions) read each function. They read its strings, asserts, callers, callees, vtable slots and decompiled code, and gave it a name. Then fresh agents reviewed every name with medium or low confidence, every shared stub and every false entry. A third agent settled each disagreement. The review changed 842 names. A confidence pass then gave the agents the names of the globals and of the reviewed neighbours, and checked the medium and low rows again. It raised 245 rows to high and changed 10 names.
 
 Each row has a confidence:
 
-- **high** (5,457): the evidence quotes a string, a caller or a vtable slot that pins the purpose.
-- **medium** (1,378): the shape of the code and the callers agree, but no single fact proves the name.
+- **high** (5,702): the evidence quotes a string, a caller or a vtable slot that pins the purpose.
+- **medium** (1,133): the shape of the code and the callers agree, but no single fact proves the name.
 - **low** (28): a guess.
 
 Read the code before you build a patch on a medium or low name. A name helps you find code. It does not prove what the code does.
